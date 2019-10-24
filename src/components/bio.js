@@ -1,10 +1,3 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
@@ -17,8 +10,13 @@ function Bio() {
         const { author } = data.site.siteMetadata
         return (
           <Container>
-            <p>
-              Written by <strong>{author}</strong> in San
+            <p
+              style={{
+                fontFamily: `Montserrat, sans-serif`,
+                fontWeight: 100,
+              }}
+            >
+              Written by <span style={{ fontWeight: 300 }}>{author}</span> in San
               Francisco.
             </p>
           </Container>

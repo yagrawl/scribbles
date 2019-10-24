@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
