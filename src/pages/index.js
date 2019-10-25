@@ -26,10 +26,13 @@ class IndexPage extends Component {
                   style={{
                     marginBottom: rhythm(1 / 4),
                     fontFamily: `Montserrat, sans-serif`,
+                    textDecoration: 'none',
                   }}
                 >
                   <Link
-                    style={{ boxShadow: `none` }}
+                    style={{ boxShadow: `none`,
+                             textDecoration: 'none',
+                             color: '#363866' }}
                     to={`blog${node.fields.slug}`}
                   >
                     {title}
@@ -40,12 +43,11 @@ class IndexPage extends Component {
                 </small>
                 <p
                   style={{
-                    marginBottom: rhythm(3 / 4),
                     fontFamily: `Montserrat, sans-serif`,
                     fontWeight: 100,
                   }}
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
+                    __html: node.excerpt || node.frontmatter.description,
                   }}
                 />
               </div>

@@ -1,6 +1,8 @@
 ---
 title: Solo-trip to Tokyo.
 date: "2019-02-21T23:46:37.121Z"
+time: "3 mins"
+description: Full of kit-kats and vending machines
 ---
 
 After graduating from college and before starting work full-time I decided to

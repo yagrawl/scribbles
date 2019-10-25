@@ -26,11 +26,14 @@ class BlogPostTemplate extends Component {
             display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
+            fontFamily: `Montserrat, sans-serif`,
           }}
         >
           {post.frontmatter.date}
         </p>
-        <MDXRenderer>{post.body}</MDXRenderer>
+        <MDXRenderer>
+          {post.body}
+        </MDXRenderer>
         <hr
           style={{
             marginBottom: rhythm(1),

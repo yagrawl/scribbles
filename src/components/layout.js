@@ -14,9 +14,10 @@ class Layout extends React.Component {
       header = (
         <h2
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            ...scale(1),
+            marginBottom: rhythm(0.5),
             fontFamily: `Montserrat, sans-serif`,
+            color: '#363866',
             marginTop: 0,
           }}
         >
@@ -66,7 +67,9 @@ class Layout extends React.Component {
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer>
+        <Footer style={{
+          fontFamily: `Montserrat, sans-serif`,
+        }}>
           © {new Date().getFullYear()},
           {` `}
           <a href="https://www.twitter.com/yagrawl">yagrawl</a>

@@ -1,6 +1,8 @@
 ---
 title: Hoisting in Javascript
 date: "2017-08-01T22:12:03.284Z"
+time: "4 mins"
+description: How function declarations/variables get ‘moved’ to the top.
 ---
 
 The term _Hoisting_ is used in a lot of JavaScript blogs to explain identifier
@@ -133,4 +135,4 @@ the variable `notyetdeclared` has not been registered yet. If **line 12** did
 not contain the `var` keyword, this would have been a different story.
 
 Hopefully it is clear now that hoisting in JS is a simplistic view and
-technically the functions and variables aren’t moved anywhere. 
+technically the functions and variables aren’t moved anywhere.
