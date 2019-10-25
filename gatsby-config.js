@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `< journal. >`,
+    title: `< scribbles. >`,
     author: `@yagrawl`,
     description: `A personal portfolio - Yash Agrawal.`,
     siteUrl: `https://yagrawal.com/`,
