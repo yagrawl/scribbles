@@ -4,7 +4,8 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+
+import "../styles/base.scss"
 
 class IndexPage extends Component {
   render() {
@@ -21,9 +22,8 @@ class IndexPage extends Component {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
-                <h3
+                <h3 className="title-text"
                   style={{
-                    marginBottom: rhythm(1 / 4),
                     fontFamily: `Montserrat, sans-serif`,
                     textDecoration: 'none',
                   }}
@@ -31,7 +31,7 @@ class IndexPage extends Component {
                   <Link
                     style={{ boxShadow: `none`,
                              textDecoration: 'none',
-                             color: '#363866' }}
+                             color: '#0E0E0E' }}
                     to={`blog${node.fields.slug}`}
                   >
                     {title}

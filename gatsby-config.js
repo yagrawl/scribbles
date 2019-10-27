@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     // edit below
     title: `scribbles_`,
-    author: `@yagrawl`,
+    author: `Yash Agrawal`,
     description: `A personal portfolio - Yash Agrawal.`,
     siteUrl: `https://yagrawal.com/`,
     social: {
@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {

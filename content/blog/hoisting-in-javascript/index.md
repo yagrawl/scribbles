@@ -111,14 +111,14 @@ When the global context is set up, the environment is scanned and the
 variable `notyetdeclared` is registered and its value is initialized to
 `undefined` per the steps.
 
-_How is the function being accessed before declaration on ~~line 6~~?_
+_How is the function being accessed before declaration on **line 6**?_
 
 The `hoisting()` function is already registered to an identifier in phase 1 and
 when the JS code starts executing in the global context in phase 2, it looks up
 the lexical environment for `hoisting` and finds the function even before its
 definition.
 
-_How did ~~line 1~~ not throw an error since at this point no variable
+_How did **line 1** not throw an error since at this point no variable
 called `notyetdeclared` exists?_
 
 Similarly, `notyetdeclared` is registered to an identifier and initialized to
@@ -126,7 +126,7 @@ Similarly, `notyetdeclared` is registered to an identifier and initialized to
 
 Finally,
 
-_Why is ~~line 9~~ printing `undefined` when `notyetdeclared` has already been
+_Why is **line 9** printing `undefined` when `notyetdeclared` has already been
 declared in the global scope?_
 
 Now we are in the `hoisting` environment. In phase 1, `notyetdeclared` is

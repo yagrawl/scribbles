@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import { rhythm, scale } from "../utils/typography"
+import "../styles/base.scss"
 
 class Layout extends React.Component {
   render() {
@@ -12,43 +12,16 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h2
-          style={{
-            ...scale(1),
-            marginBottom: rhythm(0.5),
-            fontFamily: `Montserrat, sans-serif`,
-            color: '#363866',
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
+        <h2 className="blog-title-text-main">
+          <Link className="link" to={`/`}>
             {title}
           </Link>
         </h2>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
+        <h3 className="blog-title-text-sub">
+          <Link className="link" to={`/`}>
             {title}
           </Link>
         </h3>
@@ -56,20 +29,11 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
+        <div className="wrapper">
           <header>{header}</header>
           <main>{children}</main>
         </div>
-        <Footer style={{
-          fontFamily: `Montserrat, sans-serif`,
-        }}>
+        <Footer>
           © {new Date().getFullYear()},
           {` `}
           <a href="https://www.twitter.com/yagrawl">yagrawl</a>
