@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+import Theme from './theme';
+
 import "../styles/base.scss"
 
 class Layout extends React.Component {
@@ -29,6 +31,7 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
+        <Theme/>
         <div className="wrapper">
           <header>{header}</header>
           <main>{children}</main>
