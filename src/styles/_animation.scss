@@ -1,0 +1,64 @@
+$link-underline-color: #FF595C;
+
+.anchor {
+    color: #282C34;
+    text-decoration: none !important;
+}
+
+.anchor:hover {
+    animation: uline 0.10s linear 1 forwards;
+    -webkit-animation: uline 0.10s linear 1 forwards;
+    -moz-animation: uline 0.10s linear 1 forwards;
+    -o-animation: uline 0.10s linear 1 forwards;
+}
+
+.shadow {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+}
+
+.shadow:hover {
+  box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+  -webkit-transform:scale(1.02);
+  -moz-transform:scale(1.02);
+  -ms-transform:scale(1.02);
+  -o-transform:scale(1.02);
+  transform:scale(1.02);
+  -webkit-filter: saturate(0%);
+  filter: saturate(0%);
+}
+
+@-webkit-keyframes uline {
+    0% {border-bottom: 0.5px solid $link-underline-color;}
+    50% {border-bottom: 1px solid $link-underline-color;}
+    75% {border-bottom: 1.5px solid $link-underline-color;}
+    100% {border-bottom: 2px solid $link-underline-color;}
+}
+
+@keyframes uline {
+    0% {border-bottom: 0.5px solid $link-underline-color;}
+    50% {border-bottom: 1px solid $link-underline-color;}
+    75% {border-bottom: 1.5px solid $link-underline-color;}
+    100% {border-bottom: 2px solid $link-underline-color;}
+}
+
+@-moz-keyframes uline {
+    0% {border-bottom: 0.5px solid $link-underline-color;}
+    50% {border-bottom: 1px solid $link-underline-color;}
+    75% {border-bottom: 1.5px solid $link-underline-color;}
+    100% {border-bottom: 2px solid $link-underline-color;}
+}
+
+@-o-keyframes uline {
+    0% {border-bottom: 0.5px solid $link-underline-color;}
+    50% {border-bottom: 1px solid $link-underline-color;}
+    75% {border-bottom: 1.5px solid $link-underline-color;}
+    100% {border-bottom: 2px solid $link-underline-color;}
+}

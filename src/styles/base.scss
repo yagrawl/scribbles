@@ -1,0 +1,23 @@
+@import 'margin';
+@import 'font';
+@import 'color';
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+a { text-decoration: none !important; }
+.no-overflow { overflow-x: hidden !important; }
+
+.link,
+.link:hover {
+  text-decoration: none !important;
+}
+
+pre,
+code {
+  border-style: none;
+  background-color: #393B43 !important;
+}

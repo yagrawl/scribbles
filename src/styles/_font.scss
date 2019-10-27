@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  font-display: auto;
+  src: url('../assets/fonts/Proxima Nova/ProximaNovaThin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-display: auto;
+  src: url('../assets/fonts/Proxima Nova/ProximaNovaRegular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-display: auto;
+  src: url('../assets/fonts/Proxima Nova/ProximaNovaSemibold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-display: auto;
+  src: url('../assets/fonts/Proxima Nova/ProximaNovaBold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../assets/fonts/Inconsolata/Inconsolata.otf') format('opentype');
+  font-weight: 700;
+}
+
+$font-family: 'Proxima Nova';
+$font-size: 20px;
+$font-weight: 100;
+
+%font {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+.header-titlepage-text { @extend %font; }
+.header-subpage-text,
+.header-subpage-small-text {
+  @extend %font;
+  font-size: 16px;
+}
+
+.sub-pages-name {
+  @extend %font;
+  font-size: 16px;
+}
+
+.page-title-text {
+  @extend %font;
+  font-size: 36px;
+}
+
+.page-subtitle-text {
+  @extend %font;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.page-content-text {
+  @extend %font;
+  font-size: 18px;
+}
+
+.article-snippet-title {
+  @extend %font;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.article-snippet-tag,
+.article-snippet-details {
+  @extend %font;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tag-text {
+  @extend %font;
+  font-size: 18px;
+}
+.tag-text-focus {
+  @extend %font;
+  font-size: 18px;
+}
+
+.gif-note {
+  @extend %font;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.img-location-note {
+  @extend %font;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.article-snippet-subtitle {
+  @extend %font;
+  font-size: 16px;
+}
+
+.article-content-subheader {
+  @extend %font;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.inline-code {
+  font-family: 'Inconsolata';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.twitter-share-button {
+  font-family: 'Inconsolata';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.project-title {
+  @extend %font;
+  font-size: 18px;
+}
+
+.project-description {
+  @extend %font;
+  font-size: 16px;
+}
+
+.footer-text {
+  @extend %font;
+  font-size: 14px;
+}
+
+.tooltip-year {
+  @extend %font;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tooltip-details {
+  @extend %font;
+  font-weight: 400;
+}
+
+th {
+  @extend %font;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+td {
+  font-family: 'Inconsolata';
+  font-size: 700;
+}

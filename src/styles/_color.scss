@@ -1,0 +1,127 @@
+$background-color-dark: #292A32;
+$background-color-light: #FFFEFE;
+$complimentary-color-dark: #393B43;
+$complimentary-color-light: #F2F2F2;
+$subtitle-text-color: #C3C3C6;
+$article-snippet-hover-light: #F2F2F2;
+$article-snippet-hover-dark: #393B43;
+$article-snippet-details-tag-background: #C5C5F4;
+$article-snippet-details-tag-color: #7F7FDA;
+$subtitle-color: #FF595C;
+
+body {
+  background-color: $background-color-light;
+  color: $background-color-dark;
+
+  .subheader-small-devices { background-color: $complimentary-color-light; }
+  .anchor { color: $background-color-dark; }
+  .page-subtitle-text { color: $subtitle-text-color; }
+  .article-snippet-details {
+    background-color: $article-snippet-details-tag-background;
+    color: $article-snippet-details-tag-color;
+  }
+  .article-snippet-tag { color: $subtitle-text-color; }
+  .article-snippet:hover { background-color: $article-snippet-hover-light; }
+  .tag-text {
+    background-color: $article-snippet-hover-light;
+    color: $background-color-dark;
+  }
+  .tag-text:hover {
+    background-color: #E0E0E0;
+  }
+  .tag-text-focus {
+    background-color: $article-snippet-details-tag-background;
+    color: $article-snippet-details-tag-color;
+  }
+  .photo-preloader {
+    background: linear-gradient( $article-snippet-hover-light, $background-color-light );
+    transition: all 0.45s;
+  }
+  .stats-graph-box { background-color: $complimentary-color-light; }
+
+  .link,
+  .link:hover {
+    color: $background-color-dark;
+  }
+
+  .inline-code {
+    background-color: $article-snippet-hover-light;
+    color: $background-color-dark;
+  }
+  .twitter-share-button {
+    background-color: #1DA1F2;
+    color: $background-color-light;
+  }
+  .twitter-share-button:hover {
+    background-color: #1A94E0;
+  }
+
+  .loader {
+    border: 8px solid $background-color-light;
+    border-top: 8px solid $complimentary-color-light;
+  }
+
+  .runs { color: #8884d8; }
+  .distance { color: #82ca9d; }
+  .pace { color: #ffc658; }
+
+  .article-content-subheader { color: $subtitle-text-color; }
+
+  .project-image { background-color: $background-color-light; }
+  .project-title { color: $subtitle-color; }
+  .project-description { color: $background-color-dark; }
+  .custom-tooltip { background-color: $background-color-light;}
+
+  tr:nth-child(even) { background-color: $background-color-light; }
+  tr:hover { background-color: $complimentary-color-light; }
+}
+
+body.dark-mode {
+  background-color: $background-color-dark;
+  color: $background-color-light;
+
+  .subheader-small-devices { background-color: $complimentary-color-dark; }
+
+  .anchor { color: $background-color-light; }
+
+  .article-snippet:hover { background-color: $article-snippet-hover-dark; }
+  .tag-text {
+    background-color: $complimentary-color-dark;
+    color: $background-color-light;
+  }
+  .tag-text:hover {
+    background-color: #5B5E6C;
+  }
+  .tag-text-focus {
+    background-color: $article-snippet-details-tag-background;
+    color: $article-snippet-details-tag-color;
+  }
+  .photo-preloader {
+    background: linear-gradient( $article-snippet-hover-dark, $background-color-dark );
+    transition: all 0.45s;
+  }
+  .stats-graph-box { background-color: $complimentary-color-dark; }
+
+  .link,
+  .link:hover {
+    color: $background-color-light;
+  }
+
+  .inline-code {
+    background-color: $complimentary-color-dark;
+    color: $complimentary-color-light;
+  }
+
+  .loader {
+    border: 8px solid $background-color-dark;
+    border-top: 8px solid $complimentary-color-dark;
+  }
+
+  .project-image { background-color: $complimentary-color-dark; }
+  .project-title { color: $subtitle-color; }
+  .project-description { color: $background-color-light; }
+  .custom-tooltip { background-color: $background-color-dark;}
+
+  tr:nth-child(even) { background-color: $background-color-dark; }
+  tr:hover { background-color: $complimentary-color-dark; }
+}
