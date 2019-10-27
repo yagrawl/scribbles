@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `< scribbles. >`,
+    title: `scribbles_`,
     author: `@yagrawl`,
     description: `A personal portfolio - Yash Agrawal.`,
     siteUrl: `https://yagrawal.com/`,
@@ -76,7 +76,7 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     {
