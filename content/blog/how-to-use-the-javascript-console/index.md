@@ -3,6 +3,8 @@ title: How to use the Javascript Console
 date: "2019-04-17T22:12:03.284Z"
 time: "5 mins"
 description: Going beyond console.log()
+category: JavaScript
+tags: Frontend, Debugging
 ---
 
 One of the easiest ways to debug anything in JavaScript is by logging stuff

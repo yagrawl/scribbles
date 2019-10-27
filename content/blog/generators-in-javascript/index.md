@@ -3,6 +3,8 @@ title: Generators in Javascript
 date: "2017-08-16T22:12:03.284Z"
 time: "7 mins"
 description: Making Async code beautiful since ES6
+category: JavaScript
+tags: Frontend, Basics, ES6
 ---
 
 Generators are a cutting edge addition to ES6 JavaScript. Async code is harder

@@ -3,6 +3,8 @@ title: Defining Functions in Javascript
 date: "2019-09-03T22:12:03.284Z"
 time: "5 mins"
 description: Different types of function definitions in Javascript and their consequences
+category: JavaScript
+tags: Frontend, Basics
 ---
 
 Generally, a function is a sequence of instructions or a 'subprogram' that can be invoked by the code that is external (or internal) to that function. In essence, functions 'encapsulate' a particular task.

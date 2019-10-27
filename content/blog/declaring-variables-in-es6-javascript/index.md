@@ -3,6 +3,8 @@ title: Declaring Variables in ES6 Javascript
 date: "2017-08-06T22:12:03.284Z"
 time: "4 mins"
 description: let, var, const, what!?
+category: JavaScript
+tags: Frontend, Basics
 ---
 
 Before ES6, `var` was the only keyword used to declare variables in JavaScript.

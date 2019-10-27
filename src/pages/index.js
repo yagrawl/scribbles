@@ -38,7 +38,7 @@ class IndexPage extends Component {
                   </Link>
                 </h3>
                 <small style={{ fontFamily: `Montserrat, sans-serif` }}>
-                  {node.frontmatter.date} &middot; {node.frontmatter.time}
+                  {node.frontmatter.date} &middot; {node.frontmatter.time} &middot; {node.frontmatter.category} 
                 </small>
                 <p
                   style={{
@@ -79,6 +79,7 @@ export const pageQuery = graphql`
             title
             time
             description
+            category
           }
         }
       }
