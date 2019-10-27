@@ -29,7 +29,7 @@ class BlogPostTemplate extends Component {
             fontFamily: `Montserrat, sans-serif`,
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date} &middot; {post.frontmatter.time}
         </p>
         <MDXRenderer>
           {post.body}
@@ -87,6 +87,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        time
       }
     }
   }
