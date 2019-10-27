@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Toggle from 'react-toggle';
 
 import '../styles/base.scss';
+import '../styles/_toggle.scss';
 
 class Theme extends Component {
   constructor(props) {
@@ -32,7 +34,10 @@ class Theme extends Component {
 
   render() {
     return (
-      <button onClick={this.handleModeChange}>Change Mode</button>
+      <Toggle
+        defaultChecked={this.state.darkMode}
+        icons={false}
+        onChange={this.handleModeChange} />
     );
   }
 }
