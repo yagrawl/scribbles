@@ -12,3 +12,14 @@ $max-width: 700px;
   text-decoration: none;
   color: inherit;
 }
+
+.category-text-focus,
+.category-text {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background: none;
+  outline: none;
+}

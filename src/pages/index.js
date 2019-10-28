@@ -8,35 +8,65 @@ import SEO from "../components/seo"
 import "../styles/base.scss"
 
 class IndexPage extends Component {
-  state = {
-    currentCategory: '',
-    posts: this.props.data.allMdx.edges,
-    filteredPosts: '',
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentCategory: '',
+      posts: this.props.data.allMdx.edges,
+    }
+
+    this.categories = [];
   }
 
   applyCategory(category) {
     if(this.state.currentCategory === '') {
       this.setState({
         currentCategory: category
+      }, () => {
+        this.activeCategory(category);
       });
     } else if(this.state.currentCategory === category) {
       this.setState({
         currentCategory: ''
+      }, () => {
+        this.passiveCategory(category);
+      });
+    } else {
+      this.setState({
+        currentCategory: category
+      }, () => {
+        for(let i = 0; i < this.categories.length; i++) {
+          if(this.categories[i] !== category) {
+            this.passiveCategory(this.categories[i]);
+          } else {
+            this.activeCategory(category);
+          }
+        }
       });
     }
   }
 
-  getCategories() {
-    let category = {};
-    this.state.posts.map(({ node }) => {
+  activeCategory(category) {
+    document.getElementById(`${category}-button`).classList.add("category-text-focus");
+    document.getElementById(`${category}-button`).classList.remove("category-text");
+  }
 
-      if(!(node.frontmatter.category in category)) {
-        category[node.frontmatter.category] = true;
+  passiveCategory(category) {
+    document.getElementById(`${category}-button`).classList.add("category-text");
+    document.getElementById(`${category}-button`).classList.remove("category-text-focus");
+  }
+
+  getCategories() {
+    this.state.posts.map(({ node }) => {
+      if(!this.categories.includes(node.frontmatter.category)) {
+        this.categories.push(node.frontmatter.category);
       }
     });
 
-    let categories = Object.keys(category).map(key => {
-      return <button className="title-text"
+    let categories = this.categories.map(key => {
+      return <button className="category-text"
+                     id={`${key}-button`}
                      onClick={() => this.applyCategory(key)}> {key}
              </button>
     });
