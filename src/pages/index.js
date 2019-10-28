@@ -8,50 +8,69 @@ import SEO from "../components/seo"
 import "../styles/base.scss"
 
 class IndexPage extends Component {
+  state = {
+    currentCategory: '',
+    posts: this.props.data.allMdx.edges,
+    filteredPosts: '',
+  }
+
+  applyCategory(category) {
+    if(this.state.currentCategory === '') {
+      this.setState({
+        currentCategory: category
+      });
+    } else if(this.state.currentCategory === category) {
+      this.setState({
+        currentCategory: ''
+      });
+    }
+  }
+
+  getCategories() {
+    let category = {};
+    this.state.posts.map(({ node }) => {
+
+      if(!(node.frontmatter.category in category)) {
+        category[node.frontmatter.category] = true;
+      }
+    });
+
+    let categories = Object.keys(category).map(key => {
+      return <button className="title-text"
+                     onClick={() => this.applyCategory(key)}> {key}
+             </button>
+    });
+
+    return categories;
+  }
+
+  getPosts() {
+    let posts = this.state.posts.map(({ node }) => {
+      if(node.frontmatter.category === this.state.currentCategory || this.state.currentCategory === '') {
+        return <div key={node.fields.slug}>
+                <h3 className="title-text">
+                  <Link className="link" to={`blog${node.fields.slug}`}>
+                    {node.frontmatter.title}
+                  </Link>
+                </h3>
+              </div>
+      }
+    });
+
+    return posts;
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Yash Agrawal" />
         <Bio />
-        <div style={{ margin: "20px 0 40px" }}>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <div key={node.fields.slug}>
-                <h3 className="title-text"
-                  style={{
-                    fontFamily: `Montserrat, sans-serif`,
-                    textDecoration: 'none',
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none`,
-                             textDecoration: 'none',
-                             color: '#0E0E0E' }}
-                    to={`blog${node.fields.slug}`}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small style={{ fontFamily: `Montserrat, sans-serif` }}>
-                  {node.frontmatter.date} &middot; {node.frontmatter.time} &middot; {node.frontmatter.category} 
-                </small>
-                <p
-                  style={{
-                    fontFamily: `Montserrat, sans-serif`,
-                    fontWeight: 100,
-                  }}
-                  dangerouslySetInnerHTML={{
-                    __html: node.excerpt || node.frontmatter.description,
-                  }}
-                />
-              </div>
-            )
-          })}
+        <div>
+          {this.getCategories()}
+          {this.getPosts()}
         </div>
       </Layout>
     )
@@ -70,7 +89,6 @@ export const pageQuery = graphql`
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }
