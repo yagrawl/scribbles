@@ -32,6 +32,8 @@ body {
   .post-snippet-tag { color: $subtitle-text-color; }
   .post-snippet:hover { background-color: $post-snippet-hover-light; }
   .post-content-subheader { color: $subtitle-text-color; }
+
+  .anchor { color: $background-color-dark; }
 }
 
 body.dark-mode {
@@ -51,4 +53,6 @@ body.dark-mode {
   }
 
   .post-snippet:hover { background-color: $post-snippet-hover-dark; }
+
+  .anchor { color: $background-color-light; }
 }

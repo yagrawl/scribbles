@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Theme from './theme';
+import Footer from './footer';
 
 import "../styles/base.scss"
 
@@ -31,16 +32,12 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
-        <Theme/>
         <div className="wrapper">
           <header>{header}</header>
+          <Theme/>
           <main>{children}</main>
         </div>
-        <Footer>
-          © {new Date().getFullYear()},
-          {` `}
-          <a href="https://www.twitter.com/yagrawl">yagrawl</a>
-        </Footer>
+        <Footer/>
       </Wrapper>
     )
   }
@@ -48,11 +45,6 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
-`
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
 `
 
 export default Layout
