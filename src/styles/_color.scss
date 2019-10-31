@@ -3,10 +3,10 @@ $background-color-light: #FFFEFE;
 $complimentary-color-dark: #393B43;
 $complimentary-color-light: #F2F2F2;
 $subtitle-text-color: #C3C3C6;
-$article-snippet-hover-light: #F2F2F2;
-$article-snippet-hover-dark: #393B43;
-$article-snippet-details-tag-background: #C5C5F4;
-$article-snippet-details-tag-color: #7F7FDA;
+$post-snippet-hover-light: #F2F2F2;
+$post-snippet-hover-dark: #393B43;
+$post-snippet-details-tag-background: #C5C5F4;
+$post-snippet-details-tag-color: #7F7FDA;
 $subtitle-color: #FF595C;
 
 body {
@@ -14,16 +14,24 @@ body {
   color: $background-color-dark;
 
   .category-text {
-    background-color: $article-snippet-hover-light;
+    background-color: $post-snippet-hover-light;
     color: $background-color-dark;
   }
   .category-text:hover {
     background-color: #E0E0E0;
   }
   .category-text-focus {
-    background-color: $article-snippet-details-tag-background;
-    color: $article-snippet-details-tag-color;
+    background-color: $post-snippet-details-tag-background;
+    color: $post-snippet-details-tag-color;
   }
+
+  .post-snippet-details {
+    background-color: $post-snippet-details-tag-background;
+    color: $post-snippet-details-tag-color;
+  }
+  .post-snippet-tag { color: $subtitle-text-color; }
+  .post-snippet:hover { background-color: $post-snippet-hover-light; }
+  .post-content-subheader { color: $subtitle-text-color; }
 }
 
 body.dark-mode {
@@ -38,7 +46,9 @@ body.dark-mode {
     background-color: #5B5E6C;
   }
   .category-text-focus {
-    background-color: $article-snippet-details-tag-background;
-    color: $article-snippet-details-tag-color;
+    background-color: $post-snippet-details-tag-background;
+    color: $post-snippet-details-tag-color;
   }
+
+  .post-snippet:hover { background-color: $post-snippet-hover-dark; }
 }

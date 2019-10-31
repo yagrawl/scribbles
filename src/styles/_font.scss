@@ -89,3 +89,28 @@ $font-weight: 100;
   @extend %font;
   font-size: 18px;
 }
+
+/* Post Snippet */
+.post-snippet-title {
+  @extend %font;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.post-snippet-tag,
+.post-snippet-details {
+  @extend %font;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.post-snippet-subtitle {
+  @extend %font;
+  font-size: 16px;
+}
+
+.post-content-subheader {
+  @extend %font;
+  font-size: 24px;
+  font-weight: 400;
+}

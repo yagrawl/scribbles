@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Post from "../components/post"
 import SEO from "../components/seo"
 
 import "../styles/base.scss"
@@ -78,11 +79,14 @@ class IndexPage extends Component {
     let posts = this.state.posts.map(({ node }) => {
       if(node.frontmatter.category === this.state.currentCategory || this.state.currentCategory === '') {
         return <div key={node.fields.slug}>
-                <h3 className="title-text">
-                  <Link className="link" to={`blog${node.fields.slug}`}>
-                    {node.frontmatter.title}
-                  </Link>
-                </h3>
+                <Link className="link" to={`blog${node.fields.slug}`}>
+                  <Post title={node.frontmatter.title}
+                               subtitle={node.frontmatter.description}
+                               date={node.frontmatter.date}
+                               readTime={node.frontmatter.time}
+                               tag={`#${node.frontmatter.category.toUpperCase()}`}
+                          />
+                </Link>
               </div>
       }
     });
@@ -100,7 +104,9 @@ class IndexPage extends Component {
         <Bio />
         <div>
           {this.getCategories()}
-          {this.getPosts()}
+          <div className="posts">
+            {this.getPosts()}
+          </div>
         </div>
       </Layout>
     )
