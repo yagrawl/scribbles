@@ -1,6 +1,6 @@
 ---
 title: Declaring Variables in ES6 Javascript
-date: "2017-08-06T22:12:03.284Z"
+date: "2017-08-06"
 time: "4 mins"
 description: let, var, const, what!?
 category: JavaScript

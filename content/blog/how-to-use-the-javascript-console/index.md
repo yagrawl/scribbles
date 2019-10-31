@@ -1,6 +1,6 @@
 ---
 title: How to use the Javascript Console
-date: "2019-04-17T22:12:03.284Z"
+date: "2019-04-17"
 time: "5 mins"
 description: Going beyond console.log()
 category: JavaScript

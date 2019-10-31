@@ -1,6 +1,6 @@
 ---
-title: Solo-trip to Tokyo.
-date: "2019-02-21T23:46:37.121Z"
+title: Solo-trip to Tokyo
+date: "2019-02-21"
 time: "3 mins"
 description: Full of kit-kats and vending machines
 category: Travel

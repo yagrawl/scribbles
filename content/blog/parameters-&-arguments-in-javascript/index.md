@@ -1,6 +1,6 @@
 ---
 title: Parameters & Arguments in Javascript
-date: "2017-08-23T22:12:03.284Z"
+date: "2017-08-23"
 time: "5 mins"
 description: Is a parameter and an argument one and the same?
 category: JavaScript

@@ -1,6 +1,6 @@
 ---
 title: Generators in Javascript
-date: "2017-08-16T22:12:03.284Z"
+date: "2017-08-16"
 time: "7 mins"
 description: Making Async code beautiful since ES6
 category: JavaScript

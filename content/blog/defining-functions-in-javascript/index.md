@@ -1,6 +1,6 @@
 ---
 title: Defining Functions in Javascript
-date: "2019-09-03T22:12:03.284Z"
+date: "2019-09-03"
 time: "5 mins"
 description: Different types of function definitions in Javascript and their consequences
 category: JavaScript

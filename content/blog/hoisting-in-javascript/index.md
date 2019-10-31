@@ -1,6 +1,6 @@
 ---
 title: Hoisting in Javascript
-date: "2017-08-01T22:12:03.284Z"
+date: "2017-08-01"
 time: "4 mins"
 description: How function declarations/variables get ‘moved’ to the top.
 category: JavaScript
