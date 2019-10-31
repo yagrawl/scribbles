@@ -81,6 +81,22 @@ $font-weight: 100;
   font-weight: 600;
 }
 
+.bio {
+  @extend %font;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.bio-content-text {
+  @extend %font;
+  font-size: 20px;
+}
+
+.bio-title-text {
+  @extend %font;
+  font-size: 36px;
+}
+
 .category-text {
   @extend %font;
   font-size: 18px;

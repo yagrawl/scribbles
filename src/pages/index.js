@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Post from "../components/post"
 import SEO from "../components/seo"
@@ -101,7 +100,6 @@ class IndexPage extends Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Yash Agrawal" />
-        <Bio />
         <div>
           {this.getCategories()}
           <div className="posts">

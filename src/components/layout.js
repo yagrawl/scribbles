@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Theme from './theme';
+import Bio from './bio';
 import Footer from './footer';
 
 import "../styles/base.scss"
@@ -33,8 +34,16 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         <div className="wrapper">
-          <header>{header}</header>
-          <Theme/>
+          <div className="header">
+            <header>{header}</header>
+            <div className="bio">
+              <Bio/>
+            </div>
+          </div>
+          <div className="theme">
+            <Theme/>
+          </div>
+          <div className="clear"></div>
           <main>{children}</main>
         </div>
         <Footer/>

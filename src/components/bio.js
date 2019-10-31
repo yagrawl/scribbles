@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 function Bio() {
@@ -9,17 +9,10 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <Container>
-            <p
-              style={{
-                fontFamily: `Montserrat, sans-serif`,
-                fontWeight: 100,
-              }}
-            >
-              Written by <span style={{ fontWeight: 300 }}>{author}</span> in San
-              Francisco.
-            </p>
-          </Container>
+          <p>
+            Written by <Link to='/bio' className="anchor"><strong>{author}</strong></Link> in San
+            Francisco.
+          </p>
         )
       }}
     />
@@ -34,10 +27,6 @@ const bioQuery = graphql`
       }
     }
   }
-`
-
-const Container = styled.div`
-  display: flex;
 `
 
 export default Bio
