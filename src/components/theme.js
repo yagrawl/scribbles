@@ -8,12 +8,19 @@ class Theme extends Component {
   constructor(props) {
     super(props);
 
-    if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
-      document.body.classList.add('dark-mode');
+    if (typeof window !== 'undefined') {
+      if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
+        document.body.classList.add('dark-mode');
+      }
+    }
+
+    let mode = false;
+    if (typeof window !== 'undefined') {
+      mode = JSON.parse(localStorage.getItem('DARK_MODE'));
     }
 
     this.state = {
-      darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
+      darkMode: mode
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
@@ -29,7 +36,10 @@ class Theme extends Component {
     this.setState({
       darkMode: (!this.state.darkMode)
     });
-    localStorage.setItem('DARK_MODE', !this.state.darkMode);
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('DARK_MODE', !this.state.darkMode);
+    }
   }
 
   render() {
