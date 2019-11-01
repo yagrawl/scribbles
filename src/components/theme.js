@@ -14,13 +14,8 @@ class Theme extends Component {
       }
     }
 
-    let mode = false;
-    if (typeof window !== 'undefined') {
-      mode = JSON.parse(localStorage.getItem('DARK_MODE'));
-    }
-
     this.state = {
-      darkMode: mode
+      darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
