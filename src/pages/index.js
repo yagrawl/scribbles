@@ -20,6 +20,7 @@ class IndexPage extends Component {
   }
 
   applyCategory(category) {
+    console.log(this.categories);
     if(this.state.currentCategory === '') {
       this.setState({
         currentCategory: category
