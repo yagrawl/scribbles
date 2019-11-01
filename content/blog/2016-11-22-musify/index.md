@@ -29,11 +29,11 @@ Finally one of the main aspect of our project was to actually find the music sui
 
 Before :
 
-`youtube:https://www.youtube.com/watch?v=Yq2-oM5AkEU`
+`youtube:https://www.youtube.com/embed/Yq2-oM5AkEU`
 
 After :
 
-`youtube:https://www.youtube.com/watch?v=8kGR5jMhrDo`
+`youtube:https://www.youtube.com/embed/8kGR5jMhrDo`
 
 ## What's Next?
 
