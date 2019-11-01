@@ -1,3 +1,5 @@
+@import 'animation';
+
 $max-width: 700px;
 
 .wrapper {
@@ -81,6 +83,25 @@ $max-width: 700px;
   display: inline-block;
   text-decoration: none;
   padding: 25px 10px;
+}
+
+.blog > img {
+  width: 100px;
+}
+
+.blog a {
+  @extend .anchor;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog img {
+  max-width: 700px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: $max-width + 40px) {

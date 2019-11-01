@@ -63,6 +63,11 @@ $font-weight: 100;
   font-weight: $font-weight;
 }
 
+.blog {
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
+
 .blog-title-text-main {
   font-family: 'Circular';
   font-size: 36px;
@@ -81,7 +86,7 @@ $font-weight: 100;
   font-weight: 600;
 }
 
-.bio {
+.bio, .blog-bio {
   @extend %font;
   font-size: 18px;
   font-weight: 100;

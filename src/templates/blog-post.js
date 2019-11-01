@@ -17,13 +17,17 @@ class BlogPostTemplate extends Component {
           title={post.frontmatter.title}
           description={post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <p className="blog-title-text-main no-margin-bottom">{post.frontmatter.title}</p>
         <p>
-          {post.frontmatter.date} &middot; {post.frontmatter.time}
+          <span className="post-snippet-details">{post.frontmatter.date}</span>
+          &nbsp;
+          <span className="post-snippet-details">{post.frontmatter.time}</span>
         </p>
-        <MDXRenderer>
-          {post.body}
-        </MDXRenderer>
+        <div className="blog">
+          <MDXRenderer>
+            {post.body}
+          </MDXRenderer>
+        </div>
         <hr/>
         <Bio />
       </Layout>

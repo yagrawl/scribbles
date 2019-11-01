@@ -9,7 +9,7 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <p>
+          <p className="blog-bio">
             Written by <Link to='/bio' className="anchor"><strong>{author}</strong></Link> in San
             Francisco.
           </p>
