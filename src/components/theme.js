@@ -11,13 +11,16 @@ class Theme extends Component {
     if (typeof window !== 'undefined') {
       if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
         document.body.classList.add('dark-mode');
+
+        this.darkMode = true;
+      } else {
+        this.darkMode = false;
       }
     }
 
+
     try {
-      this.state = {
-        darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
-      }
+      this.darkMode = JSON.parse(localStorage.getItem('DARK_MODE'))
     } catch(err) {
       console.log(err);
     }
@@ -25,40 +28,24 @@ class Theme extends Component {
     this.handleModeChange = this.handleModeChange.bind(this);
   }
 
-  // componentDidMount() {
-  //   let mode = true;
-  //   if (typeof window !== 'undefined') {
-  //     mode = JSON.parse(localStorage.getItem('DARK_MODE'));
-  //
-  //     this.setState(
-  //       prevState => ({
-  //         ...prevState,
-  //         darkMode: mode
-  //       })
-  //     )
-  //   }
-  // }
-
   handleModeChange() {
-    if(!this.state.darkMode) {
+    if(!this.darkMode) {
       document.body.classList.add('dark-mode');
     } else {
       document.body.classList.remove('dark-mode');
     }
 
-    this.setState({
-      darkMode: (!this.state.darkMode)
-    });
+    this.darkMode = !this.darkMode;
 
     if (typeof window !== 'undefined') {
-      localStorage.setItem('DARK_MODE', !this.state.darkMode);
+      localStorage.setItem('DARK_MODE', this.darkMode);
     }
   }
 
   render() {
     return (
       <Toggle
-        defaultChecked={this.state.darkMode}
+        defaultChecked={this.darkMode}
         icons={false}
         onChange={this.handleModeChange} />
     );
