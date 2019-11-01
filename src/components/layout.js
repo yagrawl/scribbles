@@ -16,19 +16,19 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h2 className="blog-title-text-main">
+        <p className="blog-title-text-main">
           <Link className="link" to={`/`}>
-            {title}
+            {title}<span className="blinking-cursor">_</span>
           </Link>
-        </h2>
+        </p>
       )
     } else {
       header = (
-        <h3 className="blog-title-text-sub">
+        <p className="blog-title-text-sub">
           <Link className="link" to={`/`}>
-            {title}
+            {title}<span className="blinking-cursor">_</span>
           </Link>
-        </h3>
+        </p>
       )
     }
     return (
