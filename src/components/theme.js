@@ -14,12 +14,30 @@ class Theme extends Component {
       }
     }
 
-    this.state = {
-      darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
+    try {
+      this.state = {
+        darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
+      }
+    } catch(err) {
+      console.log(err);
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
   }
+
+  // componentDidMount() {
+  //   let mode = true;
+  //   if (typeof window !== 'undefined') {
+  //     mode = JSON.parse(localStorage.getItem('DARK_MODE'));
+  //
+  //     this.setState(
+  //       prevState => ({
+  //         ...prevState,
+  //         darkMode: mode
+  //       })
+  //     )
+  //   }
+  // }
 
   handleModeChange() {
     if(!this.state.darkMode) {
