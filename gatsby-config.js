@@ -40,13 +40,13 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 650,
-              backgroundColor: 'none',
+              backgroundColor: `none`,
               linkImagesToOriginal: false,
               disableBgImageOnAlpha: true,
             },
           },
           {
-            resolve: "gatsby-remark-embed-youtube",
+            resolve: `gatsby-remark-embed-youtube`,
             options: {
               width: 800,
               height: 400
@@ -76,8 +76,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-65874311-9`,
       },
     },
     {
