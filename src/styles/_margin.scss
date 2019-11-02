@@ -1,6 +1,6 @@
 @import 'animation';
 
-$max-width: 700px;
+$max-width: 650px;
 
 .wrapper {
   max-width: $max-width;
@@ -96,8 +96,10 @@ $max-width: 700px;
 }
 
 .blog img {
-  max-width: 700px;
+  max-width: 550px;
   border-radius: 15px;
+  margin: auto;
+  padding: 0;
 }
 
 .no-margin-bottom {
@@ -108,7 +110,7 @@ $max-width: 700px;
   display: none !important;
 }
 
-@media screen and (max-width: $max-width + 40px) {
+@media screen and (max-width: $max-width) {
   .footer-text {
     display: inline-block;
     text-decoration: none;
@@ -121,14 +123,15 @@ $max-width: 700px;
 
   .category-text-focus,
   .category-text {
-    border-radius: 15px;
-    padding: 5px 10px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
 
   .wrapper {
-    padding: 15px;
+    margin: auto;
+    padding: 25px;
   }
 
   .post-snippet {

@@ -100,7 +100,7 @@ $font-weight: 100;
 
 .bio-title-text {
   @extend %font;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .category-text-focus,
@@ -146,7 +146,7 @@ $font-weight: 100;
 @media screen and (max-width: $max-width + 40px) {
   .category-text-focus,
   .category-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .post-snippet-title {

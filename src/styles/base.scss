@@ -11,6 +11,16 @@ body {
 a { text-decoration: none !important; }
 .no-overflow { overflow-x: hidden !important; }
 
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: auto !important;
+}
+
+code {
+  font-size: 14px !important;
+}
+
 .link,
 .link:hover {
   text-decoration: none !important;

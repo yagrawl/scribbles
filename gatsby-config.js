@@ -39,7 +39,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 650,
               backgroundColor: 'none',
               linkImagesToOriginal: false,
               disableBgImageOnAlpha: true,
@@ -60,6 +60,9 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-vscode`,
+            options: {
+              colorTheme: 'Dark+ (default dark)',
+            }
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,
