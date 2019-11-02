@@ -103,11 +103,8 @@ $font-weight: 100;
   font-size: 36px;
 }
 
+.category-text-focus,
 .category-text {
-  @extend %font;
-  font-size: 18px;
-}
-.category-text-focus {
   @extend %font;
   font-size: 18px;
 }
@@ -140,4 +137,24 @@ $font-weight: 100;
 .footer-text {
   @extend %font;
   font-size: 14px;
+}
+
+.blog a {
+  font-weight: 400;
+}
+
+@media screen and (max-width: $max-width + 40px) {
+  .category-text-focus,
+  .category-text {
+    font-size: 14px;
+  }
+
+  .post-snippet-title {
+    font-size: 20px;
+  }
+
+  .post-snippet-tag,
+  .post-snippet-details {
+    font-size: 10px;
+  }
 }
