@@ -45,7 +45,7 @@ class Theme extends Component {
   render() {
     return (
       <Toggle
-        defaultChecked={this.darkMode}
+        defaultChecked={!this.darkMode}
         icons={false}
         onChange={this.handleModeChange} />
     );
