@@ -78,12 +78,12 @@ class DarkModeToggle extends Component {
   constructor(props) {
     super(props);
 
-    if(JSON.parse(localStorage.getItem('DARM_MODE')) === true) {
+    if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
       document.body.classList.add('dark-mode');
     }
 
     this.state = {
-      darkMode: JSON.parse(localStorage.getItem('DARM_MODE'))
+      darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
@@ -99,7 +99,7 @@ class DarkModeToggle extends Component {
     this.setState({
       darkMode: (!this.state.darkMode)
     });
-    localStorage.setItem('DARM_MODE', !this.state.darkMode);
+    localStorage.setItem('DARK_MODE', !this.state.darkMode);
   }
 
   render() {

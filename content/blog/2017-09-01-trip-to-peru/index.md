@@ -7,15 +7,15 @@ category: Travel
 tags: Peru, Inca Cola
 ---
 
-After my internship at Mastercard ended I had a couple weeks before my fall
+After my internship at Mastercard ended, I had a couple weeks before my fall
 semester started. I had always wanted to go to South America and this seemed
 like the perfect time for the first trip to this continent. The plan was to go
 to Bolivia, Peru and Colombia.
 
 On 12th of August, I flew from Chicago O'Hare. The flight had a couple
 connections Chicago -> Houston -> Lima -> La Paz. The flight from Houston to
-Lima was delayed a few hours and I missed my connection to La Paz. The airline
-staff provided a hotel for overnight stay at Lima and business class tickets to
+Lima was delayed by a few hours and I missed my connection to La Paz. The airline
+staff provided a hotel for overnight stay in Lima and business class tickets to
 La Paz for the next day. I decided to skip Bolivia and just stay in Peru for a
 longer time because I was already a day short and it didn't seem worth it to go
 to a country like Bolivia just for 3 days.
@@ -32,21 +32,25 @@ drink - Inca Cola. It tastes kind of like a cream soda but much better.
 ![inca cola](./image2.jpeg)
 
 The next day I went on a food tour and they started with a drink at
-La Trastienda, a restaurant in the Barranco district of Lima. They served the
+[_La Trastienda_](https://www.thefork.com.pe/restaurante/la-trastienda-r491339), a restaurant in the Barranco district of Lima. They served the
 traditional Pisco sour. I saw the bartender put some egg whites into the flask
-and I hoped for it to taste like crap but it is surprisingly delicious. Also, it
-is a legit pisco sour only if it has those 3 dots on top.
+and I expected it to taste like crap but it is surprisingly delicious. Also, it
+is a legit Pisco sour only if it has those 3 dots of Angostura Bitters on top.
+Chile has a different version of Pisco than Peru and the origins are disputed
+to this day.
 
 ![pisco sour](./image4.jpeg)
 
-Next I made some Ceviche with plantains and fish. It is essentially [_bhel_](https://en.wikipedia.org/wiki/Bhelpuri) but with fish instead of puffed rice. The last stop on the tour was at
-some place for desserts and they hosted a bunch of famous people - including
-The Killers.
+Next I made some Ceviche with plantains and fish at
+[_ámaz_](http://www.amaz.com.pe/). It is essentially
+[_bhel_](https://en.wikipedia.org/wiki/Bhelpuri) but with fish instead of puffed
+rice. The last stop on the tour was at some place for desserts and they hosted
+a bunch of famous people - including 'The Killers'.
 
 ![the killers](./image5.jpeg)
 
 After eating the desserts, I roamed a bit in the Barranco district which is
-considered to be the Bohemian epicenter of Lima. They have beautiful street.
+considered to be the Bohemian epicenter of Lima. They have beautiful street art.
 
 ![dessert](./image6.jpeg)
 
@@ -54,13 +58,13 @@ The Airbnb I stayed at in Lima was in the Miraflores district, right next to
 the coast and it was really beautiful. The next few days in Lima were spent
 visiting parks and tourist attractions and eating the local cuisine.
 
-Interesting fact, in Lima they call Chinese food _Chifa_ which roughly
-translates to 'eating food' in Mandarin. A guide told me that when the Chinese
-immigrants first came to Lima there was a communication gap between the locals.
-Some local at some point pointed towards Chinese food and asked what it was and
-they said _Chifa_ because well, it was food and then the local thought it was
-called _Chifa_ and that is how the name stuck. I don't know if I believe that
-story.  
+Interesting fact, in Peru they call Chinese food _Chifa_ which roughly
+translates to 'cooking rice' in Cantonese. A guide told me that the language
+barrier was the cause of this nomenclature. Some local at some point pointed
+towards fried rice and asked what it was and the Chinese migrants said _Chifa_
+because well, it was fried rice and then the local thought that this kind of food was
+called _Chifa_ and that is how the name stuck. I don't know if I believe this particular
+etymology.
 
 ![airbnb](./image7.jpeg)
 
@@ -76,7 +80,7 @@ train ride back was closer to the city but this part of the trip required a
 taxi. The driver asked me when I was going to come back and I told him that my
 train reached Cuzco sometime in the evening without giving him an exact time. He
 told me to keep his number and call him when I get back. I didn't save that
-number cause well I would just book an Uber when I got back.
+number cause well why won't I find an Uber?
 
 The train ride was really nice and relaxing. It was beautiful and when I
 reached the town I quickly ate something and passed out at the hostel. The next
@@ -86,9 +90,9 @@ clear sky with a billion stars visible. It is one of the most beautiful things I
 have ever seen in my life.
 
 The hike itself was okay. The first couple hours were in the dark with people
-using the flashes on the phone to see the steps. Finally at about 7 I reached
-to the summit. The guide gave us a quick tour and then I got to catch a
-beautiful sunrise which is apparently rare cause it is mostly covered with fog.
+using the flashes on the phone to see the steps. Finally at about 7 I reached the summit.
+The guide gave us a quick tour and then I got to catch a beautiful sunrise
+which is apparently rare because it is mostly covered with fog.
 
 ![macchu picchu](./macchupicchu.gif)
 
@@ -100,7 +104,7 @@ refreshing.
 
 Then I got back on the train and reached Cuzco. I realized there were
 literally no Ubers available at the time and I didn't know what to do. I walked
-outside the station and I found the same driver with a board with my name on it.
+outside the station and I found the same driver carrying a board with my name on it.
 He knew that I won't be able to find a ride to wherever I wanted to go so he
 waited till the evening train came. On the way back I told him that I was
 flying from Cuzco the next morning. He was visibly sad and told me that he would
