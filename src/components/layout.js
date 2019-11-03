@@ -9,6 +9,12 @@ import Footer from './footer';
 import "../styles/base.scss"
 
 class Layout extends React.Component {
+  getThemeToggle() {
+    if (typeof window !== 'undefined') {
+      return <Theme/>;
+    }
+  }
+
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -41,7 +47,7 @@ class Layout extends React.Component {
             </div>
           </div>
           <div className="theme">
-            <Theme/>
+            {this.getThemeToggle()}
           </div>
           <div className="clear"></div>
           <main>{children}</main>

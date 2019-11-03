@@ -15,6 +15,7 @@ collections:
       - { name: time, label: Time }
       - { name: title, label: Title }
       - { name: category, label: Category }
-      - { name: tags, label: tags }
+      - { name: tags, label: Tags }
+      - { name: path, label: Path }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
