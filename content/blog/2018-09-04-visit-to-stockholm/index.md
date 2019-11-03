@@ -8,7 +8,7 @@ tags: Stockholm, Fika Nordics
 path: /visit-to-stockholm
 ---
 
-Stockholm, Sweden is one of the most beautiful city on this planet but doesn't necessarily come up on top of the list of places to visit in Europe. After my internship at Braintree, I was planning on a short trip to a couple places in Europe with my friends. I really wanted to go to Rome but since the Schengen visa appointments are pretty scare in the US I couldn't find one for Italy.
+Stockholm, Sweden is one of the most beautiful city on this planet but doesn't necessarily come up on top of the list of places to visit in Europe. After my internship at Braintree, I was planning on a short trip to a couple places in Europe with my friends. I really wanted to go to Rome but since the Schengen visa appointments are pretty scare in the US I so couldn't find one for Italy.
 
 Schengen visa requires that the country you get it from is the place where you stay the longest during your visit. After scouring for appointments from all Schengen area countries, we decided to compromise and go to Stockholm in Sweden and I am really glad that happened.
 
@@ -30,7 +30,7 @@ Gamla Stan, where our Airbnb was, is really pretty and probably the most tourist
 
 ![stockholm building](./image5.jpeg)
 
-Another really interesting thing about Stockholm is that it is the home to the longest art gallery in the world. A lot of metro stations in Stockholm have art installations and I would highly recommend taking a day to just hopping from one station to another, looking at the installations. I didn't quite get to do a lot of them because it was towards the end of our trip but I did get to see a few.
+Another really interesting thing about Stockholm is that it is the home to the longest art gallery in the world. A lot of metro stations in Stockholm have art installations and I would highly recommend taking a day to just hop from one station to another, looking at the installations. I didn't quite get to do a lot of them because it was towards the end of our trip but I did get to see a few.
 
 ![metro station 1](./image6.jpeg)
 
