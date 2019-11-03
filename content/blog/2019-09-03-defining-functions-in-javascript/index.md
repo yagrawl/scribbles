@@ -5,6 +5,7 @@ time: "5 mins"
 description: Different types of function definitions in Javascript and their consequences
 category: JavaScript
 tags: Frontend, Basics
+path: /defining-functions-in-javascript
 ---
 
 Generally, a function is a sequence of instructions or a 'subprogram' that can be invoked by the code that is external (or internal) to that function. In essence, functions 'encapsulate' a particular task.
@@ -41,7 +42,7 @@ Two main things to be noted about this form of defining a function are:
 
 -   A variable which holds the function object is created in the current scope with the same identifier as the function name provided. In our example, `sum`.
 
--   The variable is **hoisted** to the top of the current scope. You can read more on that [here](https://www.yagrawal.com/hoisting-in-javascript).
+-   The variable is **hoisted** to the top of the current scope. You can read more on that [here](/hoisting-in-javascript).
 
 To bring the second point home, lets look at an example :
 
@@ -147,7 +148,7 @@ Some important things to note in this form of function definition are :
     console.log(foo.prototype); // Logs 'undefined'
     ```
 
--   The `arguments` object is not available in an arrow function. You can read more about the `arguments` object [here](https://www.yagrawal.com/parameters-&-arguments-in-javascript).
+-   The `arguments` object is not available in an arrow function. You can read more about the `arguments` object [here](/parameters-&-arguments-in-javascript).
 
 ### Function Constructor
 
@@ -183,7 +184,7 @@ console.log(gen.next().value); // Logs 2
 
 The `function*` and `yield` keywords are unique to a generator. Generators are defined by adding an `*` at the end of a function keyword. This enables us to use the `yield` keyword within the body of the generator to produce values on request.
 
-You can read it in more detail [here](https://www.yagrawal.com/generators-in-javascript).
+You can read it in more detail [here](/generators-in-javascript).
 
 ## Conclusion
 

@@ -5,6 +5,7 @@ time: "3 mins"
 description: Keeping track of run data from Strava & Nike+.
 category: Projects
 tags: Vanilla JS, Web Application
+path: /runistics
 ---
 
 I like running but I'm not too motivated to do it everyday. I thought it would be a great idea to bet with people for a fixed duration of time. Whoever runs the most wins. Very simple concept and could have easily been done by straight up just keeping track of runs in a month and paying in person but this way, I could practice some full stack web development. There were also a lot of challenges involved, and this is still an in-progress app. Here's the process:

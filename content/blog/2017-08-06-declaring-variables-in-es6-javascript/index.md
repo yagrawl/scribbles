@@ -5,6 +5,7 @@ time: "4 mins"
 description: let, var, const, what!?
 category: JavaScript
 tags: Frontend, Basics
+path: /declaring-variables-in-es6-javascript
 ---
 
 Before ES6, `var` was the only keyword used to declare variables in JavaScript.
@@ -102,7 +103,7 @@ and can be accessed within function scope. Since it hasn’t been initialized by
 the time we are outside of the block scope but inside the function scope, its
 value is `undefined`. `let` on the other hand is a block scoped variable and
 isn’t accessible outside of the block lexical environment it is defined in.
-Read more about lexical environments and variable hoisting [here](/blog/hoisting-in-javascript/).
+Read more about lexical environments and variable hoisting [here](/hoisting-in-javascript/).
 
 ## What to use and when?
 

@@ -5,6 +5,7 @@ time: "5 mins"
 description: Going beyond console.log()
 category: JavaScript
 tags: Frontend, Debugging
+path: /how-to-use-the-javascript-console
 ---
 
 One of the easiest ways to debug anything in JavaScript is by logging stuff

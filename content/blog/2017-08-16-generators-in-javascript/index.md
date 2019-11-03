@@ -5,6 +5,7 @@ time: "7 mins"
 description: Making Async code beautiful since ES6
 category: JavaScript
 tags: Frontend, Basics, ES6
+path: /generators-in-javascript
 ---
 
 Generators are a cutting edge addition to ES6 JavaScript. Async code is harder
@@ -112,7 +113,7 @@ because the execution context below would be drawn based on that.
 
 Figure 1 is a snapshot of how the execution context and the lexical
 environments would look before Line 6 in code snippet 2. If you need to read up
-on how execution contexts and lexical environments work, read my article on [variable hoisting](/blog/hoisting-in-javascript/).
+on how execution contexts and lexical environments work, read my article on [variable hoisting](/hoisting-in-javascript/).
 
 In Step 1, the global context executes and because of variable hoisting we
 have the ‘result’ variables and the `gen` object initialized to `undefined`.

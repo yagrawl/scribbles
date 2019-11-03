@@ -5,6 +5,7 @@ time: "5 mins"
 description: Is a parameter and an argument one and the same?
 category: JavaScript
 tags: Frontend, Basics
+path: /parameters-&-arguments-in-javascript
 ---
 
 Javascript is a functional language meaning that functions are the primary

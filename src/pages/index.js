@@ -78,8 +78,8 @@ class IndexPage extends Component {
   getPosts() {
     let posts = this.state.posts.map(({ node }) => {
       if(node.frontmatter.category === this.state.currentCategory || this.state.currentCategory === '') {
-        return <div key={node.fields.slug}>
-                <Link className="link" to={`blog${node.fields.slug}`}>
+        return <div key={node.frontmatter.path}>
+                <Link className="link" to={node.frontmatter.path}>
                   <Post title={node.frontmatter.title}
                                subtitle={node.frontmatter.description}
                                date={node.frontmatter.date}
@@ -133,6 +133,7 @@ export const pageQuery = graphql`
             time
             description
             category
+            path
           }
         }
       }

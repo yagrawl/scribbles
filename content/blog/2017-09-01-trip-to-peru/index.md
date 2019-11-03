@@ -5,6 +5,7 @@ time: "8 mins"
 description: lugares increíbles.
 category: Travel
 tags: Peru, Inca Cola
+path: /trip-to-peru
 ---
 
 After my internship at Mastercard ended, I had a couple weeks before my fall

@@ -5,6 +5,7 @@ time: "4 mins"
 description: A node.js webapp to encrypt/decrypt using the blowfish algorithm.
 category: Projects
 tags: Web Application, Encryption
+path: /encryptr
 ---
 
 I was always fascinated by encryption and I wanted to know more about it so I decided to make a web application which would allow encrytion and decryption with a key. It is written in node.js and uses ejs templating and css for frontend. Mostly, this was for me to review.

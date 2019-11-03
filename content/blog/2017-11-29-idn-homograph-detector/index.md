@@ -5,6 +5,7 @@ time: "4 mins"
 description: Possible/Potential IDN homograph detection with DNS lookup.
 category: Projects
 tags: EJS, Web Application, IDN
+path: /idn-homograph-detector
 ---
 
 I was taking a database class in the Fall of 2017 and as part of the course I had to work in a group of 4 on a database related project. A team-member introduced me to the problems with IDN homographs. There was definitely a need for something like this. So what exactly is an IDN homograph? According to wikipedia, 'The internationalized domain name (IDN) homograph attack is a way a malicious party may deceive computer users about what remote system they are communicating with, by exploiting the fact that many different characters look alike, (i.e., they are homographs, hence the term for the attack). For example, a regular user of example.com may be lured to click a link where the Latin A is replaced with the Cyrillic A.'

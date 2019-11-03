@@ -5,6 +5,7 @@ time: "6 mins"
 description: A polling web application made with React/Node/MySQL
 category: Projects
 tags: Web Application, SQL
+path: /ballot
 ---
 
 This was a project for a college course and I wrote a report as part of the submission.

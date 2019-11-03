@@ -5,6 +5,7 @@ time: "2 mins"
 description: A todo web application written in vanilla JS.
 category: Projects
 tags: Vanilla JS, Web Application
+path: /task
 ---
 
 Whenever I had a few chapters to read for example, I used to draw circles on a piece of paper and cross them out as I finished each chapter. Just something that got me to work and I used to do it every time. I thought of making it into a web application so I could practice my frontend skills. I wanted to focus on the frontend and didn't really want to bother with database so it was written in HTML, CSS and Vanilla JavaScript. The first step was obviously design.

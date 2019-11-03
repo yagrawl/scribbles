@@ -5,6 +5,7 @@ time: "3 mins"
 description: A chrome extension that skips through intros of popular TV shows on Netflix.
 category: Projects
 tags: Vanilla JS, Chrome Extension
+path: /leapflix
 ---
 
 LeapFlix was designed to be a Chrome Extension which would skip through intros of popular TV shows on Netflix. Some shows have cold opening and terribly long intros. House of cards has a 90 second video of time lapses from Washington which gets a little boring to watch while binging, so I thought this was required.

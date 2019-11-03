@@ -5,6 +5,7 @@ time: "5 mins"
 description: A messenger bot powered by Google’s Dialogflow that recommends movies.
 category: Projects
 tags: Messenger Bot, Movies
+path: /moviebot
 ---
 
 I love watching movies. I have watched most of the IMDb top 250 and many of the popular ones so it becomes really hard to find a new movie to watch. I hate to waste my time on an uninteresting movie and also despise trying to search for a good movie to watch so I thought of making something that would solve the problem. Well, a couple of months ago, Facebook released the messenger platform and I thought it was really cool that we could just communicate with a bot. I thought I would give this interface a try.

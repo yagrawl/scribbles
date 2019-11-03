@@ -5,6 +5,7 @@ time: "3 mins"
 description: CLI tool that recognises the mood of the video to find appropriate background score.
 category: Projects
 tags: Web Application, Clarifai
+path: /musify
 ---
 
 This is a project that me and a couple other people worked on at WildHacks 2016, Northwestern University. We decided to go for 'The best use of Clarifai's API' and went through a few ideas before finalizing one. The basic idea of our project was to provide background music for videos. Quite simply the videos would be passed through our own custom trained Clarifai agent and decide on a mood. Clarifai is an Artificial Intelligence with a Vision. Basically it's an image and video recognition API. We decided to work with a custom model and trained it on the images we scraped using Pixabay. We landed upon 4 different categories for the video emotions - Action, Sad, Happy, Calm.

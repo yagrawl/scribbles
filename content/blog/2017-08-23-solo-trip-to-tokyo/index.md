@@ -5,6 +5,7 @@ time: "3 mins"
 description: Full of kit-kats and vending machines
 category: Travel
 tags: Japan, Food, Solo
+path: /solo-trip-to-tokyo
 ---
 
 After graduating from college and before starting work full-time I decided to
