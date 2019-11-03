@@ -38,6 +38,10 @@ body {
   .blog a {
     color: $post-snippet-details-tag-color;
   }
+
+  ::selection {
+    background-color: $complimentary-color-light;
+  }
 }
 
 body.dark-mode {
@@ -61,5 +65,9 @@ body.dark-mode {
   .anchor { color: $background-color-light; }
   .blog a {
     color: $post-snippet-details-tag-color;
+  }
+
+  ::selection {
+    background-color: $post-snippet-hover-dark;
   }
 }
