@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import '../styles/base.scss';
 import '../styles/_animation.scss';

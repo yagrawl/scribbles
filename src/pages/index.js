@@ -59,7 +59,7 @@ class IndexPage extends Component {
   }
 
   getCategories() {
-    this.state.posts.map(({ node }) => {
+    this.state.posts.forEach(({ node }) => {
       if(!this.categories.includes(node.frontmatter.category)) {
         this.categories.push(node.frontmatter.category);
       }
