@@ -38,7 +38,7 @@ Another really interesting thing about Stockholm is that it is home to the longe
 
 ![metro station 3](../images/2018-09-04-visit-to-stockholm/solna.jpeg)
 
-![metro station 4](../images/2018-09-04-visit-to-stockholm/t_centra.jpeg)
+![metro station 4](../images/2018-09-04-visit-to-stockholm/t_centralen.jpeg)
 
 I also went to a _Thirty Seconds to Mars_ concert at Gröna Lund, the first ever IKEA store, the Nobel Museum, the Stockholm Palace and a bunch of other really neat places.
 
