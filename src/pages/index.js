@@ -64,6 +64,8 @@ class IndexPage extends Component {
       }
     });
 
+    this.categories = this.categories.sort();
+
     let categories = this.categories.map(key => {
       return <button className="category-text"
                      id={`${key}-button`}
