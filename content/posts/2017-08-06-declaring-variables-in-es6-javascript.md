@@ -3,7 +3,7 @@ title: Declaring Variables in ES6 Javascript
 date: "2017-08-06"
 time: "4 mins"
 description: let, var, const, what!?
-category: JavaScript
+category: Code
 tags: Frontend, Basics
 path: /declaring-variables-in-es6-javascript
 ---

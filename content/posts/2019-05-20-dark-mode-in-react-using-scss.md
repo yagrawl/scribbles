@@ -3,7 +3,7 @@ title: Dark Mode in React using SCSS
 date: "2019-05-20"
 time: "4 mins"
 description: How to setup dark mode in create-react-app using scss.
-category: React
+category: Code
 tags: Tutorial, Basics, DarkMode
 path: /dark-mode-in-react-using-scss
 ---

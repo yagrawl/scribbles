@@ -3,7 +3,7 @@ title: Defining Functions in Javascript
 date: "2019-09-03"
 time: "5 mins"
 description: Different types of function definitions in Javascript and their consequences
-category: JavaScript
+category: Code
 tags: Frontend, Basics
 path: /defining-functions-in-javascript
 ---

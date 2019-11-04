@@ -3,7 +3,7 @@ title: How to use the Javascript Console
 date: "2019-04-17"
 time: "5 mins"
 description: Going beyond console.log()
-category: JavaScript
+category: Code
 tags: Frontend, Debugging
 path: /how-to-use-the-javascript-console
 ---

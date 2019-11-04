@@ -3,7 +3,7 @@ title: Generators in Javascript
 date: "2017-08-16"
 time: "7 mins"
 description: Making Async code beautiful since ES6
-category: JavaScript
+category: Code
 tags: Frontend, Basics, ES6
 path: /generators-in-javascript
 ---

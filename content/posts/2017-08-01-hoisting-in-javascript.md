@@ -3,7 +3,7 @@ title: Hoisting in Javascript
 date: "2017-08-01"
 time: "4 mins"
 description: How function declarations/variables get ‘moved’ to the top.
-category: JavaScript
+category: Code
 tags: Frontend, Basics
 path: /hoisting-in-javascript
 ---
