@@ -20,7 +20,6 @@ class IndexPage extends Component {
   }
 
   applyCategory(category) {
-    console.log(this.categories);
     if(this.state.currentCategory === '') {
       this.setState({
         currentCategory: category
@@ -68,6 +67,7 @@ class IndexPage extends Component {
     let categories = this.categories.map(key => {
       return <button className="category-text"
                      id={`${key}-button`}
+                     key={key}
                      onClick={() => this.applyCategory(key)}> {key}
              </button>
     });
