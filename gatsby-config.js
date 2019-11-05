@@ -96,7 +96,7 @@ module.exports = {
         short_name: `yagrawl`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#393B43`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/icon.png`,
