@@ -63,6 +63,7 @@ $max-width: 650px;
 }
 .post-snippet-subtitle { margin-top: 10px; }
 .post-snippet-details-spacing { padding-left: 5px; }
+.post-snippet-details-spacing-3x { padding-left: 15px; }
 .post-snippet-details {
   padding: 1px 4px;
   border-radius: 5px;
@@ -71,6 +72,17 @@ $max-width: 650px;
 .post-snippet-tag {
   display: inline-block;
   margin-top: 10px;
+}
+
+.related-post-snippet {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+
+.related-posts-details {
+  display: inline-block;
+  float: right;
 }
 
 .footer {

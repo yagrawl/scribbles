@@ -1,12 +1,52 @@
 import React, { Component } from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import RelatedPost from "../components/relatedPost"
 
 class BlogPostTemplate extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      posts: this.props.data.allMdx.edges,
+    }
+  }
+
+  getRelatedPosts(category, title, date) {
+    let count = 0;
+
+    let posts = this.state.posts.map(({ node }) => {
+      if(node.frontmatter.category === category &&
+         node.frontmatter.title !== title &&
+         count < 3) {
+        count += 1;
+        return <div key={node.frontmatter.path}>
+                <Link className="link" to={node.frontmatter.path}>
+                  <RelatedPost title={node.frontmatter.title}
+                               date={node.frontmatter.date}
+                               readTime={node.frontmatter.time}
+                          />
+                </Link>
+              </div>
+      }
+    });
+
+    if(count === 0) {
+      return <div></div>
+    } else {
+      return (
+        <div>
+          <p className="related-posts-title">Related Posts</p>
+          {posts}
+        </div>
+      )
+    }
+  }
+
   render() {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -28,6 +68,9 @@ class BlogPostTemplate extends Component {
             {post.body}
           </MDXRenderer>
         </div>
+        {this.getRelatedPosts(post.frontmatter.category,
+                              post.frontmatter.title,
+                              post.frontmatter.date)}
         <hr/>
         <Bio />
       </Layout>
@@ -55,6 +98,23 @@ export const pageQuery = graphql`
         time
         category
         tags
+      }
+    }
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            time
+            description
+            category
+            path
+          }
+        }
       }
     }
   }
