@@ -25,3 +25,14 @@ code {
 .link:hover {
   text-decoration: none !important;
 }
+
+.runstats {
+  width: 600px;
+  height: 380px;
+}
+
+@media screen and (max-width: 720px) {
+    .runstats {
+      height: 400px;
+    }
+}
