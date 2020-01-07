@@ -13,7 +13,7 @@ body {
   background-color: $background-color-light;
   color: $background-color-dark;
 
-  .category-text {
+  .category-text, .search-box {
     background-color: $post-snippet-hover-light;
     color: $background-color-dark;
   }
@@ -42,13 +42,21 @@ body {
   ::selection {
     background-color: $complimentary-color-light;
   }
+
+  .search-box {
+    border: 2px solid $post-snippet-hover-light;
+  }
+
+  .search-box:focus {
+    border: 2px solid $post-snippet-details-tag-color;
+  }
 }
 
 body.dark-mode {
   background-color: $background-color-dark;
   color: $background-color-light;
 
-  .category-text {
+  .category-text, .search-box {
     background-color: $complimentary-color-dark;
     color: $background-color-light;
   }
@@ -69,5 +77,13 @@ body.dark-mode {
 
   ::selection {
     background-color: $post-snippet-hover-dark;
+  }
+
+  .search-box {
+    border: 2px solid $complimentary-color-dark;
+  }
+
+  .search-box:focus {
+    border: 2px solid $post-snippet-details-tag-color;
   }
 }

@@ -52,7 +52,7 @@ $max-width: 650px;
 }
 
 /* Post Snippet */
-.post-snippet {
+.post-snippet, .not-found-snippet {
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 10px 20px;
@@ -122,6 +122,28 @@ $max-width: 650px;
   display: none !important;
 }
 
+.search-box {
+  width: inherit;
+  height: 30px;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 20px;
+}
+
+.search-box:focus {
+  outline: none;
+  border-radius: 25px;
+}
+
+.not-found-art {
+  display: block;
+  width: 300px;
+}
+
+.not-found-snippet {
+  margin: auto;
+}
+
 @media screen and (max-width: $max-width) {
   .footer-text {
     display: inline-block;
@@ -146,7 +168,7 @@ $max-width: 650px;
     padding: 25px;
   }
 
-  .post-snippet {
+  .post-snippet, .not-found-snippet {
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 5px 10px;

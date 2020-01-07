@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import Post from "../components/post"
 import SEO from "../components/seo"
 
+import NotFoundArt from "../assets/images/notfoundart.png";
+
 import "../styles/base.scss"
 
 class IndexPage extends Component {
@@ -14,9 +16,21 @@ class IndexPage extends Component {
     this.state = {
       currentCategory: '',
       posts: this.props.data.allMdx.edges,
+      query: ''
     }
 
     this.categories = [];
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(e) {
+    let value = e.target.value;
+    this.setState(
+      prevState => ({
+        ...prevState,
+        query: value
+      })
+    );
   }
 
   applyCategory(category) {
@@ -79,7 +93,10 @@ class IndexPage extends Component {
 
   getPosts() {
     let posts = this.state.posts.map(({ node }) => {
-      if(node.frontmatter.category === this.state.currentCategory || this.state.currentCategory === '') {
+      if((node.frontmatter.category === this.state.currentCategory ||
+        this.state.currentCategory === '') &&
+        (node.frontmatter.title.toLowerCase().indexOf(this.state.query.toLowerCase()) !== -1 ||
+         node.frontmatter.description.toLowerCase().indexOf(this.state.query.toLowerCase()) !== -1)) {
         return <div key={node.frontmatter.path}>
                 <Link className="link" to={node.frontmatter.path}>
                   <Post title={node.frontmatter.title}
@@ -93,6 +110,19 @@ class IndexPage extends Component {
       }
     });
 
+    if(posts.every(val => val === undefined)) {
+      return (
+        <div className="not-found-snippet">
+          <center>
+            <p className="post-snippet-title">
+              Sorry, the search query returned no results.
+            </p>
+          </center>
+          <img className="not-found-art" src={NotFoundArt}/>
+        </div>
+      );
+    }
+
     return posts;
   }
 
@@ -105,6 +135,15 @@ class IndexPage extends Component {
         <SEO title="Yash Agrawal" />
         <div>
           {this.getCategories()}
+          <input className="search-box"
+                 id="searchbox"
+                 type="text"
+                 name="query"
+                 autoComplete="off"
+                 onChange={this.handleChange}
+                 placeholder="Search posts ..."
+                 value={this.state.query}>
+          </input>
           <div className="posts">
             {this.getPosts()}
           </div>
