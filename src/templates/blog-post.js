@@ -22,6 +22,7 @@ class BlogPostTemplate extends Component {
     let posts = this.state.posts.map(({ node }) => {
       if(node.frontmatter.category === category &&
          node.frontmatter.title !== title &&
+         daysSince2000(node.frontmatter.date) < daysSince2000(date) &&
          count < 3) {
         count += 1;
         return <div key={node.frontmatter.path}>
@@ -36,7 +37,33 @@ class BlogPostTemplate extends Component {
     });
 
     if(count === 0) {
-      return <div></div>
+      let newPosts = this.state.posts.map(({ node }) => {
+        if(node.frontmatter.category === category &&
+           node.frontmatter.title !== title &&
+           daysSince2000(node.frontmatter.date) > daysSince2000(date) &&
+           count < 3) {
+          count += 1;
+          return <div key={node.frontmatter.path}>
+                  <Link className="link" to={node.frontmatter.path}>
+                    <RelatedPost title={node.frontmatter.title}
+                                 date={node.frontmatter.date}
+                                 readTime={node.frontmatter.time}
+                            />
+                  </Link>
+                </div>
+        }
+      });
+
+      if(newPosts.every(val => val === undefined)) {
+        return <div></div>
+      } else {
+        return (
+          <div>
+            <p className="related-posts-title">Related Posts</p>
+            {newPosts}
+          </div>
+        )
+      }
     } else {
       return (
         <div>
@@ -76,6 +103,19 @@ class BlogPostTemplate extends Component {
       </Layout>
     )
   }
+}
+
+let daysSince2000 = date => {
+  let months = ["January", "February", "March", "April",
+                "May", "June", "July", "August",
+                "September", "October", "November", "December"];
+
+  date = date.split(" ");
+  let month = months.indexOf(date[0]);
+  let day = parseInt(date[1].slice(0, -1));
+  let year = parseInt(date[2]);
+
+  return ((year - 2000) * 365) + (month * 30) + day;
 }
 
 export default BlogPostTemplate
