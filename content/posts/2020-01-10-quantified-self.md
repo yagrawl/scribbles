@@ -48,17 +48,17 @@ It also keeps tab on the steps I take everyday (when I have the phone on me, of
 ![Weight Tracking](../images/2020-01-10-quantified-self/health_weight_tracking.png)
 
 I also like running and I collect my running data on the [Nike Run Club](https://apps.apple.com/us/app/nike-running/id387771637) App. I would not recommend this app if you are just
-starting out. The application itself is pretty great and does what its supposed
+starting out. The application itself is pretty great and does what it is supposed
 to, but the API is closed and there is no way available to export your own data.
 [Strava](https://www.strava.com/) is a better option. I used to live in Illinois and it gets extremely cold
-you have to run on the treadmill for half a year and for some reason Strava
+so you have to run on the treadmill for half a year and for some reason Strava
 doesn't track runs on the treadmill. Another workaround for this is to track
-everything on Nike Run Club and use an app called [RunGap](https://www.rungap.com/) and
+everything on Nike Run Club and use an app called [RunGap](https://www.rungap.com/) to
 export it to Strava or wherever you want.
 
 I have a somewhat complicated workflow wherein I record my runs on Nike Run Club, then use
 RunGap to Export it to Strava and finally, use Strava's public API to feed data to a
-personal React application I built to see stats that I want.
+personal React application I built to see the stats that I want.
 
 <iframe src="https://runstats.netlify.com"
         class="runstats"
@@ -70,7 +70,7 @@ They have a very extensive database of ingredients and also support Barcodes.
 
 ![Food Tracking](../images/2020-01-10-quantified-self/lifesum_food_tracking.png)
 
-I've read about people collecting data about their mental health in apps where
+I've read about people collecting data concerning their mental health in apps where
 you kind of rate your mental state during the day. I've heard promising things
 about it but I personally like a more detailed account of the day, so I maintain
 a journal. I originally use to host it on [Evernote](https://evernote.com/) but
@@ -88,7 +88,7 @@ day activities if you are doing something wrong.
 
 This stems from the obsession to collect data. I've not seen this be too useful
 to me other than being able to recommend a restaurant in New Orleans to a
-friend who's visiting. I use [FourSquare](https://foursquare.com/city-guide) to
+friend who's planning a trip. I use [FourSquare](https://foursquare.com/city-guide) to
 add the places I've been to - restaurants, hotels, tourist attractions, etc.
 
 Google Maps is always recording in the background anyway and while it is creepy,
@@ -106,11 +106,11 @@ descriptors provided by many banks are just outright incorrect and that is
 extremely annoying. It is quite a challenge to automate this process, so while an
 actual working app shows up, I simply track it manually on an application called
 [Buddy](https://apps.apple.com/us/app/buddy-easy-budgeting/id936422955). It has
-a clean no-bullshit UI and doesn't have any features that kind of work. I can
+a clean no-bullshit UI and doesn't have any features that just 'kind of work'. I can
 always export the data as a CSV and do use that data to see whatever I want.
 
 For other details I use services like [Wealthfront](https://www.wealthfront.com/), [Credit Karma](https://www.creditkarma.com) and [Robinhood](https://robinhood.com/).
-They have to maintain data for legal reasons and well its, good enough for me.
+They have to maintain data for legal reasons and well, that's good enough for me.
 
 ## Entertainment
 
@@ -118,21 +118,21 @@ This is mostly for fun. I don't think I've gotten too much out of it except for
 maybe - how much time I spend watching movies. I use [Trakt.tv](ttps://trakt.tv)
 to monitor TV shows and Movies that I watch. It has to be entered manually and
 I've been religiously following it for a while now. I would be able to answer
-what my favorite genre is and it is nice to know that data agrees. I also
+what my favorite genre is and it is nice to know that the data agrees. I also
 maintain a list of movies I want to watch on an [IMDB](https://www.imdb.com/)
 list and move it once I do.
 
 ![Trakt TV](../images/2020-01-10-quantified-self/trakt_tv.png)
 
 I mostly listen to music on Spotify and I use [last.fm](https://www.last.fm/) to
-keep track of the artists I often listen to, the song that I've played the most
+keep track of the artists I often listen to and the song that I've played the most
 number of times. Sometimes, it is pretty interesting when you discover non-obvious
 things like, you prefer music coming out of a specific country to others.
 
 [Goodreads](https://www.goodreads.com/) is an obvious choice for tracking books.
 
 [Screen Time](https://support.apple.com/en-us/HT208982) tracks my app usage
-satisfactorily but I hoped for the mac app to not include background apps in
+satisfactorily but I hoped for the Mac app to not include background apps in
 that time because well, I am not really using it. I am currently working on a
 chrome extension that would log browsing details locally.
 
@@ -140,7 +140,7 @@ chrome extension that would log browsing details locally.
 
 Apart from JIRA boards and commit logs, I personally like to keep a version
 controlled weekly account of things I've completed. It helps in framing the
-year-end review and gives you time to reflect back upon the week.
+year-end review and gives me time to reflect back upon the week.
 
 Personal projects are also all version controlled and a good old to-do list
 does the rest. I use [Todoist](https://todoist.com/).
