@@ -73,7 +73,7 @@ They have a very extensive database of ingredients and also support Barcodes.
 I've read about people collecting data concerning their mental health in apps where
 you kind of rate your mental state during the day. I've heard promising things
 about it but I personally like a more detailed account of the day, so I maintain
-a journal. I originally use to host it on [Evernote](https://evernote.com/) but
+a journal. I originally used to host it on [Evernote](https://evernote.com/) but
 I've since moved it to [Notion](https://www.notion.so/). I've also tried to do
 Intermittent Fasting for a few months and I used [Zero](https://www.zerofasting.com/)
 to track the fasts.
@@ -81,8 +81,8 @@ to track the fasts.
 I've been able to see direct correlations between what I eat and how I run the
 next day, how my diet affects my productivity (recorded in the Journal) and how
 intermittent fasting helped me lose weight. Data reassures you if you are doing
-something right and gives you pause to reconsider and re-evaluate your day to
-day activities if you are doing something wrong.  
+something right and gives you pause to reconsider and re-evaluate your day-to-day
+activities if you are doing something wrong.  
 
 ## Places
 
@@ -107,7 +107,7 @@ extremely annoying. It is quite a challenge to automate this process, so while a
 actual working app shows up, I simply track it manually on an application called
 [Buddy](https://apps.apple.com/us/app/buddy-easy-budgeting/id936422955). It has
 a clean no-bullshit UI and doesn't have any features that just 'kind of work'. I can
-always export the data as a CSV and do use that data to see whatever I want.
+always export the data as a CSV file and use that data to see whatever I want.
 
 For other details I use services like [Wealthfront](https://www.wealthfront.com/), [Credit Karma](https://www.creditkarma.com) and [Robinhood](https://robinhood.com/).
 They have to maintain data for legal reasons and well, that's good enough for me.
@@ -127,13 +127,14 @@ list and move it once I do.
 I mostly listen to music on Spotify and I use [last.fm](https://www.last.fm/) to
 keep track of the artists I often listen to and the song that I've played the most
 number of times. Sometimes, it is pretty interesting when you discover non-obvious
-things like, you prefer music coming out of a specific country to others.
+things, for example, your preference to music coming out of a specific country
+to others.
 
 [Goodreads](https://www.goodreads.com/) is an obvious choice for tracking books.
 
 [Screen Time](https://support.apple.com/en-us/HT208982) tracks my app usage
 satisfactorily but I hoped for the Mac app to not include background apps in
-that time because well, I am not really using it. I am currently working on a
+that time because well, it isn't very accurate. I am currently working on a
 chrome extension that would log browsing details locally.
 
 ## Work
