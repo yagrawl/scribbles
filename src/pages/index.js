@@ -118,7 +118,7 @@ class IndexPage extends Component {
               Sorry, the search query returned no results.
             </p>
           </center>
-          <img className="not-found-art" src={NotFoundArt}/>
+          <img className="not-found-art" src={NotFoundArt} alt="not found art"/>
         </div>
       );
     }
