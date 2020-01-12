@@ -122,7 +122,7 @@ $max-width: 650px;
   display: none !important;
 }
 
-.search-box {
+.search-box, .newsletter-email-box {
   width: inherit;
   height: 30px;
   border-radius: 25px;
@@ -133,9 +133,26 @@ $max-width: 650px;
   appearance: none;
 }
 
-.search-box:focus {
+.search-box:focus, .newsletter-email-box:focus {
   outline: none;
   border-radius: 25px;
+}
+
+.newsletter-email-box {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.newsletter-submit-button-active,
+.newsletter-submit-button-inactive {
+  height: 40px;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 20px;
+}
+
+.newsletter {
+  margin-bottom: 30px;
 }
 
 .not-found-art {
@@ -180,5 +197,9 @@ $max-width: 650px;
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 5px 10px;
+  }
+
+  .newsletter-email-box {
+    width: 35%;
   }
 }

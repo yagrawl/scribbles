@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RelatedPost from "../components/relatedPost"
+import Newsletter from "../components/newsletter"
 
 class BlogPostTemplate extends Component {
   constructor(props) {
@@ -98,6 +99,7 @@ class BlogPostTemplate extends Component {
         {this.getRelatedPosts(post.frontmatter.category,
                               post.frontmatter.title,
                               post.frontmatter.date)}
+        <Newsletter/>
         <hr/>
         <Bio />
       </Layout>
