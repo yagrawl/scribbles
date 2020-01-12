@@ -56,7 +56,7 @@ class Newsletter extends Component {
       );
 
       let email = { "email": this.state.email, "subscribed": true };
-      axios.post(`http://localhost:4000/api/scribbles/subscribe`,
+      axios.post(`https://yagrawlserver.herokuapp.com/api/scribbles/subscribe`,
         email)
       .then(res => {
         if(res.status === 200) {
