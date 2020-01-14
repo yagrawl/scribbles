@@ -115,6 +115,11 @@ $font-weight: 100;
   font-size: 18px;
 }
 
+.newsletter-response {
+  @extend %font;
+  font-weight: 100;
+}
+
 /* Post Snippet */
 .post-snippet-title {
   @extend %font;

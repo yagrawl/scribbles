@@ -115,7 +115,9 @@ class Newsletter extends Component {
       );
     } else if(this.state.status === "LOADING") {
       return (
-        <Loader/>
+        <div className="center">
+          <center><Loader/></center>
+        </div>
       );
     } else if(this.state.status === "SUBSCRIBED") {
       return (
@@ -129,7 +131,7 @@ class Newsletter extends Component {
                  <path class="checkmark__check" fill="none"
                          d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
             </svg>
-            <p className="related-posts-title newsletter-response">
+            <p className="newsletter-response">
               Subscribed.
             </p>
           </center>
@@ -146,8 +148,8 @@ class Newsletter extends Component {
                <path className="checkmark__check" fill="none"
                        d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
           </svg>
-          <p className="related-posts-title newsletter-response">
-            You're Already a Subscriber.
+          <p className="newsletter-response">
+            You're already a Subscriber.
           </p>
         </center>
       );
@@ -161,7 +163,7 @@ class Newsletter extends Component {
 	              <path class="cross__path cross__path--right" d="M16,16 l20,20" />
                <path class="cross__path cross__path--right" d="M16,36 l20,-20" />
 			    </svg>
-          <p className="related-posts-title newsletter-response">
+          <p className="newsletter-response">
             Oops, something went wrong.
           </p>
         </center>

@@ -58,6 +58,10 @@ body {
     background-color: $post-snippet-details-tag-color;
     color: $post-snippet-details-tag-background;
   }
+
+  .newsletter-response {
+    color: $post-snippet-details-tag-color;
+  }
 }
 
 body.dark-mode {
