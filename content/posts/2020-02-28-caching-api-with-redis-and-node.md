@@ -162,7 +162,7 @@ After you try GET on `localhost:4000/spacex/launches`, it would still take about
 
 ![API response cached](../images/2020-02-28-caching-api-with-redis-and-node/with_cache.png)
 
-One very obvious pitfall in this implementation is that once we add it to the cache, we will never fetch the updated value from the third party API. This probably isn't the expected behavior. One way to counter this to use `setex` which takes an expiry argument. It essentially runs two atomic operations. `SET` and `EXPIRE`. After the set expiry period, we fetch the data again from the third party api and update the cache.
+One very obvious pitfall in this implementation is that once we add it to the cache, we will never fetch the updated value from the third party API. This probably isn't the expected behavior. One way to counter this is to use `setex` which takes an expiry argument. It essentially runs two atomic operations. `SET` and `EXPIRE`. After the set expiry period, we fetch the data again from the third party api and update the cache.
 
 ## Conclusion
 
