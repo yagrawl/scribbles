@@ -8,7 +8,7 @@ tags: Middleware, Basics
 path: /caching-api-with-redis-and-node
 ---
 
-More often that not, your backend server needs to talk to downstream services, third party APIs and the database. These calls are expensive both in terms of time and money. Consider for example, your API fetches popular movies from a movie API which charges you based on each call you make or, you need to get a user's joining date to your app to display on their profile. The list of popular movies is not likely to change in a span of few hours while the user's joining date is not bound to change at all.
+More often than not, your backend server needs to talk to downstream services, third party APIs and the database. These calls are expensive both in terms of time and money. Consider for example, your API fetches popular movies from a movie API which charges you based on each call you make or, you need to get a user's joining date to your app to display on their profile. The list of popular movies is not likely to change in a span of few hours while the user's joining date is not bound to change at all.
 
 For fetching the popular movie data, each time you'd call the third party API to get the same information that you got a minute ago. This would add noticeable performance issues and higher costs to your application. Similarly, for a profile that is being accessed frequently, the database is repeatedly being queried for the same data and would definitely rack up heavy bills.
 
