@@ -16,7 +16,7 @@ There is a simple solution to this issue -- Caching.
 
 ## Caching
 
-Caching is the process of storing data in a high-speed data storage layer (cache). Cache is generally stored in a fast access hardware and is more efficient than fetching data from the primary data store that the application uses.
+Caching is the process of storing data in a high-speed data storage layer (cache). The cache is generally stored in fast access hardware and is more efficient than fetching data from the primary data store that the application uses.
 
 Here's a very basic example of Caching -- memoization. Note that memoization is a very specific form of caching which deals with storing the return value of a function based on its parameters.
 
@@ -30,7 +30,7 @@ const fibonacci = (n) => {
 }
 ```
 
-Basically, the snippet above recursively calls our method for (n - 1) and (n - 2) and adds it together. Lets break it down for n = 4.
+Basically, the snippet above recursively calls our method for (n - 1) and (n - 2) and adds it together. Let's break it down for n = 4.
 
 Here's what the call stack would look like:
 
@@ -53,11 +53,11 @@ Here's the updated call stack with the memoization process:
 
 ![Fibonacci memoized call stack](../images/2020-02-28-caching-api-with-redis-and-node/fibonacci_memoized_call_stack.png)
 
-As you can see, we were able to reduce some compute time with memoization which is just a form of caching. Now lets use this technique to cache responses from a third party API service using Redis.
+As you can see, we were able to reduce some compute time with memoization which is just a form of caching. Now, let's use this technique to cache responses from a third party API service using Redis.
 
 ## Redis
 
-[Redis](https://redis.io/), according to their website, is an open source, in-memory data structure store, used as a database, cache and message broker. Find the instructions to download it on your local machine [here](https://redis.io/download).
+[Redis](https://redis.io/), according to its website, is an open source, in-memory data structure store, used as a database, cache and message broker. Find the instructions to download it on your local machine [here](https://redis.io/download).
 
 ## Demo
 
@@ -70,7 +70,7 @@ Install all dependencies we will use for this demo:
 npm i express redis node-fetch
 ```
 
-We have a simple endpoint that provides details about Spacex's latest launches.
+We have a simple endpoint that provides details about SpaceX's latest launches.
 
 ```js
 "use strict";
