@@ -8,34 +8,38 @@ class Theme extends Component {
   constructor(props) {
     super(props);
 
-    if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
-      document.body.classList.add('dark-mode');
+    if(JSON.parse(localStorage.getItem('LIGHT_MODE')) === true) {
+      document.body.classList.remove('dark-mode');
     }
 
     this.state = {
-      darkMode: JSON.parse(localStorage.getItem('DARK_MODE'))
+      lightMode: JSON.parse(localStorage.getItem('LIGHT_MODE'))
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
   }
 
+  componentDidMount() {
+    document.body.classList.add('dark-mode');
+  }
+
   handleModeChange() {
-    if(!this.state.darkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
+    if(!this.state.lightMode) {
       document.body.classList.remove('dark-mode');
+    } else {
+      document.body.classList.add('dark-mode');
     }
 
     this.setState({
-      darkMode: (!this.state.darkMode)
+      lightMode: (!this.state.lightMode)
     });
-    localStorage.setItem('DARK_MODE', !this.state.darkMode);
+    localStorage.setItem('LIGHT_MODE', !this.state.lightMode);
   }
 
   render() {
     return (
       <Toggle
-        defaultChecked={this.state.darkMode}
+        defaultChecked={this.state.lightMode}
         icons={false}
         onChange={this.handleModeChange} />
     );
