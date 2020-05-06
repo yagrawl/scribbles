@@ -10,6 +10,8 @@ class Theme extends Component {
 
     if(JSON.parse(localStorage.getItem('LIGHT_MODE')) === true) {
       document.body.classList.remove('dark-mode');
+    } else {
+      document.body.classList.add('dark-mode');
     }
 
     this.state = {
