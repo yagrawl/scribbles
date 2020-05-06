@@ -19,10 +19,6 @@ class Theme extends Component {
     this.handleModeChange = this.handleModeChange.bind(this);
   }
 
-  componentDidMount() {
-    document.body.classList.add('dark-mode');
-  }
-
   handleModeChange() {
     if(!this.state.lightMode) {
       document.body.classList.remove('dark-mode');
