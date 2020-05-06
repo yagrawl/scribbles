@@ -62,6 +62,20 @@ body {
   .newsletter-response {
     color: $post-snippet-details-tag-color;
   }
+
+  .MuiButtonBase-root {
+    color: $complimentary-color-dark;
+  }
+
+  .MuiButtonBase-root:hover {
+    color: $complimentary-color-dark;
+    background-color: $post-snippet-hover-light;
+  }
+
+  .Mui-selected {
+    color: $post-snippet-details-tag-color;
+    background-color: $post-snippet-details-tag-background;
+  }
 }
 
 body.dark-mode {
@@ -100,5 +114,19 @@ body.dark-mode {
 
   .search-box:focus, .newsletter-email-box:focus {
     border: 2px solid $post-snippet-details-tag-color;
+  }
+
+  .MuiButtonBase-root {
+    color: $complimentary-color-light;
+  }
+
+  .MuiButtonBase-root:hover {
+    color: $complimentary-color-light;
+    background-color: $post-snippet-hover-dark;
+  }
+
+  .Mui-selected {
+    color: $post-snippet-details-tag-color;
+    background-color: $post-snippet-details-tag-background;
   }
 }

@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
+import { makeStyles } from "@material-ui/core/styles";
+import Pagination from "@material-ui/lab/Pagination";
 
 import Layout from "../components/layout"
 import Post from "../components/post"
@@ -16,11 +18,17 @@ class IndexPage extends Component {
     this.state = {
       currentCategory: '',
       posts: this.props.data.allMdx.edges,
-      query: ''
+      query: '',
+      page: 1,
     }
 
     this.categories = [];
     this.handleChange = this.handleChange.bind(this);
+    this.handlePageChange = this.handlePageChange.bind(this);
+    this.filterPosts = this.filterPosts.bind(this);
+    this.searchPosts = this.searchPosts.bind(this);
+    this.getLow = this.getLow.bind(this);
+    this.getHigh = this.getHigh.bind(this);
   }
 
   handleChange(e) {
@@ -28,7 +36,18 @@ class IndexPage extends Component {
     this.setState(
       prevState => ({
         ...prevState,
-        query: value
+        query: value,
+        posts: this.searchPosts(value),
+        page: 1
+      })
+    );
+  }
+
+  handlePageChange(event, page) {
+    this.setState(
+      prevState => ({
+        ...prevState,
+        page: page
       })
     );
   }
@@ -36,19 +55,25 @@ class IndexPage extends Component {
   applyCategory(category) {
     if(this.state.currentCategory === '') {
       this.setState({
-        currentCategory: category
+        currentCategory: category,
+        posts: this.filterPosts(category),
+        page: 1
       }, () => {
         this.activeCategory(category);
       });
     } else if(this.state.currentCategory === category) {
       this.setState({
-        currentCategory: ''
+        currentCategory: '',
+        posts: this.props.data.allMdx.edges,
+        page: 1
       }, () => {
         this.passiveCategory(category);
       });
     } else {
       this.setState({
-        currentCategory: category
+        currentCategory: category,
+        posts: this.filterPosts(category),
+        page: 1
       }, () => {
         for(let i = 0; i < this.categories.length; i++) {
           if(this.categories[i] !== category) {
@@ -59,6 +84,18 @@ class IndexPage extends Component {
         }
       });
     }
+  }
+
+  filterPosts(category) {
+    return this.props.data.allMdx.edges.filter(({ node }) =>
+      node.frontmatter.category === category
+    );
+  }
+
+  searchPosts(value) {
+    return this.props.data.allMdx.edges.filter(({ node }) =>
+      node.frontmatter.title.toLowerCase().indexOf(value.toLowerCase()) !== -1 || node.frontmatter.description.toLowerCase().indexOf(value.toLowerCase()) !== -1
+    );
   }
 
   activeCategory(category) {
@@ -91,23 +128,34 @@ class IndexPage extends Component {
     return categories;
   }
 
+  getLow() {
+    if(this.state.posts.length <= 5) {
+      return 0;
+    } else {
+      return (this.state.page - 1) * 5;
+    }
+  }
+
+  getHigh() {
+    if(this.state.posts.length <= 5) {
+      return this.state.posts.length;
+    } else {
+      return (this.state.page) * 5;
+    }
+  }
+
   getPosts() {
-    let posts = this.state.posts.map(({ node }) => {
-      if((node.frontmatter.category === this.state.currentCategory ||
-        this.state.currentCategory === '') &&
-        (node.frontmatter.title.toLowerCase().indexOf(this.state.query.toLowerCase()) !== -1 ||
-         node.frontmatter.description.toLowerCase().indexOf(this.state.query.toLowerCase()) !== -1)) {
-        return <div key={node.frontmatter.path}>
-                <Link className="link" to={node.frontmatter.path}>
-                  <Post title={node.frontmatter.title}
-                               subtitle={node.frontmatter.description}
-                               date={node.frontmatter.date}
-                               readTime={node.frontmatter.time}
-                               tag={`#${node.frontmatter.category.toUpperCase()}`}
-                          />
-                </Link>
-              </div>
-      }
+    let posts = this.state.posts.slice(this.getLow(), this.getHigh()).map(({ node }) => {
+      return <div key={node.frontmatter.path}>
+              <Link className="link" to={node.frontmatter.path}>
+                <Post title={node.frontmatter.title}
+                             subtitle={node.frontmatter.description}
+                             date={node.frontmatter.date}
+                             readTime={node.frontmatter.time}
+                             tag={`#${node.frontmatter.category.toUpperCase()}`}
+                        />
+              </Link>
+            </div>
     });
 
     if(posts.every(val => val === undefined)) {
@@ -124,6 +172,14 @@ class IndexPage extends Component {
     }
 
     return posts;
+  }
+
+  getPagination() {
+    if(Math.ceil(this.state.posts.length / 5) <= 1) {
+      return;
+    } else {
+      return <Pagination count={Math.ceil(this.state.posts.length / 5)}   onChange={this.handlePageChange} defaultPage={this.state.page}/>
+    }
   }
 
   render() {
@@ -148,6 +204,7 @@ class IndexPage extends Component {
             {this.getPosts()}
           </div>
         </div>
+        <div className="pagination">{this.getPagination()}</div>
       </Layout>
     )
   }
