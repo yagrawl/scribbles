@@ -8,9 +8,13 @@ tags: EJS, Web Application, IDN
 path: /idn-homograph-detector
 ---
 
-I was taking a database class in the Fall of 2017 and as part of the course I had to work in a group of 4 on a database related project. A team-member introduced me to the problems with IDN homographs. There was definitely a need for something like this. So what exactly is an IDN homograph? According to wikipedia, 'The internationalized domain name (IDN) homograph attack is a way a malicious party may deceive computer users about what remote system they are communicating with, by exploiting the fact that many different characters look alike, (i.e., they are homographs, hence the term for the attack). For example, a regular user of example.com may be lured to click a link where the Latin A is replaced with the Cyrillic A.'
+I was taking a database class in the Fall of 2017 and as part of the course I had to work in a group of 4 on a database related project. A team-member introduced me to the problems with IDN homographs. So what exactly is the issue with IDN homographs? According to wikipedia, 'The internationalized domain name (IDN) homograph attack is a way a malicious party may deceive computer users about what remote system they are communicating with, by exploiting the fact that many different characters look alike, (i.e., they are homographs, hence the term for the attack). For example, a regular user of example.com may be lured to click a link where the Latin A is replaced with the Cyrillic A.'
 
-Try this link for example. Don't worry it is safe. In Google chrome today, it shows up in its original Cyrillic form but try Firefox, it looks exactly like apple.com. It even has an SSL certificate. What happens if someone does that to chase.com, changes the a to Cyrillic, and recreates the frontend. The account information of an unaware user is comprised that easy. There has actually been an attack which was discovered in September of 2017 where hackers used a homograph of adobe.com to deliver betabot trojan.
+Try this [link](https://www.xn--80ak6aa92e.com/) for example. Don't worry it is safe. In Google chrome today (as of November 2017), it shows up in its original Cyrillic form but try Firefox, it looks exactly like apple.com. It even has an SSL certificate.
+
+![apple idn homograph example](../images/2017-11-29-idn-homograph-detector/apple_idn_homograph_example.png)
+
+What happens if someone does that to chase.com -- changing the 'a' to Cyrillic, and recreating the frontend. The account information of an unaware user is comprised that easy. There has actually been an attack which was discovered in September of 2017 where hackers used a homograph of adobe.com to deliver betabot trojan.
 
 ## Setup
 
@@ -22,7 +26,7 @@ We contacted Verisign to get the data for the existing .com TLDs. That was a 10 
 
 ![frontend](../images/2017-11-29-idn-homograph-detector/idn_homograph_search.png)
 
-The landing screen had a big search bar in the middle to make it obvious what the purpose was and then it allowed to select the number of permutations of characters it wanted to allow because the list of possible homographs would be a huge amount if all the other scripts were considered.
+The landing screen had a big search bar in the middle to make it obvious what the purpose was. You could also choose the number of permutations of characters because each permutation adds a huge number of homographs.
 
 ![stats](../images/2017-11-29-idn-homograph-detector/idn_homograph_stats.png)
 
@@ -30,7 +34,7 @@ After a domain is searched, apple.com here for example, the details about that d
 
 ![list](../images/2017-11-29-idn-homograph-detector/idn_homograph_list.png)
 
-Finally the list was displayed in a table form where each possible homograph was shown in its punycode, ASCII and unicode form. You could check the status to see if a domain was already registered and it would call our database and confirm. My main contribution to this project was the UI and the frontend. In addition to that I also worked on the APIs and the parsers for sorting out the Verisign data. This was a problem that I had never faced before but I do understand its impact and would love to work on this in the future.
+Finally the list was displayed in a table form where each possible homograph was shown in its punycode, ASCII and unicode form. You could check the status to see if a domain was already registered and it would call our database and confirm. My main contribution to this project was the UI and the frontend. In addition to that I also worked on the APIs and the parsers for sorting out the Verisign data. This was a problem that I had never faced before but I do understand its impact and I hope that all the major browsers get this fixed.
 
 ## Try it out
 

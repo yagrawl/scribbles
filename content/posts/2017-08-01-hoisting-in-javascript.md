@@ -23,22 +23,22 @@ unlike compiled languages JS code runs line by line.
 Consider the following example.
 
 ```js
-console.log(notyetdeclared);
-// prints out 'undefined'
-
-var notyetdeclared = 'now it is declared';
-
-hoisting();
-
-function hoisting(){
-  console.log(notyetdeclared);
-  // prints out 'undefined'
-
-  var notyetdeclared = 'declared differently';
-
-  console.log(notyetdeclared);
-  // prints out 'declared differently'
-}
+ 1  console.log(notyetdeclared);
+ 2  // prints out 'undefined'
+ 3  
+ 4  var notyetdeclared = 'now it is declared';
+ 5
+ 6  hoisting();
+ 7
+ 8  function hoisting(){
+ 9    console.log(notyetdeclared);
+10    // prints out 'undefined'
+11
+12    var notyetdeclared = 'declared differently';
+13
+14    console.log(notyetdeclared);
+15    // prints out 'declared differently'
+16  }
 ```
 
 After overanalyzing the code sample above, there are several questions that
