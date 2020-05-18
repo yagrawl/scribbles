@@ -12,6 +12,7 @@ class Newsletter extends Component {
 
     this.state = {
       email: '',
+      post: props.post,
       status: 'INIT',
       active: false
     }
@@ -57,11 +58,14 @@ class Newsletter extends Component {
         })
       );
 
-      let email = { "email": this.state.email, "subscribed": true };
+      let email = { "email": this.state.email,
+                    "subscribed": true,
+                    "post": this.state.post };
       axios.post(`https://yagrawlserver.herokuapp.com/api/scribbles/subscribe`,
         email)
       .then(res => {
         if(res.status === 200) {
+          console.log(res.data);
           if(res.data === "Subscribed") {
             this.setState(
               prevState => ({
@@ -69,13 +73,20 @@ class Newsletter extends Component {
                 status: 'SUBSCRIBED'
               })
             );
-          } else if(res.data === "Email already exists") {
+          } else if(res.data === "Email already subscribed") {
               this.setState(
                 prevState => ({
                   ...prevState,
                   status: 'EXISTS'
                 })
               );
+          } else if(res.data === "Email re-subscribed") {
+            this.setState(
+              prevState => ({
+                ...prevState,
+                status: 'RESUBSCRIBED'
+              })
+            );
           }
         } else {
           this.setState(
@@ -150,6 +161,22 @@ class Newsletter extends Component {
           </svg>
           <p className="newsletter-response">
             You're already a Subscriber.
+          </p>
+        </center>
+      );
+    } else if(this.state.status === "RESUBSCRIBED") {
+      return (
+        <center>
+          <svg className="checkmark"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 52 52">
+               <circle className="checkmark__circle"
+                       cx="26" cy="26" r="25" fill="none"/>
+               <path className="checkmark__check" fill="none"
+                       d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+          <p className="newsletter-response">
+            Re-Subscribed.
           </p>
         </center>
       );

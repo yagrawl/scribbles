@@ -99,7 +99,7 @@ class BlogPostTemplate extends Component {
         {this.getRelatedPosts(post.frontmatter.category,
                               post.frontmatter.title,
                               post.frontmatter.date)}
-        <Newsletter/>
+        <Newsletter post={post.frontmatter.title}/>
         <hr/>
         <Bio />
       </Layout>
