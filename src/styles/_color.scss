@@ -76,6 +76,14 @@ body {
     color: $post-snippet-details-tag-color;
     background-color: $post-snippet-details-tag-background;
   }
+
+  blockquote {
+    color: $background-color-dark;
+    background-color: $complimentary-color-light;
+    border-left: 6px solid $post-snippet-details-tag-background;
+
+    &::before { color: $background-color-light; }
+  }
 }
 
 body.dark-mode {
@@ -128,5 +136,13 @@ body.dark-mode {
   .Mui-selected {
     color: $post-snippet-details-tag-color;
     background-color: $post-snippet-details-tag-background;
+  }
+
+  blockquote {
+    color: $background-color-light;
+    background-color: $complimentary-color-dark;
+    border-left: 6px solid $post-snippet-details-tag-background;
+
+    &::before { color: $background-color-dark; }
   }
 }

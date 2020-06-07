@@ -57,7 +57,11 @@ As you can see, we were able to reduce some compute time with memoization which 
 
 ## Redis
 
-[Redis](https://redis.io/), according to its website, is an open source, in-memory data structure store, used as a database, cache and message broker. Find the instructions to download it on your local machine [here](https://redis.io/download).
+[Redis](https://redis.io/), according to its website,
+
+> [Redis] is an open source, in-memory data structure store, used as a database, cache and message broker.
+
+Find the instructions to download it on your local machine [here](https://redis.io/download).
 
 ## Demo
 

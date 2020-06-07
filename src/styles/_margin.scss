@@ -183,6 +183,26 @@ $max-width: 650px;
   margin-left: -152px;
 }
 
+blockquote {
+	width: 80%;
+	margin: 32px auto;
+	padding: 20px 20px 5px 40px;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 4px;
+
+	&::before {
+		content: "\275D";
+		font-size: 2em;
+		position: absolute;
+		left: 1rem;
+		top: 0.25rem;
+	}
+	::after {
+		content: "";
+	}
+}
+
 @media screen and (max-width: $max-width) {
   .footer-text {
     display: inline-block;
