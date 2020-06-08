@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,6 +22,9 @@ class Bio extends Component {
         I’m very interested in frontend development, UX design, and fintech.
         Apart from that I love to run, play badminton, make pasta, build my
         vinyl collection and watch a bunch of movies.
+        </p>
+
+        <p className="bio-content-text">I also write from time to time. You can read it <Link to='/' className="anchor"><strong>here</strong></Link>.
         </p>
       </Layout>
     )
