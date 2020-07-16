@@ -1,16 +1,16 @@
 ---
-title: A Few Lessons From Refactoring an Old Project
+title: Lessons from Refactoring an Old Project
 date: "2020-07-15"
 time: "3 mins"
 description: Objective improvement tracking and motivation to grow more.
 category: Personal
 tags: refactor, code
-path: /a-few-lessons-from-refactoring-an-old-project
+path: /lessons-from-refactoring-an-old-project
 ---
 
 About four years ago, I started working on a simple project — a messenger bot that 'recommends' movies. I called it '[moviebot](/moviebot)'. It was written in JavaScript (node) and hosted on Heroku. I was simply following a tutorial to set it up. I made none of those choices. It did a variety of things like recommending a movie, displaying all movies by a particular person, genre-based search, and even showed theaters near a provided location.
 
-![Moviebot](../images/2020-07-15-a-few-lessons-from-refactoring-an-old-project/moviebot.png)
+![Moviebot](../images/2020-07-15-lessons-from-refactoring-an-old-project/moviebot.png)
 
 I thought I had done a pretty good job simply because it worked. I actually had 500+ unique users at the time. In reality, it was a complete mess. It was a single file consisting of 1000+ lines, with no discernible order of methods. I had a lot of code duplication, no proper error handling, terrible commit history with a bunch of API keys all pushed upstream to public GitHub (All the API keys in the git history have now expired. It's all good). It was littered with whitespace all over the place and the comments were written more from the convention point of view than them actually being helpful. I was importing a bunch of libraries that I wasn't using and I did the same with a lot of variables. Simply put, anyone looking at it could easily point out how crappy it was.
 
@@ -20,7 +20,7 @@ Two more years passed by. I picked it up again out of the blue. I had started to
 
 The most important one — there were no tests. None at all. Generally when people work on a personal project, they don't tend to write tests, which is understandable. But I've started seeing tests as an important part of development, than an afterthought. The bot relies entirely on an external API and if they were to change their response structure at any point, my bot would start failing and I won't find out for a long time. On top of that, when I added a change, it was untested and I would deploy it to 'production' and see if it was working. If it wasn't then I would look at the logs in 'production' and push the fix and the cycle continued. This accounts for a bunch of commits all with the same message in the first two iterations. I added integration tests and unit tests. Then, I was repeatedly making the same request to the external API again and again. Rate limiting wasn't really an issue since the traffic on the bot is pretty low, but it was definitely slower. I added a caching layer to make it faster. I improved upon the existing modeling, added more extensive error-handling, implemented a better approach to the product itself, cleaned the whitespacing, made it more readable and a hoard of other things. I am pretty happy with this (for now). From this trend, I can safely say that it is going to change in the future.
 
-![Refactor bullet points](../images/2020-07-15-a-few-lessons-from-refactoring-an-old-project/refactor.png)
+![Refactor bullet points](../images/2020-07-15-lessons-from-refactoring-an-old-project/refactor.png)
 
 From this exercise, I learnt a few things:
 
