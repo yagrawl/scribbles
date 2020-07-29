@@ -1,6 +1,9 @@
-@import 'margin';
+@import 'base/variables';
 @import 'font';
-@import 'color';
+@import 'margin';
+
+@import 'theme/light';
+@import 'theme/dark';
 
 body {
   margin: 0;

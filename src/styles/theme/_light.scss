@@ -1,0 +1,75 @@
+body {
+  background-color: $light-background-color;
+  color: $light-text-color;
+
+  .category-text,
+  .search-box,
+  .newsletter-email-box,
+  .newsletter-submit-button-inactive {
+    background-color: $light-complimentary-color;
+    color: $light-text-color;
+  }
+  .category-text:hover {
+    background-color: #E0E0E0;
+  }
+  .category-text-focus {
+    background-color: $theme-secondary-color;
+    color: $theme-primary-color;
+  }
+
+  .post-snippet-details {
+    background-color: $theme-secondary-color;
+    color: $theme-primary-color;
+  }
+  .post-snippet-tag { color: $theme-neutral-color; }
+  .post-snippet:hover { background-color: $light-complimentary-color; }
+
+  .anchor { color: $light-text-color; }
+
+  .blog a {
+    color: $theme-primary-color;
+  }
+
+  ::selection {
+    background-color: $light-complimentary-color;
+  }
+
+  .search-box, .newsletter-email-box {
+    border: 2px solid $light-complimentary-color;
+  }
+
+  .search-box:focus, .newsletter-email-box:focus {
+    border: 2px solid $theme-primary-color;
+  }
+
+  .newsletter-submit-button-active {
+    background-color: $theme-primary-color;
+    color: $theme-secondary-color;
+  }
+
+  .newsletter-response {
+    color: $theme-primary-color;
+  }
+
+  .MuiButtonBase-root {
+    color: $light-text-complimentary-color;
+  }
+
+  .MuiButtonBase-root:hover {
+    color: $light-text-complimentary-color;
+    background-color: $light-complimentary-color;
+  }
+
+  .Mui-selected {
+    color: $theme-primary-color;
+    background-color: $theme-secondary-color;
+  }
+
+  blockquote {
+    color: $light-text-color;
+    background-color: $light-complimentary-color;
+    border-left: 6px solid $theme-secondary-color;
+
+    &::before { color: $light-background-color; }
+  }
+}
