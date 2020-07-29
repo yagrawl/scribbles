@@ -1,0 +1,137 @@
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+
+.newsletter {
+  margin-bottom: 30px;
+}
+
+.newsletter-title {
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: 24px;
+}
+
+.newsletter-email-box {
+  width: inherit;
+  height: 30px;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 20px;
+  width: 50%;
+  margin-right: 10px;
+  @extend %font;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.newsletter-email-box:focus {
+  outline: none;
+  border-radius: 25px;
+}
+
+.newsletter-description,
+.newsletter-submit-button {
+  @extend %font;
+}
+
+.newsletter-response {
+  display: block;
+  @extend %font;
+  font-weight: 100;
+}
+
+.newsletter-submit-button-active,
+.newsletter-submit-button-inactive {
+  height: 40px;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 20px;
+  @extend %font;
+}
+
+.checkmark {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: $theme-neutral-color;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px $theme-primary-color;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: $theme-primary-color;
+  fill: none;
+  animation: stroke .6s $curve forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke .3s $curve .8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px $theme-primary-color;
+  }
+}
+
+.cross-svg {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+}
+
+.circle {
+  fill: $theme-primary-color;
+}
+
+.cross-path {
+  transform-origin: 50% 50% 0;
+  stroke: $theme-neutral-color;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  &-right {
+    animation: 0.3s ease 0.8s normal forwards 1 running stroke;
+  }
+  &-left {
+    animation: 1s ease 0.8s normal forwards 1 running stroke;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media screen and (max-width: $max-width) {
+  .newsletter-email-box {
+    width: 35%;
+  }
+}

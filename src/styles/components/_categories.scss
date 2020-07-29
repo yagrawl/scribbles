@@ -1,0 +1,73 @@
+.category-text-focus,
+.category-text {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background: none;
+  outline: none;
+  @extend %font;
+  font-size: 16px;
+}
+
+.search-box {
+  @extend %font;
+  font-size: 16px;
+}
+
+.search-box {
+  width: inherit;
+  height: 30px;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search-box:focus {
+  outline: none;
+  border-radius: 25px;
+}
+
+.not-found-art {
+  display: block;
+  width: 300px;
+}
+
+.not-found-snippet {
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+@media screen and (max-width: $max-width) {
+  .search-box,
+  .search-box:focus {
+    padding: 1px 16px;
+  }
+
+  .category-text-focus,
+  .category-text {
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .not-found-snippet {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
+}

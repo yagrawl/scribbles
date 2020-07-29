@@ -1,0 +1,9 @@
+.bio-title-text {
+  @extend %font;
+  font-size: 20px;
+}
+
+.bio-content-text {
+  @extend %font;
+  font-size: 20px;
+}

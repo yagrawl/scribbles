@@ -6,8 +6,6 @@ import Theme from './theme';
 import Bio from './bio';
 import Footer from './footer';
 
-import "../styles/base.scss"
-
 class Layout extends React.Component {
   getThemeToggle() {
     if (typeof window !== 'undefined') {
@@ -22,7 +20,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <p className="blog-title-text-main">
+        <p className="title-text-root-path">
           <Link className="link" to={`/`}>
             {title}<span className="blinking-cursor">_</span>
           </Link>
@@ -30,7 +28,7 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <p className="blog-title-text-sub">
+        <p className="title-text-post-path">
           <Link className="link" to={`/`}>
             {title}<span className="blinking-cursor">_</span>
           </Link>

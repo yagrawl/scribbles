@@ -17,7 +17,7 @@ body.dark-mode {
     color: $theme-primary-color;
   }
 
-  .post-snippet:hover { background-color: $dark-complimentary-color; }
+  .snippet:hover { background-color: $dark-complimentary-color; }
 
   .anchor { color: $dark-text-color; }
   .blog a {
@@ -57,4 +57,10 @@ body.dark-mode {
 
     &::before { color: $dark-background-color; }
   }
+
+  a { color: $dark-text-color }
+  a:visited { text-decoration: none; color: $dark-text-color; }
+  a:hover { text-decoration: none; color: $dark-text-color; }
+  a:focus { text-decoration: none; color: $dark-text-color; }
+  a:hover, a:active { text-decoration: none; color: $dark-text-color }
 }

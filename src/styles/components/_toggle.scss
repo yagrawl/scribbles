@@ -53,11 +53,11 @@
 }
 
 .react-toggle--checked .react-toggle-track {
-  background-color: #C5C5F4;
+  background-color: $theme-secondary-color;
 }
 
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: #C5C5F4;
+  background-color: $theme-secondary-color;
 }
 
 .react-toggle-track-check {
@@ -125,17 +125,17 @@
 
 .react-toggle--checked .react-toggle-thumb {
   left: 27px;
-  border-color: #C5C5F4;
+  border-color: $theme-secondary-color;
 }
 
 .react-toggle--focus .react-toggle-thumb {
-  -webkit-box-shadow: 0px 0px 3px 2px #0099E0;
-  -moz-box-shadow: 0px 0px 3px 2px #0099E0;
-  box-shadow: 0px 0px 2px 3px #0099E0;
+  -webkit-box-shadow: 0px 0px 3px 2px $theme-primary-color;
+  -moz-box-shadow: 0px 0px 3px 2px $theme-primary-color;
+  box-shadow: 0px 0px 2px 3px $theme-primary-color;
 }
 
 .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
-  -webkit-box-shadow: 0px 0px 5px 5px #0099E0;
-  -moz-box-shadow: 0px 0px 5px 5px #0099E0;
-  box-shadow: 0px 0px 5px 5px #0099E0;
+  -webkit-box-shadow: 0px 0px 5px 5px $theme-primary-color;
+  -moz-box-shadow: 0px 0px 5px 5px $theme-primary-color;
+  box-shadow: 0px 0px 5px 5px $theme-primary-color;
 }

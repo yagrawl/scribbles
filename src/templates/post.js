@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import RelatedPost from "../components/relatedPost"
 import Newsletter from "../components/newsletter"
 
-class BlogPostTemplate extends Component {
+class PostTemplate extends Component {
   constructor(props) {
     super(props);
 
@@ -85,13 +85,13 @@ class BlogPostTemplate extends Component {
           title={post.frontmatter.title}
           description={post.excerpt}
         />
-        <p className="blog-title-text-main no-margin-bottom">{post.frontmatter.title}</p>
+        <p className="post-title-text">{post.frontmatter.title}</p>
         <p>
-          <span className="post-snippet-details">{post.frontmatter.date}</span>
+          <span className="post-details">{post.frontmatter.date}</span>
           &nbsp;
-          <span className="post-snippet-details">{post.frontmatter.time}</span>
+          <span className="post-details">{post.frontmatter.time}</span>
         </p>
-        <div className="blog">
+        <div className="post">
           <MDXRenderer>
             {post.body}
           </MDXRenderer>
@@ -120,7 +120,7 @@ let daysSince2000 = date => {
   return ((year - 2000) * 365) + (month * 30) + day;
 }
 
-export default BlogPostTemplate
+export default PostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

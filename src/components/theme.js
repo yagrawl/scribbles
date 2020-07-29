@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Toggle from 'react-toggle';
 
-import '../styles/base.scss';
-import '../styles/_toggle.scss';
-
 class Theme extends Component {
   constructor(props) {
     super(props);

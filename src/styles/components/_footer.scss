@@ -1,0 +1,27 @@
+.footer {
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-text {
+  @extend %font;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 10px;
+}
+
+.footer-bio {
+  @extend %font;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: $max-width) {
+  .footer-text {
+    display: inline-block;
+    text-decoration: none;
+    padding: 50px 5px;
+  }
+}

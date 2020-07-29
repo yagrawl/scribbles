@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 
-class RelatedPost extends Component {
+class Snippet extends Component {
   render(props) {
     return (
-      <div className="snippet related-post-snippet">
-        <span className="related-posts-snippet-title">{this.props.title}</span>
-        <span className="snippet-details-spacing"></span>
+      <div className="snippet">
+        <span className="snippet-tag">{this.props.tag}</span>
+        <p className="snippet-title">{this.props.title}</p>
         <span className="snippet-details">{this.props.date}</span>
         <span className="snippet-details-spacing"></span>
         <span className="snippet-details">{this.props.readTime}</span>
         <br/>
+        <p className="snippet-subtitle">{this.props.subtitle}</p>
       </div>
     );
   }
 }
 
-export default RelatedPost;
+export default Snippet;

@@ -1,6 +1,15 @@
 @import 'base/variables';
-@import 'font';
-@import 'margin';
+@import 'base/font';
+
+@import 'components/bio';
+@import 'components/categories';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/loader';
+@import 'components/newsletter';
+@import 'components/post';
+@import 'components/snippet';
+@import 'components/toggle';
 
 @import 'theme/light';
 @import 'theme/dark';
@@ -26,7 +35,25 @@ code {
 
 .link,
 .link:hover {
+  box-shadow: none;
   text-decoration: none !important;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.pagination {
+  display: block;
+  position: relative;
+  margin: auto;
+  left: 50%;
+  width: 304px;
+  margin-left: -152px;
 }
 
 .runstats {
@@ -35,8 +62,13 @@ code {
 }
 
 @media screen and (max-width: 720px) {
-    .runstats {
-      width: 98%;
-      height: 360px;
-    }
+  .runstats {
+    width: 98%;
+    height: 360px;
+  }
+
+  .wrapper {
+    margin: auto;
+    padding: 25px;
+  }
 }

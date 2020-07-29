@@ -3,9 +3,6 @@ import axios from 'axios';
 
 import Loader from './loader';
 
-import '../styles/base.scss';
-import '../styles/_animation.scss';
-
 class Newsletter extends Component {
   constructor(props) {
     super(props);
@@ -137,9 +134,9 @@ class Newsletter extends Component {
             <svg className="checkmark"
                  xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 52 52">
-                 <circle class="checkmark__circle"
+                 <circle class="checkmark-circle"
                          cx="26" cy="26" r="25" fill="none"/>
-                 <path class="checkmark__check" fill="none"
+                 <path class="checkmark-check" fill="none"
                          d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
             </svg>
             <p className="newsletter-response">
@@ -154,9 +151,9 @@ class Newsletter extends Component {
           <svg className="checkmark"
                xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 52 52">
-               <circle className="checkmark__circle"
+               <circle className="checkmark-circle"
                        cx="26" cy="26" r="25" fill="none"/>
-               <path className="checkmark__check" fill="none"
+               <path className="checkmark-check" fill="none"
                        d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
           </svg>
           <p className="newsletter-response">
@@ -170,9 +167,9 @@ class Newsletter extends Component {
           <svg className="checkmark"
                xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 52 52">
-               <circle className="checkmark__circle"
+               <circle className="checkmark-circle"
                        cx="26" cy="26" r="25" fill="none"/>
-               <path className="checkmark__check" fill="none"
+               <path className="checkmark-check" fill="none"
                        d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
           </svg>
           <p className="newsletter-response">
@@ -183,12 +180,12 @@ class Newsletter extends Component {
     } else {
       return (
         <center>
-          <svg class="cross__svg"
+          <svg class="cross-svg"
                xmlns="http://www.w3.org/2000/svg"
                viewBox="0 0 52 52">
                <circle cx="26" cy="26" r="25" className="circle"/>
-	              <path class="cross__path cross__path--right" d="M16,16 l20,20" />
-               <path class="cross__path cross__path--right" d="M16,36 l20,-20" />
+	              <path class="cross-path cross-path-right" d="M16,16 l20,20" />
+               <path class="cross-path cross-path-right" d="M16,36 l20,-20" />
 			    </svg>
           <p className="newsletter-response">
             Oops, something went wrong.
@@ -201,7 +198,7 @@ class Newsletter extends Component {
   render() {
     return (
       <div className="newsletter">
-        <p className="related-posts-title">Get Updates</p>
+        <p className="newsletter-title">Get Updates</p>
         <p className="newsletter-description">I generally write about frontend
         development, traveling and other interesting things. I will send an
         email once a month. Sign up below if you are interested.</p>

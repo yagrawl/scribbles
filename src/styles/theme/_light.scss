@@ -17,12 +17,12 @@ body {
     color: $theme-primary-color;
   }
 
-  .post-snippet-details {
+  .snippet-details, .post-details {
     background-color: $theme-secondary-color;
     color: $theme-primary-color;
   }
-  .post-snippet-tag { color: $theme-neutral-color; }
-  .post-snippet:hover { background-color: $light-complimentary-color; }
+  .snippet-tag { color: $theme-neutral-color; }
+  .snippet:hover { background-color: $light-complimentary-color; }
 
   .anchor { color: $light-text-color; }
 
@@ -72,4 +72,10 @@ body {
 
     &::before { color: $light-background-color; }
   }
+
+  a { color: $light-text-color }
+  a:visited { text-decoration: none; color: $light-text-color; }
+  a:hover { text-decoration: none; color: $light-text-color; }
+  a:focus { text-decoration: none; color: $light-text-color; }
+  a:hover, a:active { text-decoration: none; color: $light-text-color }
 }

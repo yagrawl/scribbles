@@ -1,7 +1,7 @@
 $max-width: 650px;
 
 $light-background-color: #FFFEFE;
-$light-text-color: #292A32;
+$light-text-color: #393B43;
 $light-text-complimentary-color: #393B43;
 $light-complimentary-color: #F2F2F2;
 
@@ -14,12 +14,17 @@ $theme-primary-color: #7F7FDA;
 $theme-secondary-color: #C5C5F4;
 $theme-neutral-color: #C3C3C6;
 
-$background-color-dark: #292A32;
-$background-color-light: #FFFEFE;
-$complimentary-color-dark: #393B43;
-$complimentary-color-light: #F2F2F2;
-$subtitle-text-color: #C3C3C6;
-$post-snippet-hover-light: #F2F2F2;
-$post-snippet-hover-dark: #393B43;
-$post-snippet-details-tag-background: #C5C5F4;
-$post-snippet-details-tag-color: #7F7FDA;
+$font-weight-light: 100;
+$font-weight-regular: 200;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+
+$font-family: 'Avenir Next';
+$font-size: 16px;
+$font-weight: $font-weight-light;
+
+%font {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Pagination from "@material-ui/lab/Pagination";
 
 import Layout from "../components/layout"
-import Post from "../components/post"
+import Snippet from "../components/snippet"
 import SEO from "../components/seo"
 
 import NotFoundArt from "../assets/images/notfoundart.png";
@@ -147,7 +147,7 @@ class IndexPage extends Component {
     let posts = this.state.posts.slice(this.getLow(), this.getHigh()).map(({ node }) => {
       return <div key={node.frontmatter.path}>
               <Link className="link" to={node.frontmatter.path}>
-                <Post title={node.frontmatter.title}
+                <Snippet title={node.frontmatter.title}
                              subtitle={node.frontmatter.description}
                              date={node.frontmatter.date}
                              readTime={node.frontmatter.time}
@@ -161,7 +161,7 @@ class IndexPage extends Component {
       return (
         <div className="not-found-snippet">
           <center>
-            <p className="post-snippet-title">
+            <p className="snippet-title">
               Sorry, the search query returned no results.
             </p>
           </center>
