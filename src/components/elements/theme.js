@@ -7,14 +7,16 @@ class Theme extends Component {
   constructor(props) {
     super(props);
 
-    if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
-      document.body.classList.remove('dark');
-    } else {
-      document.body.classList.add('dark');
+    if (typeof window !== 'undefined') {
+      if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
+        document.body.classList.remove('dark');
+      } else {
+        document.body.classList.add('dark');
+      }
     }
 
     this.state = {
-      dark: JSON.parse(localStorage.getItem('DARK_MODE'))
+      dark: (typeof window !== 'undefined') ? JSON.parse(localStorage.getItem('DARK_MODE')) : true
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
