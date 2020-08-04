@@ -1,0 +1,62 @@
+.navbar-title {
+  line-height: 10%;
+  display: inline-block;
+  float: left;
+}
+
+.title-root {
+  @extend %font;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.title-non-root {
+  @extend %font;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subtitle-root {
+  @extend %font;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.subtitle-non-root {
+  @extend %font;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.subtitle-name {
+  font-weight: 200;
+}
+
+.clear {
+  clear: both;
+}
+
+.blinking-cursor {
+  font-weight: 400;
+  color: $theme-primary-color;
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: $viewport-width) {
+  .subtitle-root {
+    max-width: 200px;
+  }
+}

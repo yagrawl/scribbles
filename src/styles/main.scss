@@ -1,0 +1,71 @@
+@import 'base/variables';
+@import 'base/font';
+
+@import 'themes/light';
+@import 'themes/dark';
+@import 'themes/prism';
+
+@import 'components/navbar';
+@import 'components/theme';
+@import 'components/about';
+@import 'components/post-snippet';
+@import 'components/post';
+@import 'components/tag';
+@import 'components/more-posts';
+@import 'components/newsletter';
+@import 'components/loader';
+@import 'components/footer';
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+a { text-decoration: none; }
+.no-overflow { overflow-x: hidden !important; }
+
+.link,
+.link:hover {
+  box-shadow: none;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+img {
+  max-width: $viewport-width;
+  height: auto !important;
+  margin: auto !important;
+  border-radius: 20px;
+}
+
+iframe {
+  max-width: $viewport-width;
+  max-height: 100%;
+}
+
+.main {
+  max-width: $viewport-width;
+  padding: $viewport-padding;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: $font-family;
+}
+
+.runstats {
+  width: 600px;
+  height: 380px;
+  margin: auto;
+}
+
+@media screen and (max-width: 720px) {
+  .runstats {
+    width: 98%;
+    height: 360px;
+  }
+
+  .main {
+    margin: auto;
+    padding: 25px;
+  }
+}

@@ -1,16 +1,14 @@
 ---
 title: Lessons from Refactoring an Old Project
 date: "2020-07-15"
-time: "3 mins"
 description: Things I realized on updating 'moviebot' twice over the span of four years.
-category: Personal
-tags: refactor, code
+tags: ["Personal", "Refactor", "Code"]
 path: /lessons-from-refactoring-an-old-project
 ---
 
 About four years ago, I started working on a simple project — a Messenger bot that 'recommends' movies. I called it '[moviebot](/moviebot)'. It was written in JavaScript (node) and hosted on Heroku. At the time, Messenger bots seemed like an interesting avenue to explore and I was simply following a tutorial to set it up. I made none of the choices, from the language to the deployment platform. It did a variety of things like recommending a movie, displaying all movies by a particular person, genre-based search, and even showed theaters near a provided location.
 
-![Moviebot](../images/2020-07-15-lessons-from-refactoring-an-old-project/moviebot.png)
+![(Img 1) Moviebot features](../images/2020-07-15-lessons-from-refactoring-an-old-project/moviebot.png)
 
 I thought I had done a pretty good job simply because it worked. I actually had 500+ unique users at the time. In reality, it was a complete mess. It was a single file consisting of 1000+ lines, with no discernible order of methods. I had a lot of code duplication, no proper error handling, terrible commit history with a bunch of API keys all pushed upstream to public GitHub (All the API keys in the git history have now expired. It's all good). It was littered with whitespace and the comments were written more from the convention point of view than them actually being helpful. I was importing a bunch of libraries that I wasn't using and I did the same with a lot of variables. Simply put, anyone looking at it could easily point out how crappy it was.
 
@@ -22,7 +20,7 @@ The most important one — there were no tests. None at all. Generally when peop
 
 I was repeatedly making the same request to the TMDb API again and again. Rate limiting wasn't really an issue since the traffic on the bot is pretty low, but it definitely made it slower. I added a caching layer to make it faster. I then improved upon the existing modeling, added more extensive error-handling, implemented a better approach to the product itself, cleaned the whitespacing, made it more readable and a numerous other things. I am pretty happy with this (for now). From this trend, I can safely say that it is going to change in the future.
 
-![Refactor bullet points](../images/2020-07-15-lessons-from-refactoring-an-old-project/refactor.png)
+![(Img 2) Refactor bullet points](../images/2020-07-15-lessons-from-refactoring-an-old-project/refactor.png)
 
 From this exercise, I learnt a few things:
 

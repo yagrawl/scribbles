@@ -5,15 +5,16 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 }
 
 .newsletter-title {
+  margin-top: 30px;
   font-family: $font-family;
-  font-weight: $font-weight-medium;
-  font-size: 24px;
+  font-weight: $font-weight-bold;
+  font-size: 21px;
 }
 
 .newsletter-email-box {
   width: inherit;
   height: 30px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 0;
   padding: 5px 20px;
   width: 50%;
@@ -26,12 +27,13 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 
 .newsletter-email-box:focus {
   outline: none;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .newsletter-description,
 .newsletter-submit-button {
   @extend %font;
+  font-size: 14px;
 }
 
 .newsletter-response {
@@ -43,7 +45,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
 .newsletter-submit-button-active,
 .newsletter-submit-button-inactive {
   height: 40px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 0;
   padding: 5px 20px;
   @extend %font;
@@ -130,7 +132,7 @@ $curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
   }
 }
 
-@media screen and (max-width: $max-width) {
+@media screen and (max-width: $viewport-width) {
   .newsletter-email-box {
     width: 35%;
   }

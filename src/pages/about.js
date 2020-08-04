@@ -7,7 +7,7 @@ import SEO from "../components/elements/seo"
 
 import "../styles/main.scss"
 
-class NotFound extends Component {
+class About extends Component {
   render() {
     const { data } = this.props
     const { title, cursor, subtitle, author, location } = data.site.siteMetadata
@@ -17,7 +17,13 @@ class NotFound extends Component {
         <SEO title={"About me"}/>
         <Navbar title={title} cursor={cursor} subtitle={subtitle} author={author} location={location} root={true}/>
         <div className="about-text">
-          <p>Oops, seems like you clicked on the wrong link. Go back home.</p>
+        <p><span role="img" aria-label="wave emoji">👋</span> Hi, I'm Yash</p>
+
+        <p>I’m a full-stack software engineer currently working at Braintree in San Francisco, CA.</p>
+
+        <p>I’m interested in fullstack development and fintech. Apart from that I love to run, play badminton, make pasta, build my vinyl collection and watch a lot of movies.</p>
+
+        <p>I also write from time to time. You can read it <a className="link" href="/">here</a>.</p>
         </div>
         <Footer/>
       </div>
@@ -25,7 +31,7 @@ class NotFound extends Component {
   }
 }
 
-export default NotFound
+export default About
 
 export const pageQuery = graphql`
   query {

@@ -1,0 +1,34 @@
+.post-snippet-div {
+  margin: $post-snippet-margin auto;
+}
+
+.post-snippet-title {
+  @extend %font;
+  font-size: 18px;
+  margin: 0;
+}
+
+div.post-snippet-details > span {
+  @extend %font;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.post-snippet-excerpt {
+  @extend %font;
+  font-weight: 100;
+  font-size: 14px;
+  color: $theme-neutral-color;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  max-width: $viewport-width - 20px;
+}
+
+div.post-snippet-tags > a {
+  @extend %font;
+  font-weight: 100;
+  font-size: 12px;
+  padding: 3px 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+}

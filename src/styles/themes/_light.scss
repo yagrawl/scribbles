@@ -1,0 +1,48 @@
+body {
+  background-color: $light-background-color;
+  color: $light-text-color;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+
+  .anchor {
+    color: $light-text-color;
+  }
+
+  .post-snippet-tags > a, .post-tags > a {
+    color: $light-text-complimentary-color;
+    background-color: $light-complimentary-color;
+  }
+
+  .post-snippet-details > span, .post-details > span {
+    color: $theme-primary-color;
+  }
+
+  .newsletter-email-box,
+  .newsletter-submit-button-inactive {
+    background-color: $light-complimentary-color;
+    color: $light-text-color;
+  }
+
+  .newsletter-submit-button-active {
+    background-color: $theme-primary-color;
+    color: $theme-secondary-color;
+  }
+
+  .newsletter-response {
+    color: $theme-primary-color;
+  }
+
+  .tag-template-tagname {
+    color: $theme-secondary-color;
+    border-bottom: 3px solid $theme-primary-color;
+  }
+
+  blockquote {
+    color: $light-text-color;
+    background-color: $light-complimentary-color;
+    border-left: 6px solid $theme-secondary-color;
+
+    &::before { color: $light-background-color; }
+  }
+}

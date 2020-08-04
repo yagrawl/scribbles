@@ -1,10 +1,8 @@
 ---
 title: Trip to Peru
 date: "2017-09-01"
-time: "8 mins"
 description: lugares increíbles.
-category: Travel
-tags: Peru, Inca Cola
+tags: ["Travel", "Peru"]
 path: /trip-to-peru
 ---
 
@@ -21,16 +19,16 @@ La Paz for the next day. I decided to skip Bolivia and just stay in Peru for a
 longer time because I was already a day short and it didn't seem worth it to go
 to a country like Bolivia just for 3 days.
 
-The hotel was right next to some government building in Lima.
+The hotel was right next to the Supreme Court building in Lima.
 
-![government building](../images/2017-09-01-trip-to-peru/lima_government_building.jpeg)
+![(Img 1) View of the Supreme Court of Peru from the hotel room](../images/2017-09-01-trip-to-peru/lima_government_building.jpeg)
 
 The day I went, there was a protest. I think it was the teachers protesting
 against low wages but I could be wrong. My Spanish literacy is nonexistent. The
 dinner was complimentary by the hotel and there I found my new favorite soft
-drink - Inca Cola. It tastes kind of like a cream soda but much better.
+drink - Inca Kola. It tastes kind of like a cream soda but much better.
 
-![inca cola](../images/2017-09-01-trip-to-peru/inca_cola.jpeg)
+![(Img 2) Inca Kola -- a source of national pride for Peruvians](../images/2017-09-01-trip-to-peru/inca_cola.jpeg)
 
 The next day I went on a food tour and they started with a drink at
 [_La Trastienda_](https://www.thefork.com.pe/restaurante/la-trastienda-r491339), a restaurant in the Barranco district of Lima. They served the
@@ -40,7 +38,7 @@ is a legit Pisco sour only if it has those 3 dots of Angostura Bitters on top.
 Chile has a different version of Pisco than Peru and the origins are disputed
 to this day.
 
-![pisco sour](../images/2017-09-01-trip-to-peru/lima_pisco_sour.jpeg)
+![(Img 3) Pisco Sour with the traditional Angostura Bitters](../images/2017-09-01-trip-to-peru/lima_pisco_sour.jpeg)
 
 Next I made some Ceviche with plantains and fish at
 [_ámaz_](http://www.amaz.com.pe/). It is essentially
@@ -48,12 +46,12 @@ Next I made some Ceviche with plantains and fish at
 rice. The last stop on the tour was at some place for desserts and they hosted
 a bunch of famous people - including 'The Killers'.
 
-![the killers](../images/2017-09-01-trip-to-peru/lima_the_killers.jpeg)
+![(Img 4) The Killers visited the dessert place](../images/2017-09-01-trip-to-peru/lima_the_killers.jpeg)
 
 After eating the desserts, I roamed a bit in the Barranco district which is
 considered to be the Bohemian epicenter of Lima. They have beautiful street art.
 
-![dessert](../images/2017-09-01-trip-to-peru/lima_desserts.jpeg)
+![(Img 5) Assorted Desserts](../images/2017-09-01-trip-to-peru/lima_desserts.jpeg)
 
 The Airbnb I stayed at in Lima was in the Miraflores district, right next to
 the coast and it was really beautiful. The next few days in Lima were spent
@@ -67,7 +65,7 @@ because well, it was fried rice and then the local thought that this kind of foo
 called _Chifa_ and that is how the name stuck. I don't know if I believe this particular
 etymology.
 
-![airbnb](../images/2017-09-01-trip-to-peru/lima_airbnb.jpeg)
+![(Img 6) Airbnb in Miraflores, Lima](../images/2017-09-01-trip-to-peru/lima_airbnb.jpeg)
 
 The next stop in Peru was Macchu Picchu. You need to book tickets before you go
 to Macchu Picchu and booking it off that website is truly a hassle. That
@@ -95,13 +93,13 @@ using the flashes on the phone to see the steps. Finally at about 7 I reached th
 The guide gave us a quick tour and then I got to catch a beautiful sunrise
 which is apparently rare because it is mostly covered with fog.
 
-![macchu picchu](../images/2017-09-01-trip-to-peru/macchupicchu.gif)
+![(Img 7) Macchu Picchu](../images/2017-09-01-trip-to-peru/macchupicchu.gif)
 
 The hike back made me realize how beautiful the hike itself was. I couldn't see
 anything at night. I also went into this river. The water was incredibly
 refreshing.
 
-![river](../images/2017-09-01-trip-to-peru/macchu_picchu_river.jpeg)
+![(Img 8) River at the base of the Macchu Piccu Hike](../images/2017-09-01-trip-to-peru/macchu_picchu_river.jpeg)
 
 Then I got back on the train and reached Cuzco. I realized there were
 literally no Ubers available at the time and I didn't know what to do. I walked
@@ -114,6 +112,6 @@ don't miss out on what his city has to offer. This and other such interactions
 made me feel like Peruvians genuinely want you to have a great time in their
 country.
 
-![somewhere in Cuzco](../images/2017-09-01-trip-to-peru/cuzco_attractions.jpeg)
+![(Img 9) Somewhere in Cuzco](../images/2017-09-01-trip-to-peru/cuzco_attractions.jpeg)
 
 After this, I was off to Bogota.

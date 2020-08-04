@@ -1,4 +1,15 @@
-$max-width: 650px;
+$viewport-width: 650px;
+$viewport-padding: 20px;
+$post-snippet-margin: 50px;
+
+$font-weight-light: 100;
+$font-weight-regular: 200;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+
+$font-family: 'Avenir Next';
+$font-size: 16px;
+$font-weight: $font-weight-light;
 
 $light-background-color: #FFFEFE;
 $light-text-color: #393B43;
@@ -13,15 +24,6 @@ $dark-complimentary-color: #393B43;
 $theme-primary-color: #7F7FDA;
 $theme-secondary-color: #C5C5F4;
 $theme-neutral-color: #C3C3C6;
-
-$font-weight-light: 100;
-$font-weight-regular: 200;
-$font-weight-medium: 400;
-$font-weight-bold: 600;
-
-$font-family: 'Avenir Next';
-$font-size: 16px;
-$font-weight: $font-weight-light;
 
 %font {
   font-family: $font-family;

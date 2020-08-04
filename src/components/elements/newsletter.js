@@ -198,7 +198,7 @@ class Newsletter extends Component {
   render() {
     return (
       <div className="newsletter">
-        <p className="newsletter-title">Get Updates</p>
+        <h2 className="newsletter-title">Get Updates</h2>
         <p className="newsletter-description">I generally write about frontend
         development, traveling and other interesting things. I will send an
         email once a month. Sign up below if you are interested.</p>

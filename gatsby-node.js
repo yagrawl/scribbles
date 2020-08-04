@@ -1,63 +1,72 @@
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-
   const postTemplate = path.resolve(`./src/templates/post.js`)
-  return graphql(
+  const tagTemplate = path.resolve(`./src/templates/tag.js`)
+
+  const result = await graphql(
     `
       {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+        allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
           edges {
             node {
-              fields {
-                slug
-              }
               frontmatter {
                 title
                 path
+                tags
               }
             }
           }
         }
       }
     `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
+  )
 
-    const posts = result.data.allMdx.edges
+  if (result.errors) {
+    throw result.errors
+  }
 
-    posts.forEach((post, index) => {
-      createPage({
-        path: post.node.frontmatter.path,
-        component: postTemplate,
-        context: {
-          slug: post.node.fields.slug,
-        },
-      })
+  const posts = result.data.allMarkdownRemark.edges
+  const tagSet = new Set()
+
+  posts.forEach((post, index) => {
+    post.node.frontmatter.tags.forEach((tag) => {
+      tagSet.add(tag)
     })
 
-    return null
+    createPage({
+      path: post.node.frontmatter.path,
+      component: postTemplate,
+      context: {
+        link: post.node.frontmatter.path,
+        tags: post.node.frontmatter.tags
+      },
+    })
   })
+
+  const tags = Array.from(tagSet)
+
+  tags.forEach((tag, index) => {
+    createPage({
+      path: `/tag/${parseTag(tag)}`,
+      component: tagTemplate,
+      context: {
+        tag,
+      },
+    })
+  })
+
+
+  return null
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  fmImagesToRelative(node);
-
-  if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
+let parseTag = tag => {
+  return (
+    tag &&
+    tag
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map((x) => x.toLowerCase())
+    .join('-')
+  )
 }

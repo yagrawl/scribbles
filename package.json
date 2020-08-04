@@ -1,70 +1,48 @@
 {
-  "name": "yagrawl",
+  "name": "scribbles_",
   "private": true,
   "description": "A personal portfolio - Yash Agrawal.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Yash Agrawal <yagrawl2@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/yagrawl/blog/issues"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.9.13",
-    "@material-ui/lab": "^4.0.0-alpha.52",
-    "@mdx-js/mdx": "^1.5.1",
-    "@mdx-js/react": "^1.5.1",
-    "axios": "^0.19.1",
-    "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.18.17",
-    "gatsby-image": "^2.0.39",
-    "gatsby-plugin-feed": "^2.1.1",
-    "gatsby-plugin-google-analytics": "^2.0.18",
-    "gatsby-plugin-manifest": "^2.0.29",
-    "gatsby-plugin-mdx": "^1.0.52",
-    "gatsby-plugin-netlify-cms": "^4.0.0",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sass": "^2.1.20",
-    "gatsby-plugin-sharp": "^2.0.35",
-    "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-remark-copy-linked-files": "^2.0.11",
-    "gatsby-remark-embed-youtube": "^0.0.7",
-    "gatsby-remark-images": "^3.1.28",
-    "gatsby-remark-relative-images": "^0.2.3",
-    "gatsby-remark-responsive-iframe": "^2.2.30",
-    "gatsby-remark-smartypants": "^2.0.9",
-    "gatsby-remark-vscode": "^1.0.4",
-    "gatsby-source-filesystem": "^2.0.29",
-    "gatsby-transformer-remark": "^2.3.8",
-    "gatsby-transformer-sharp": "^2.1.18",
-    "netlify-cms-app": "^2.9.1",
-    "node-sass": "^4.14.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
-    "react-switch": "^5.0.0",
-    "react-toggle": "^4.1.1",
-    "styled-components": "^4.2.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.17.0"
-  },
-  "homepage": "https://yagrawal.com",
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yagrawl/blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "clean": "rm -rf .cache"
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.23.12",
+    "gatsby-plugin-google-analytics": "^2.3.13",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sharp": "^2.6.21",
+    "gatsby-remark-autolink-headers": "^2.3.11",
+    "gatsby-remark-copy-linked-files": "^2.3.11",
+    "gatsby-remark-embed-youtube": "0.0.7",
+    "gatsby-remark-images": "^3.3.20",
+    "gatsby-remark-prismjs": "^3.5.10",
+    "gatsby-remark-responsive-iframe": "^2.4.12",
+    "gatsby-source-filesystem": "^2.3.21",
+    "gatsby-transformer-remark": "^2.8.27",
+    "node-sass": "^4.14.1",
+    "prism-themes": "^1.4.0",
+    "prismjs": "^1.20.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yagrawl/scribbles"
+  },
+  "bugs": {
+    "url": "https://github.com/yagrawl/scribbles"
   }
 }

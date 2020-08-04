@@ -1,10 +1,8 @@
 ---
 title: Generators in Javascript
 date: "2017-08-16"
-time: "7 mins"
 description: Making Async code beautiful since ES6
-category: Code
-tags: Frontend, Basics, ES6
+tags: ["Frontend", "Code", "Javascript"]
 path: /generators-in-javascript
 ---
 
@@ -55,7 +53,7 @@ the generator function. Calling a generator function doesn’t execute it,
 instead it creates an iterator object which helps us interact with the
 generator. Follow the flowchart below to understand how it works.
 
-![generators flow](../images/2017-08-16-generators-in-javascript/generators_image1.png)
+![(Img 1). Flow of how Generators work](../images/2017-08-16-generators-in-javascript/generators_image1.png)
 
 NOTE : In the code chunk we used, it would never reach `gen.done = True` since
 it is inside an infinite loop.
@@ -95,7 +93,7 @@ const result3 = gen.next();
 point of it’s first  `yield` statement. After that, at **line 8**, **line 10**
 and **line 12**, generator is activated and a value is requested.
 
-![generators timeline](../images/2017-08-16-generators-in-javascript/generators_image2.png)
+![(Img 2). Generators Timeline](../images/2017-08-16-generators-in-javascript/generators_image2.png)
 
 As soon as the iterator is created, generator goes into a suspended start state.
 After the first `gen.next()` the generator goes into execution mode and after
@@ -118,12 +116,12 @@ on how execution contexts and lexical environments work, read my article on [var
 In Step 1, the global context executes and because of variable hoisting we
 have the ‘result’ variables and the `gen` object initialized to `undefined`.
 
-![generators timeline 1](../images/2017-08-16-generators-in-javascript/generators_image3.png)
+![(Img 3). Generators Timeline - 1](../images/2017-08-16-generators-in-javascript/generators_image3.png)
 
 As **line 6** executes, an iterator object is created and the generator goes
 into a suspended start state. See Figure 2.
 
-![generators timeline 2](../images/2017-08-16-generators-in-javascript/generators_image4.png)
+![(Img 4). Generators Timeline - 2](../images/2017-08-16-generators-in-javascript/generators_image4.png)
 
 After **line 6**, the generator context is popped off the execution stack but
 isn’t discarded because `gen` keeps a reference to it. This is still at the
@@ -131,13 +129,13 @@ point before any of the  `yield` statements are executed. See Figure 3 and
 follow the dotted line in the environment to see how `myGeneration` is kept
 active despite of being popped off the stack.
 
-![generators timeline 3](../images/2017-08-16-generators-in-javascript/generators_image5.png)
+![(Img 5). Generators Timeline - 3](../images/2017-08-16-generators-in-javascript/generators_image5.png)
 
 When the first call to `gen.next()` is made in the global execution context, unlike regular functions, generators reactivate the matching execution context. The `myGenerator()`
 context is placed on the top of the stack to continue its execution from the
 point it left off.
 
-![generators timeline 4](../images/2017-08-16-generators-in-javascript/generators_image6.png)
+![(Img 6). Generators Timeline - 4](../images/2017-08-16-generators-in-javascript/generators_image6.png)
 
 After it returns an object to return with the `value` property and the `done`
 property, it is again popped off the stack but not discarded since `gen` holds
@@ -145,7 +143,7 @@ a reference to it. This time the generator goes into a suspended yield state
 and patiently waits till another request is made. Figure 5 shows a snapshot
 of how the context/environment look like at this stage.
 
-![generators timeline 5](../images/2017-08-16-generators-in-javascript/generators_image7.png)
+![(Img 7). Generators Timeline - 5](../images/2017-08-16-generators-in-javascript/generators_image7.png)
 
 After another call is made to `gen.next()`, the state reverts back to execution
 and we see a similar picture as in figure 4. This goes on till the value passed

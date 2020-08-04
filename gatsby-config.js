@@ -1,22 +1,54 @@
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `scribbles`,
+    cursor: `_`,
+    subtitle: `Written by`,
     author: `Yash Agrawal`,
+    location: `San Francisco`,
     description: `A personal portfolio - Yash Agrawal.`,
-    siteUrl: `https://yagrawal.com/`,
+    siteUrl: `https://yash.works`,
     social: {
       twitter: `yagrawl`,
     },
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              backgroundColor: "transparent",
+              showCaptions: true,
+              markdownCaptions: true,
+              maxWidth: 650,
+            },
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir: `${__dirname}/content/images`,
+            }
+          },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `30`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              showLineNumbers: true,
+            }
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,61 +59,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/content/images`,
         name: `images`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 650,
-              backgroundColor: `none`,
-              linkImagesToOriginal: false,
-              disableBgImageOnAlpha: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-embed-youtube`,
-            options: {
-              width: 800,
-              height: 400,
-              frameBorder: 0,
-            }
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
-            options: {
-              colorTheme: 'Dark+ (default dark)',
-            }
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-          },
-          {
-            resolve: `gatsby-remark-smartypants`,
-          },
-        ],
       },
     },
     {
@@ -91,68 +70,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-remark-responsive-iframe`,
       options: {
-        name: `Yash Agrawal`,
-        short_name: `yagrawl`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#393B43`,
-        display: `minimal-ui`,
-        // edit below
-        icon: `content/assets/icon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  data: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.body }],
-                })
-              })
-            },
-            query: `
-            {
-              allMdx(
-                limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
-                edges {
-                  node {
-                    fields { slug }
-                    frontmatter {
-                      title
-                      date
-                    }
-                    body
-                  }
-                }
-              }
-            }
-            `,
-            output: "/rss.xml",
-            title: `Gatsby RSS feed`,
-          },
-        ],
+        wrapperStyle: `margin-bottom: 1.0725rem`,
       },
     },
   ],

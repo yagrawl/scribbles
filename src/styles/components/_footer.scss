@@ -1,12 +1,14 @@
 .footer {
+  position: relative;
+  margin: auto;
   bottom: 0;
+  z-index: 1;
   text-align: center;
-  width: 100%;
 }
 
 .footer-text {
   @extend %font;
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
   text-decoration: none;
   padding: 25px 10px;
@@ -18,7 +20,42 @@
   font-weight: 100;
 }
 
-@media screen and (max-width: $max-width) {
+.footer-text > a:hover {
+  animation: uline 0.10s linear 1 forwards;
+  -webkit-animation: uline 0.10s linear 1 forwards;
+  -moz-animation: uline 0.10s linear 1 forwards;
+  -o-animation: uline 0.10s linear 1 forwards;
+}
+
+@-webkit-keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@-moz-keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@-o-keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@media screen and (max-width: $viewport-width) {
   .footer-text {
     display: inline-block;
     text-decoration: none;

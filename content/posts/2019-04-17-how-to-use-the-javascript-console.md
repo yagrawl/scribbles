@@ -1,10 +1,8 @@
 ---
 title: How to use the Javascript Console
 date: "2019-04-17"
-time: "5 mins"
 description: Going beyond console.log()
-category: Code
-tags: Frontend, Debugging
+tags: ["Frontend", "Debug", "Code"]
 path: /how-to-use-the-javascript-console
 ---
 
@@ -33,7 +31,7 @@ The most intuitive way to log this is to just `console.log(variable)` one after
 the other. The problem is more apparent when we see how it shows up on the
 console.
 
-![console log result without variable names visible](../images/2019-04-17-how-to-use-the-javascript-console/console_image1.png)
+![(Img 1) Console Log without variable names visible](../images/2019-04-17-how-to-use-the-javascript-console/console_image1.png)
 
 As you can see, no variable names are visible. It gets extremely annoying when
 you have a bunch of these and you have to expand the little arrow on the left
@@ -49,7 +47,7 @@ make it more readable. Whenever you have objects with common properties or an
 array of objects use `console.table()`. Here we can use
 `console.table({ foo, bar})` and the console shows:
 
-![console.table() in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image2.png)
+![(Img 2) console.table() in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image2.png)
 
 ## console.group()
 
@@ -76,7 +74,7 @@ console.groupEnd();
 console.groupEnd();
 ```
 
-![console.group() in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image3.png)
+![(Img 3) console.group() in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image3.png)
 
 You can also use `console.groupCollapsed()` instead of `console.group()` if you
 want the groups to be collapsed by default. You would need to hit the
@@ -88,7 +86,7 @@ Depending on the situation, to make sure your console is more readable you can
 add logs using `console.warn()` or `console.error()`. There’s also
 `console.info()` which displays an ‘i’ icon in some browsers.
 
-![console.warn() in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image4.png)    
+![(Img 4) console.warn() in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image4.png)    
 
 This can be taken a step further by adding custom styling. You can use a `%c`
 directive to add styling to any log statement. This can be used to
@@ -110,7 +108,7 @@ console.log('%c Error ',
 
 You can also change the `font-size` , `font-style` and other CSS things.
 
-![console styling](../images/2019-04-17-how-to-use-the-javascript-console/console_image5.png)    
+![(Img 5) Applying styles to console log](../images/2019-04-17-how-to-use-the-javascript-console/console_image5.png)    
 
 ## console.trace()
 
@@ -141,7 +139,7 @@ for (i = 0; i < 1000000; i++) {
 console.timeEnd("For loop");
 ```
 
-![console.time in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image6.png)  
+![(Img 6) console.time in action](../images/2019-04-17-how-to-use-the-javascript-console/console_image6.png)  
 
 Hopefully, the article provided some information on various ways to use the
 console.

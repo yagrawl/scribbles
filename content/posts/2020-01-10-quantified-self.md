@@ -1,10 +1,8 @@
 ---
 title: Quantified Self
 date: "2020-01-10"
-time: "3 mins"
 description: Some services I use to track data about myself.
-category: Personal
-tags: tracking, quantify
+tags: ["Personal", "Tracking"]
 path: /quantified-self
 ---
 
@@ -45,7 +43,7 @@ collecting data. I log my weight every morning on the iOS [Health App](https://w
 It also keeps tab on the steps I take everyday (when I have the phone on me, of
   course) but it isn't something I actively do or want - still, nice to have.
 
-![Weight Tracking](../images/2020-01-10-quantified-self/health_weight_tracking.png)
+![(Img 1) Weight Tracking in the iOS health app](../images/2020-01-10-quantified-self/health_weight_tracking.png)
 
 I also like running and I collect my running data on the [Nike Run Club](https://apps.apple.com/us/app/nike-running/id387771637) App. I would not recommend this app if you are just
 starting out. The application itself is pretty great and does what it is supposed
@@ -68,7 +66,7 @@ personal React application I built to see the stats that I want.
 I also track my food habits with an app called [LifeSum](https://lifesum.com/).
 They have a very extensive database of ingredients and also support Barcodes.
 
-![Food Tracking](../images/2020-01-10-quantified-self/lifesum_food_tracking.png)
+![(Img 2) Food Tracking on LifeSum](../images/2020-01-10-quantified-self/lifesum_food_tracking.png)
 
 I've read about people collecting data concerning their mental health in apps where
 you kind of rate your mental state during the day. I've heard promising things
@@ -94,7 +92,7 @@ add the places I've been to - restaurants, hotels, tourist attractions, etc.
 Google Maps is always recording in the background anyway and while it is creepy,
 I like being able to see that data about myself.  
 
-![Google Places](../images/2020-01-10-quantified-self/google_places.png)
+![(Img 3) Google Places Screengrab](../images/2020-01-10-quantified-self/google_places.png)
 
 ## Finances
 
@@ -122,7 +120,7 @@ what my favorite genre is and it is nice to know that the data agrees. I also
 maintain a list of movies I want to watch on an [IMDB](https://www.imdb.com/)
 list and move it once I do.
 
-![Trakt TV](../images/2020-01-10-quantified-self/trakt_tv.png)
+![(Img 4) Trakt.tv screengrab](../images/2020-01-10-quantified-self/trakt_tv.png)
 
 I mostly listen to music on Spotify and I use [last.fm](https://www.last.fm/) to
 keep track of the artists I often listen to and the song that I've played the most

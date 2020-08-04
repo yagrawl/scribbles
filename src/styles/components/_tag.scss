@@ -1,0 +1,13 @@
+.tag-template-text {
+  @extend %font;
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+
+.tag-template-tagname {
+  font-weight: $font-weight-medium;
+}
+
+.tag-template-count {
+  @extend %font;
+}

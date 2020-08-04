@@ -1,10 +1,8 @@
 ---
 title: Dark Mode in React using SCSS
 date: "2019-05-20"
-time: "4 mins"
 description: How to setup dark mode in create-react-app using scss.
-category: Code
-tags: Tutorial, Basics, DarkMode
+tags: ["Tutorial", "Code"]
 path: /dark-mode-in-react-using-scss
 ---
 
@@ -31,13 +29,13 @@ npm start
 
 This will launch the react app on `localhost:3000` and it should look like this.
 
-![Image 1](../images/2019-05-20-dark-mode-in-react-using-scss/basic_create_react_app.gif)
+![(Img 1) create-react-app initialized](../images/2019-05-20-dark-mode-in-react-using-scss/basic_create_react_app.gif)
 
 Now that we have the react app set up, we can start adding the dark mode. First, we will remove the styles set in `App.css`. Remove line 12 `background-color: #282c34;` and line 19 `color: white;`.
 
 This is what it should look like:
 
-![Image 2](../images/2019-05-20-dark-mode-in-react-using-scss/create_react_app_white_bg.gif)
+![(Img 2) Removing default styling from create-react-app](../images/2019-05-20-dark-mode-in-react-using-scss/create_react_app_white_bg.gif)
 
 As mentioned in the title, we will use SCSS so that it is easy to scale the styling when you want to add more dark mode featured styles instead of merely flipping text and background.
 
@@ -149,6 +147,6 @@ export default App;
 
 Now we have a very basic dark mode working. We can add more specific styles to dark mode in the `style.scss`.
 
-![Image 3](../images/2019-05-20-dark-mode-in-react-using-scss/dark_mode_demo.gif)
+![(Img 3) Dark Mode demo](../images/2019-05-20-dark-mode-in-react-using-scss/dark_mode_demo.gif)
 
 Here's the [source](https://github.com/yagrawl/dark-mode) & [demo](https://yagrawl.github.io/dark-mode/).

@@ -1,10 +1,8 @@
 ---
 title: Declaring Variables in ES6 Javascript
 date: "2017-08-06"
-time: "4 mins"
 description: let, var, const, what!?
-category: Code
-tags: Frontend, Basics
+tags: ["Frontend", "Javascript", "Code"]
 path: /declaring-variables-in-es6-javascript
 ---
 
@@ -20,7 +18,7 @@ With ES6 JavaScript introduced two other variable declaration keywords —`let
 and `const`. Since JS follows a dynamic typing system, what’s the difference
 between these keywords?
 
-![Venn Diagram](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_venn_diagram.png)
+![(Img 1). Venn Diagram covering Mutability and Scoping](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_venn_diagram.png)
 
 If we were to divide variable declaration types based on their characteristics,
 the Venn diagram above could be used a simplistic view.
@@ -35,7 +33,7 @@ A `const` variable is just like any other variable with some exceptions.
 
 -   Need to initialize the value when declared. It throws an error otherwise.
 
-![Syntax Error](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_const_error.png)
+![(Img 2). Syntax Error on not initializing a const variable](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_const_error.png)
 
 -   A new value can’t be assigned afterward. Not very _variable_, is it?
     However we can still change its properties. Check out the gist below to see
@@ -87,14 +85,14 @@ Basically in every scope there’s a variable initialized using `var` and
 a variable initialized using `let`. Just to reiterate, these are the lexical
 environments of the above code sample.
 
-![Scopes](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_scopes.png)
+![(Img 3). Detailing Scopes](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_scopes.png)
 
 As mentioned earlier, `var` ignores the blocks and is defined to the closest
 function or global scope. `let` and `const` on the other hand are block scoped
 variables. We have a total of 6 variables defined across 3 scopes. Checking the
 value of each variable across every scope gives us the following result.
 
-![table of variables](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_table.png)
+![(Img 4). Status of variables in different scopes](../images/2017-08-06-declaring-variables-in-es6-javascript/declaring_variables_table.png)
 
 The highlighted cells show block scoping in action. `var3` and `let3` were both
 defined within a `for` loop which serves as a block scope. Since `var` is

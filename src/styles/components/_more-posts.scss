@@ -1,0 +1,23 @@
+.more-posts {
+  margin-bottom: 30px;
+}
+
+.more-posts-title {
+  margin-top: 30px;
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: 21px;
+}
+
+.more-posts-description {
+  @extend %font;
+  font-size: 14px;
+}
+
+.matched-tag {
+  color: $theme-secondary-color;
+}
+
+.more-post-snippet-div {
+  margin-bottom: 20px;
+}

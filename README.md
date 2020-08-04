@@ -1,3 +1,3 @@
-# Yash Agrawal's Blog
+# scribbles\_
 
-Powered by Gatsby
+My personal portfolio

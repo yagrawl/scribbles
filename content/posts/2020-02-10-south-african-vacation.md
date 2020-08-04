@@ -1,10 +1,8 @@
 ---
 title: South African Vacation
 date: "2020-02-10"
-time: "6 mins"
 description: Wildlife, Waterfront and Wineries
-category: Travel
-tags: South Africa, Wine, Views
+tags: ["Travel", "South Africa", "Wine"]
 path: /south-african-vacation
 ---
 
@@ -26,15 +24,15 @@ The next day we just drove around the park and saw the usual suspects -
 Elephants, Giraffes, Zebras, Deer, Hyenas, Honey Badgers and some spectacular
 views of the forest.
 
-`youtube:https://www.youtube.com/embed/pbqF0b9fN6A`
+<iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/pbqF0b9fN6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![Kruger National Park - Zebra](../images/2020-02-10-south-african-vacation/kruger_zebra.png)
+![(Img 1) A Zebra in the Kruger National Park](../images/2020-02-10-south-african-vacation/kruger_zebra.png)
 
 The following day we went to [Lions Park](http://www.lionandsafaripark.com/) near
 Johannesburg. It is essentially a reverse zoo where you sit inside a car and
-drive inside enclosures. Then you also get to play with the cubs.
+drive inside enclosures. Then you also get to play with the cubs. I don't particularly think this is something that should be allowed to exist because the Cubs were clearly sedated. This cannot possibly be good for them.
 
-![Lion Cubs](../images/2020-02-10-south-african-vacation/cubs.jpg)
+![(Img 2) Playing with Lion Cubs](../images/2020-02-10-south-african-vacation/cubs.jpg)
 
 Next stop was Cape Town. Its a short 2 hour flight from Johannesburg. The very
 first place we went to in Cape Town was the Table Mountain. It is highly weather
@@ -43,23 +41,23 @@ first place we went to in Cape Town was the Table Mountain. It is highly weather
  giving you a complete 360° view. From the top of the mountain you can
  essentially see the entire city.   
 
-![Table Mountain](../images/2020-02-10-south-african-vacation/table_mountain.jpg)
+![(Img 3) View from Table Mountain](../images/2020-02-10-south-african-vacation/table_mountain.jpg)
 
 Another interesting place in Cape Town is the Lion's Head Mountain, named so
 because apparently it looks like a Lion's head. Honestly, I don't see it.
 Nevertheless, it looks beautiful.
 
-![Lionhead Mountain](../images/2020-02-10-south-african-vacation/lion_head_mountain.jpg)
+![(Img 4) Lionhead Mountain during the Sunrise](../images/2020-02-10-south-african-vacation/lion_head_mountain.jpg)
 
 The next morning I ran across the Beach Road and it is absolutely stunning.
 
-![Cape Point Run](../images/2020-02-10-south-african-vacation/cape_town_run.jpg)
+![(Img 5) 5K run in Cape Town](../images/2020-02-10-south-african-vacation/cape_town_run.jpg)
 
 Shortly after breakfast we left for Boulders Beach commonly famous for
 inhabiting Penguins. I had never actually seen a penguin in the 'wild' before
 so this was quite an experience for me.   
 
-![Boulders Penguin Beach](../images/2020-02-10-south-african-vacation/boulders_beach.jpg)
+![(Img 6) Boulders Penguin Beach](../images/2020-02-10-south-african-vacation/boulders_beach.jpg)
 
 Next stop was Cape Point -- also my favorite of all the places I've seen in
 South Africa. Cape Point is the south western tip of the African Continent.
@@ -69,7 +67,7 @@ guide was misinformed and the official geographic divide is defined by
 Cape Agulhas which is about a 100 miles South East of the Cape Point.
 Nevertheless, it is simply breathtaking.
 
-![Cape Point Sign](../images/2020-02-10-south-african-vacation/cape_point_sign.jpg)
+![(Img 7) Cape Point Sign](../images/2020-02-10-south-african-vacation/cape_point_sign.jpg)
 
 The lighthouse atop the Cape Point was originally erected in 1860 and its white
 flashing light could be seen by ships 67 kms out to sea. Since it was often
@@ -77,7 +75,7 @@ covered by cloud and mist, it was eventually destroyed by the Portuguese liner
 'Lusitania' in 1911. This 'new' lighthouse was subsequently erected on a higher
 ground.
 
-![Lighthouse at Cape Point](../images/2020-02-10-south-african-vacation/lighthouse.jpg)
+![(Img 8) Lighthouse at Cape Point](../images/2020-02-10-south-african-vacation/lighthouse.jpg)
 
 Near Cape Point, another spot to visit is the Cape of Good Hope. I do not have
 strong sources to cite on this but apparently the first ever explorer to see
@@ -91,13 +89,13 @@ windy (outrageous even for the locals). I was quite literally being pushed back.
 It was all fun and games till the sand from the beach started hitting my face.
 The view made the entire thing worth it.
 
-![Camps Bay](../images/2020-02-10-south-african-vacation/camps_bay.jpg)
+![(Img 9) Camps Bay](../images/2020-02-10-south-african-vacation/camps_bay.jpg)
 
 Another recommended spot was 'Seal Island'. We took a boat out there and it was
 probably the worst hour of the entire trip. I was extremely sea sick and
 couldn't be bothered to look at the Seals.
 
-![Seal Island](../images/2020-02-10-south-african-vacation/seal_island.jpg)
+![(Img 10) Seal Island](../images/2020-02-10-south-african-vacation/seal_island.jpg)
 
 The day after, we visited a few wineries in Constantia Valley and Stellenbosch.
 It is hard to pick a favorite but I really liked [Steenberg Farm](https://www.steenbergfarm.com/)
@@ -112,17 +110,17 @@ marketing standpoint so they changed it to 'The Black Swan'. I really loved the
 taste even though my palette isn't mature enough to pick up notes of lime,
 gooseberry, blackcurrant and the coat of cold mountain-side breeze on the grapes.
 
-![Steenberg Winery](../images/2020-02-10-south-african-vacation/steenberg_winery.jpg)
+![(Img 11) Steenberg Winery](../images/2020-02-10-south-african-vacation/steenberg_winery.jpg)
 
 Other beautiful wineries worth checking out include -
 [Meerlust Estate](http://www.meerlust.co.za/) and [Spier Wine Farm](https://www.spier.co.za/).
 
-![StellenBosch](../images/2020-02-10-south-african-vacation/stellenbosch.jpg)
+![(Img 12) StellenBosch](../images/2020-02-10-south-african-vacation/stellenbosch.jpg)
 
 On the last day in Cape Town, we visited a neighborhood called 'Bo - Kaap'
 which is known for its brightly colored homes and cobbled stone streets.  
 
-![Bo - Kaap Neighborhood](../images/2020-02-10-south-african-vacation/bo-kaap.jpg)
+![(Img 13) Bo - Kaap Neighborhood](../images/2020-02-10-south-african-vacation/bo-kaap.jpg)
 
 We couldn't get tickets to visit Robben Island which, according to over tour guide,
 is another highly recommend spot to visit because of its historical importance.

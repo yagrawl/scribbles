@@ -1,10 +1,8 @@
 ---
 title: Hoisting in Javascript
 date: "2017-08-01"
-time: "4 mins"
 description: How function declarations/variables get ‘moved’ to the top.
-category: Code
-tags: Frontend, Basics
+tags: ["Frontend", "Javascript", "Code"]
 path: /hoisting-in-javascript
 ---
 
@@ -59,7 +57,7 @@ JS — _Global execution context_ and _Function execution context_. Since
 Javascript is based on a single threaded execution model, only one piece of
 code can be executed at a time. For our code, the process is as follows :
 
-![execution stack](../images/2017-08-01-hoisting-in-javascript/hoisting_execution_stack.png)
+![(Img 1). Execution stack for the above code snippet](../images/2017-08-01-hoisting-in-javascript/hoisting_execution_stack.png)
 
 This process is self explanatory but doesn’t really explain the anomalies we
 saw during the execution of the code sample. While the execution context keeps
@@ -78,7 +76,7 @@ track of local variables, function declarations and parameters, each lexical
 environment keeps track of its parent lexical environment. So the Javascript
 Engine’s resolution of the above code sample would look something like this:
 
-![execution stack in detail](../images/2017-08-01-hoisting-in-javascript/hoisting_execution_stack_details.png)
+![(Img 2). Execution stack in more detail](../images/2017-08-01-hoisting-in-javascript/hoisting_execution_stack_details.png)
 
 To resolve an identifier within a lexical environment, the JS engine checks
 the current environment for a reference. If no reference is found, it moves on

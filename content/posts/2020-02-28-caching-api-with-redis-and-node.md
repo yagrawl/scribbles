@@ -1,10 +1,8 @@
 ---
 title: Caching API with Redis and Node
 date: "2020-02-28"
-time: "5 mins"
 description: Making faster responses and decreasing dependency on external APIs.
-category: Code
-tags: Middleware, Basics
+tags: ["Tutorial", "Code"]
 path: /caching-api-with-redis-and-node
 ---
 
@@ -34,7 +32,7 @@ Basically, the snippet above recursively calls our method for (n - 1) and (n - 2
 
 Here's what the call stack would look like:
 
-![Fibonacci normal call stack](../images/2020-02-28-caching-api-with-redis-and-node/fibonacci_normal_call_stack.png)
+![(Img 1) Fibonacci normal call stack](../images/2020-02-28-caching-api-with-redis-and-node/fibonacci_normal_call_stack.png)
 
 As you can see, we compute `fibonacci(2)` which can be thought of as a relatively resource consuming operation, multiple times. We could have essentially stored the value for `fibonacci(2)` somewhere when we calculated it the first time and used the store's value the second time to speed up the process.
 
@@ -51,7 +49,7 @@ const fibonacci = (n, cache) => {
 
 Here's the updated call stack with the memoization process:
 
-![Fibonacci memoized call stack](../images/2020-02-28-caching-api-with-redis-and-node/fibonacci_memoized_call_stack.png)
+![(Img 2) Fibonacci memoized call stack](../images/2020-02-28-caching-api-with-redis-and-node/fibonacci_memoized_call_stack.png)
 
 As you can see, we were able to reduce some compute time with memoization which is just a form of caching. Now, let's use this technique to cache responses from a third party API service using Redis.
 
@@ -105,7 +103,7 @@ I'm using [Postman](https://www.postman.com/) to test my API.
 
 results in,
 
-![API response not cached](../images/2020-02-28-caching-api-with-redis-and-node/without_cache.png)
+![(Img 3) Postman screengrab with API response not cached](../images/2020-02-28-caching-api-with-redis-and-node/without_cache.png)
 
 Notice the time in the red box on the screengrab above. It is `489ms`. Now let's add caching using Redis. Make sure you have Redis running on your local machine. Run:
 
@@ -115,7 +113,7 @@ redis-server
 
 on a new terminal window. It should look something like this.
 
-![Redis Server](../images/2020-02-28-caching-api-with-redis-and-node/redis_server.png)
+![(Img 4) Redis Server](../images/2020-02-28-caching-api-with-redis-and-node/redis_server.png)
 
 Now, add middleware to check if the key exists in the cache, if not then get it from the third party API and update the cache.
 
@@ -164,7 +162,7 @@ app.listen(PORT, () => console.log(`Server up and running on ${PORT}`));
 
 After you try GET on `localhost:4000/spacex/launches`, it would still take about the same time it did the first time we ran before adding Redis. This is because the cache doesn't have that key present and has now updated it. On running it a second time, you'll be able to see the difference.
 
-![API response cached](../images/2020-02-28-caching-api-with-redis-and-node/with_cache.png)
+![(Img 5) Postman screengrab with API response cached](../images/2020-02-28-caching-api-with-redis-and-node/with_cache.png)
 
 One very obvious pitfall in this implementation is that once we add it to the cache, we will never fetch the updated value from the third party API. This probably isn't the expected behavior. One way to counter this is to use `setex` which takes an expiry argument. It essentially runs two atomic operations. `SET` and `EXPIRE`. After the set expiry period, we fetch the data again from the third party api and update the cache.
 

@@ -1,0 +1,30 @@
+body.dark {
+  background-color: $dark-background-color;
+  color: $dark-text-color;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+
+  .anchor {
+    color: $dark-text-color;
+  }
+
+  .post-snippet-tags > a, .post-tags > a {
+    color: $dark-text-complimentary-color;
+    background-color: $dark-complimentary-color;
+  }
+
+  .newsletter-email-box,
+  .newsletter-submit-button-inactive {
+    background-color: $dark-complimentary-color;
+    color: $dark-text-color;
+  }
+
+  blockquote {
+    color: $dark-text-color;
+    background-color: $dark-complimentary-color;
+    border-left: 6px solid $theme-secondary-color;
+
+    &::before { color: $dark-background-color; }
+  }
+}

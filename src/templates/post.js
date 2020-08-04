@@ -1,163 +1,116 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import RelatedPost from "../components/relatedPost"
-import Newsletter from "../components/newsletter"
+import Navbar from "../components/layouts/navbar"
+import MorePosts from "../components/elements/morePosts"
+import Newsletter from "../components/elements/newsletter"
+import Footer from "../components/elements/footer"
+import SEO from "../components/elements/seo"
+
+import "../styles/main.scss"
 
 class PostTemplate extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      posts: this.props.data.allMdx.edges,
-    }
-  }
-
-  getRelatedPosts(category, title, date) {
-    let count = 0;
-
-    let posts = this.state.posts.map(({ node }) => {
-      if(node.frontmatter.category === category &&
-         node.frontmatter.title !== title &&
-         daysSince2000(node.frontmatter.date) < daysSince2000(date) &&
-         count < 3) {
-        count += 1;
-        return <div key={node.frontmatter.path}>
-                <Link className="link" to={node.frontmatter.path}>
-                  <RelatedPost title={node.frontmatter.title}
-                               date={node.frontmatter.date}
-                               readTime={node.frontmatter.time}
-                          />
-                </Link>
-              </div>
-      }
+  getTags(tags) {
+    return tags.map((tag, i) => {
+      return <Link to={`/tag/${parseTag(tag)}`}><span>{tag}</span></Link>
     });
-
-    if(count === 0) {
-      let newPosts = this.state.posts.map(({ node }) => {
-        if(node.frontmatter.category === category &&
-           node.frontmatter.title !== title &&
-           daysSince2000(node.frontmatter.date) > daysSince2000(date) &&
-           count < 3) {
-          count += 1;
-          return <div key={node.frontmatter.path}>
-                  <Link className="link" to={node.frontmatter.path}>
-                    <RelatedPost title={node.frontmatter.title}
-                                 date={node.frontmatter.date}
-                                 readTime={node.frontmatter.time}
-                            />
-                  </Link>
-                </div>
-        }
-      });
-
-      if(newPosts.every(val => val === undefined)) {
-        return <div></div>
-      } else {
-        return (
-          <div>
-            <p className="related-posts-title">Related Posts</p>
-            {newPosts}
-          </div>
-        )
-      }
-    } else {
-      return (
-        <div>
-          <p className="related-posts-title">Related Posts</p>
-          {posts}
-        </div>
-      )
-    }
   }
 
   render() {
-    const post = this.props.data.mdx
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { data } = this.props
+    const postTags = this.props.pathContext.tags
+    const postLink = this.props.pathContext.link
+    const morePosts = data.allMarkdownRemark.edges
+    const post = data.markdownRemark
+    const { title, date, tags } = post.frontmatter
+    const { words } = post.wordCount
+    const html = post.html
+    const { cursor, subtitle, author, location } = data.site.siteMetadata
+    const siteTitle = data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.excerpt}
-        />
-        <p className="post-title-text">{post.frontmatter.title}</p>
-        <p>
-          <span className="post-details">{post.frontmatter.date}</span>
-          &nbsp;
-          <span className="post-details">{post.frontmatter.time}</span>
-        </p>
-        <div className="post">
-          <MDXRenderer>
-            {post.body}
-          </MDXRenderer>
+      <div className="main">
+        <SEO title={title}/>
+        <Navbar title={siteTitle} cursor={cursor} subtitle={subtitle} author={author} location={location} root={false}/>
+        <div className="posts">
+          <p className="post-title-text">{title}</p>
+          <div className="post-details">
+            <span>{date.toUpperCase()}</span>
+            <span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+            <span>{words} WORDS</span>
+          </div>
+          <div className="post-tags">
+            { this.getTags(tags) }
+          </div>
+          <div
+            className="post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </div>
-        {this.getRelatedPosts(post.frontmatter.category,
-                              post.frontmatter.title,
-                              post.frontmatter.date)}
-        <Newsletter post={post.frontmatter.title}/>
-        <hr/>
-        <Bio />
-      </Layout>
+        <MorePosts posts={morePosts} tags={postTags} link={postLink}/>
+        <Newsletter post={title}/>
+        <Footer/>
+      </div>
     )
   }
 }
 
-let daysSince2000 = date => {
-  let months = ["January", "February", "March", "April",
-                "May", "June", "July", "August",
-                "September", "October", "November", "December"];
-
-  date = date.split(" ");
-  let month = months.indexOf(date[0]);
-  let day = parseInt(date[1].slice(0, -1));
-  let year = parseInt(date[2]);
-
-  return ((year - 2000) * 365) + (month * 30) + day;
-}
-
 export default PostTemplate
 
+let parseTag = tag => {
+  return (
+    tag &&
+    tag
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map((x) => x.toLowerCase())
+    .join('-')
+  )
+}
+
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query Post($link: String) {
     site {
       siteMetadata {
+        description
+        siteUrl
         title
         author
+        subtitle
+        location
+        cursor
       }
     }
-    mdx(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      body
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        time
-        category
-        tags
-      }
-    }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
       edges {
         node {
-          fields {
-            slug
-          }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            time
             description
-            category
             path
+            title
+            date(formatString: "MMMM DD, YYYY")
+            tags
           }
+          wordCount {
+            words
+          }
+          timeToRead
+          excerpt(pruneLength: 350)
         }
       }
+    }
+    markdownRemark(frontmatter: {path: {eq: $link}}) {
+      html
+      frontmatter {
+        title
+        path
+        description
+        date(formatString: "MMMM DD, YYYY")
+        tags
+      }
+      wordCount {
+        words
+      }
+      timeToRead
     }
   }
 `
