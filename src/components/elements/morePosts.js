@@ -44,6 +44,10 @@ class MorePosts extends Component {
       return null;
     })
 
+    if(filterPosts.length === 0) {
+      filterPosts = posts;
+    }
+
     return filterPosts.slice(0, 3);
   }
 
