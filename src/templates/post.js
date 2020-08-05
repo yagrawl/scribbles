@@ -18,8 +18,8 @@ class PostTemplate extends Component {
 
   render() {
     const { data } = this.props
-    const postTags = this.props.pathContext.tags
-    const postLink = this.props.pathContext.link
+    const postTags = this.props.pageContext.tags
+    const postLink = this.props.pageContext.link
     const morePosts = data.allMarkdownRemark.edges
     const post = data.markdownRemark
     const { title, date, tags } = post.frontmatter

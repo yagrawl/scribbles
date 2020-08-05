@@ -20,7 +20,7 @@ class Newsletter extends Component {
 
   handleChange(e) {
     let value = e.target.value;
-    let emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    let emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
     if(emailRegex.test(value.toLowerCase())) {
       this.setState(

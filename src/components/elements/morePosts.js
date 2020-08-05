@@ -41,7 +41,7 @@ class MorePosts extends Component {
         return post;
       }
 
-      return;
+      return null;
     })
 
     return filterPosts.slice(0, 3);

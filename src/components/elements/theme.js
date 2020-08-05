@@ -42,8 +42,8 @@ class Theme extends Component {
   render() {
     return (
       <div>
-        <input type="checkbox" id="themeToggle" onChange={this.handleModeChange}/>
         <label htmlFor="themeToggle" id="themeIconLabel">
+          <input type="checkbox" id="themeToggle" onChange={this.handleModeChange}/>
           <img src={(this.state.dark) ? Light : Dark} id="themeIcon" className="theme-image" alt={(this.state.dark) ? "Toggle to light theme icon" : "Toggle to dark theme icon"}/>
         </label>
       </div>
