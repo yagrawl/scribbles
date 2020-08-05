@@ -7,14 +7,16 @@ class Theme extends Component {
   constructor(props) {
     super(props);
 
-    if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
-      document.body.classList.remove('dark');
-    } else {
-      document.body.classList.add('dark');
+    if (typeof window !== 'undefined') {
+      if(JSON.parse(localStorage.getItem('DARK_MODE')) === true) {
+        document.body.classList.add('dark');
+      } else {
+        document.body.classList.remove('dark');
+      }
     }
 
     this.state = {
-      dark: JSON.parse(localStorage.getItem('DARK_MODE'))
+      dark: (typeof window !== 'undefined') ? JSON.parse(localStorage.getItem('DARK_MODE')) : true
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
@@ -26,9 +28,9 @@ class Theme extends Component {
     setTimeout(function() { icon.classList.remove("rotate"); }, 400);
 
     if(this.state.dark) {
-      document.body.classList.add("dark");
-    } else {
       document.body.classList.remove("dark");
+    } else {
+      document.body.classList.add("dark");
     }
 
     this.setState({
@@ -42,7 +44,7 @@ class Theme extends Component {
       <div>
         <input type="checkbox" id="themeToggle" onChange={this.handleModeChange}/>
         <label htmlFor="themeToggle" id="themeIconLabel">
-          <img src={(this.state.dark) ? Dark : Light} id="themeIcon" className="theme-image" alt={(this.state.dark) ? "Toggle to dark theme icon" : "Toggle to light theme icon"}/>
+          <img src={(this.state.dark) ? Light : Dark} id="themeIcon" className="theme-image" alt={(this.state.dark) ? "Toggle to light theme icon" : "Toggle to dark theme icon"}/>
         </label>
       </div>
     );
