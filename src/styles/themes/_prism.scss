@@ -138,7 +138,7 @@ pre[class*="language-"] {
 
 .line-numbers-rows {
 	margin-left: 20px;
-	margin-top: 16px;
+	margin-top: 14px;
 	border-left: 0px;
 }
 
@@ -184,10 +184,4 @@ pre.line-numbers > code {
 	display: block;
 	padding-right: 0.8em;
 	text-align: right;
-}
-
-@media screen and (max-width: 720px) {
-  .line-numbers-rows {
-		margin-top: 4px;
-	}
 }
