@@ -1,5 +1,4 @@
 .navbar-title {
-  line-height: 10%;
   display: inline-block;
   float: left;
 }
@@ -8,24 +7,27 @@
   @extend %font;
   font-size: 30px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .title-non-root {
   @extend %font;
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .subtitle-root {
   @extend %font;
   font-weight: 100;
-  font-size: 16px;
+  margin-top: 0;
 }
 
 .subtitle-non-root {
   @extend %font;
   font-weight: 100;
   font-size: 14px;
+  margin-top: 0;
 }
 
 .subtitle-name {
@@ -59,4 +61,16 @@
   .subtitle-root {
     max-width: 200px;
   }
+}
+
+.theme-root {
+  display: inline-block;
+  float: right;
+  margin-top: 40px;
+}
+
+.theme-non-root {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
 }

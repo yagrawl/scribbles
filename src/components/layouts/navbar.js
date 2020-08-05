@@ -19,7 +19,7 @@ const Navbar = (props) => (
       </p>
     </div>
 
-    <div className="theme">
+    <div className={(props.root) ? "theme-root" : "theme-non-root"}>
       <Theme/>
     </div>
     <div className="clear"></div>

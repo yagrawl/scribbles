@@ -43,10 +43,15 @@ div.post-content > p {
   margin-bottom: 20px;
 }
 
+div.post-content > ul > li > a,
 div.post-content > p > a {
   text-decoration: none !important;
   color: $theme-primary-color;
   font-weight: $font-weight-medium;
+}
+
+.post-autolink {
+  color: $theme-secondary-color;
 }
 
 div.post-content > ul, li {
@@ -73,6 +78,11 @@ img[src$=".gif"] {
 h2 > a[aria-label$="permalink"] {
   color: $dark-text-color;
 }
+
+div.post-content > p > img {
+  max-width: 100%;
+}
+
 
 blockquote {
 	width: 80%;
