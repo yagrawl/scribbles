@@ -50,6 +50,19 @@ div.post-content > p > a {
   font-weight: $font-weight-medium;
 }
 
+div.post-content > ul > li > a:hover,
+div.post-content > p > a:hover {
+  border-bottom: 2px solid $theme-primary-color;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: border-bottom;
+  transition-property: border-bottom;
+}
+
+div.post-content > h2 > a > svg > path {
+  fill: $theme-primary-color;
+}
+
 .post-autolink {
   color: $theme-secondary-color;
 }
