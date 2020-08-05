@@ -185,3 +185,9 @@ pre.line-numbers > code {
 	padding-right: 0.8em;
 	text-align: right;
 }
+
+@media screen and (max-width: 720px) {
+  .line-numbers-rows {
+		margin-top: 4px;
+	}
+}
