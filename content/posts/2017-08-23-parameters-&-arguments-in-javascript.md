@@ -22,7 +22,7 @@ arguments passed during a function invocation are different than the number of
 parameters listed during function definition. This should make it clear that
 parameters and arguments should be treated as two different entities.
 
-```js
+```js{numberLines: true}
 // Basic function with three parameters that logs the sum of all the parameters
 function argCheck(parameter1, parameter2, parameter3){
   console.log(parameter1 + parameter2 + parameter3);
@@ -65,7 +65,7 @@ arguments object is an array-like construct which can be used to access
 arguments passed to the function even if a matching parameter isn’t explicitly
 defined.
 
-```js
+```js{numberLines: true}
 function argumentVar(parameter1, parameter2, parameter3){
   console.log(arguments.length); // Logs the number of arguments passed.
   console.log(arguments[3]); // Logs the 4th argument. Follows array indexing notations.
@@ -93,7 +93,7 @@ would change `parameter1`.
 Rest Parameter is an ES6 addition to JavaScript. To create a rest parameter
 prefix the last parameter in a function definition with ellipsis(…).
 
-```js
+```js{numberLines: true}
 function restParam(...restArgs){
   console.log(restArgs.length); // Logs the number of arguments passed
   console.log(restArgs[3]); // Logs the 4th argument
@@ -124,7 +124,7 @@ Two major differences between the `arguments` object and rest parameters:
     parameter while arguments object contains all the arguments passed to the
     function. Code snippet #3 could also be written as follows.
 
-```js
+```js{numberLines: true}
 function restParam(parameter1, ...restArgs){
   console.log(restArgs.length); // Logs the number of arguments that do not have a corresponding parameter
   console.log(restArgs[2]); // Logs the 3rd argument after the number of arguments that do not have a corresponding parameter

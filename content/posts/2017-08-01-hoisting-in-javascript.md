@@ -20,7 +20,7 @@ unlike compiled languages JS code runs line by line.
 
 Consider the following example.
 
-```js
+```js{numberLines: true}
  1  console.log(notyetdeclared);
  2  // prints out 'undefined'
  3  

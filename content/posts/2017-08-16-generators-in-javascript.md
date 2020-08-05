@@ -27,7 +27,7 @@ Look at the code snippet from the official MDN documentation below to just see
 that it follows almost a similar syntax as a function but with some interesting
 differences.
 
-```js
+```js{numberLines: true}
 function* idMaker() {
   var index = 0;
   while(true)
@@ -72,7 +72,7 @@ A generator has the following states :
 Consider an easier code snippet to understand the states and execution context
 of the generator function.
 
-```javascript
+```javascript{numberLines: true}
 function* myGenerator() {
   yield '1';
   yield '2';
