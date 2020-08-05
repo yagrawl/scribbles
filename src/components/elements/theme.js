@@ -16,7 +16,7 @@ class Theme extends Component {
     }
 
     this.state = {
-      dark: (typeof window !== 'undefined') ? JSON.parse(localStorage.getItem('DARK_MODE')) : true
+      dark: (typeof window !== 'undefined') ? JSON.parse(localStorage.getItem('DARK_MODE')) : false
     }
 
     this.handleModeChange = this.handleModeChange.bind(this);
