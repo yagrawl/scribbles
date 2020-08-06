@@ -2,3 +2,42 @@
   @extend %font;
   font-size: 18px;
 }
+
+.about-anchor {
+  border-bottom: 1px solid $theme-primary-color;
+}
+
+.about-anchor:hover {
+  animation: uline 0.10s linear 1 forwards;
+  -webkit-animation: uline 0.10s linear 1 forwards;
+  -moz-animation: uline 0.10s linear 1 forwards;
+  -o-animation: uline 0.10s linear 1 forwards;
+}
+
+@-webkit-keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@-moz-keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}
+
+@-o-keyframes uline {
+  0% {border-bottom: 0.5px solid $theme-primary-color;}
+  50% {border-bottom: 1px solid $theme-primary-color;}
+  75% {border-bottom: 1.5px solid $theme-primary-color;}
+  100% {border-bottom: 2px solid $theme-primary-color;}
+}

@@ -24,7 +24,7 @@ The next day we just drove around the park and saw the usual suspects -
 Elephants, Giraffes, Zebras, Deer, Hyenas, Honey Badgers and some spectacular
 views of the forest.
 
-<iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/pbqF0b9fN6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="650" height="315" margin="auto" src="https://www.youtube.com/embed/pbqF0b9fN6A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![(Img 1) A Zebra in the Kruger National Park](../images/2020-02-10-south-african-vacation/kruger_zebra.png)
 

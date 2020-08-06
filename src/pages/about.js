@@ -23,7 +23,7 @@ class About extends Component {
 
         <p>I’m interested in fullstack development and fintech. Apart from that I love to run, play badminton, make pasta, build my vinyl collection and watch a lot of movies.</p>
 
-        <p>I also write from time to time. You can read it <a className="link" href="/">here</a>.</p>
+        <p>I also write from time to time. You can read it <a className="about-anchor anchor" href="/">here</a>.</p>
         </div>
         <Footer/>
       </div>
