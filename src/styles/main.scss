@@ -39,11 +39,6 @@ img {
   border-radius: 20px;
 }
 
-iframe {
-  max-width: $viewport-width;
-  max-height: 100%;
-}
-
 .main {
   max-width: $viewport-width;
   padding: $viewport-padding;
@@ -52,14 +47,14 @@ iframe {
   font-family: $font-family;
 }
 
-.runstats {
-  width: 600px;
+.responsive-iframe {
+  width: $viewport-width;
   height: 380px;
   margin: auto;
 }
 
 @media screen and (max-width: 720px) {
-  .runstats {
+  .responsive-iframe {
     width: 98%;
     height: 360px;
   }

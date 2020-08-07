@@ -75,11 +75,5 @@ module.exports = {
         trackingId: `UA-65874311-9`,
       },
     },
-    {
-      resolve: `gatsby-remark-responsive-iframe`,
-      options: {
-        wrapperStyle: `margin-bottom: 1.0725rem`,
-      },
-    },
   ],
 }

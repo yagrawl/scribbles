@@ -59,7 +59,7 @@ RunGap to Export it to Strava and finally, use Strava's public API to feed data 
 personal React application I built to see the stats that I want.
 
 <iframe src="https://runstats.netlify.com"
-        class="runstats"
+        class="responsive-iframe"
         frameBorder="0"
         scrolling="no"></iframe>
 
@@ -69,7 +69,7 @@ They have a very extensive database of ingredients and also support Barcodes.
 ![(Img 2) Food Tracking on LifeSum](../images/2020-01-10-quantified-self/lifesum_food_tracking.png)
 
 I've read about people collecting data concerning their mental health in apps where
-you kind of rate your mental state during the day. I've heard promising things
+you rate your mental state during the day. I've heard promising things
 about it but I personally like a more detailed account of the day, so I maintain
 a journal. I originally used to host it on [Evernote](https://evernote.com/) but
 I've since moved it to [Notion](https://www.notion.so/). I've also tried to do

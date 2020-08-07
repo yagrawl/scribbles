@@ -31,7 +31,7 @@ and [Frigidarium](https://www.yelp.com/biz/frigidarium-roma) for Gelato.
 
 The third day I headed to Florence on a train. The Airbnb wasn't going to be available till 2 PM and I got there at around 7:30 in the morning. To not lug my bag around till then I used something called [BagBnb](https://bagbnb.com/) to store my luggage. I also biked around Florence a bunch and it was a lot of fun.
 
-<iframe width="560" height="315" margin="auto" src="https://www.youtube.com/embed/dV8vAxrqYq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/dV8vAxrqYq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
 
 Florence is really pretty and definitely worth a visit. I'm sure there are a lot of amazing places to visit in Italy that I can't attest to at the moment but from what I've seen, Florence is definitely one of them.
 

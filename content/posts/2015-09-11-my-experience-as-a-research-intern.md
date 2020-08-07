@@ -16,6 +16,6 @@ In the [paper](https://pubmed.ncbi.nlm.nih.gov/23649979/), a steel microbead was
 
 My work involved reading the research papers and understanding what the actual research was about. That took up a majority of my time. Understanding parts of the research without any background in the topic was a challenge. After that I summarized what I understood in my own terms and confirmed it with the Graduate student I was working under. Finally my contribution to the project was designing simulations in a software called COMSOL Multiphysics. The video on the left is a clip from the start of my project. Even this involved reading a lot of documentation and understanding how the software actually works and how to use it to the benifit of the research.
 
-<iframe width="650" height="315" margin="auto" src="https://www.youtube.com/embed/bpSc_7pZgKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/bpSc_7pZgKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-iframe"></iframe>
 
 It was a productive summer because I can finally confirm that my interests don't lie in biosciences and I can finally move on.
