@@ -34,7 +34,7 @@ Another really interesting thing about Stockholm is that it is home to the longe
 
 ![(Img 7) Odenplan Metro Station](../images/2018-09-04-visit-to-stockholm/neon_lights_metro_station.jpeg)
 
-![(Img 8) Solna Centrum Metro Station](../images/2018-09-04-visit-to-stockholm/solna.jpeg)
+![(Img 8) Solna Centrum Metro Station](../images/2018-09-04-visit-to-stockholm/solna_centrum.png)
 
 ![(Img 9) T-Centralen Metro Station](../images/2018-09-04-visit-to-stockholm/t_centralen.jpeg)
 
