@@ -8,7 +8,7 @@ path: /layover-in-istanbul
 
 After I graduated from college, I decided to take a 3-day layover in Istanbul before I headed home. I landed at the airport and went straight to the hotel I was staying in. It was pretty cold and dark and I was tired of all the traveling so I called it a day.
 
-The next day I woke up and went to a place that served Turkish coffee. Turks seem to take their breakfast very seriously and I would highly recommend trying as many different breakfast food as possible.
+The next day I woke up and went to a place that served Turkish coffee. Turks seem to take their breakfast very seriously and I would highly recommend trying as many different breakfast foods as possible.
 
 ![(Img 1) Turkish Coffee](../images/2018-12-22-layover-in-istanbul/istanbul_coffee.jpg)
 

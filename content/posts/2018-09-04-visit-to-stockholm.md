@@ -16,7 +16,7 @@ Stockholm is beautiful and it feels like a place from both the past and the futu
 
 ![(Img 2) Airbnb in Gamla Stan, Stockholm](../images/2018-09-04-visit-to-stockholm/stockholm_airbnb.png)
 
-My absolute favorite thing about Sweden is the concept of _fika_. _Fika_ roughly translates to 'A coffee & cake break' but it is so much more than that. It is supposed to be the time of the day when Swedes slow down, take a break, and notice the beauty of life. You can do it anywhere and with anyone or no one. The important thing is to take that time out and pause. Unlike other places in the world, coffee happens more and more 'to go' as a fuel for the rest of the day. But our body works differently than a machine. A pause is more of a fuel than a caffeine shot. Naturally, Stockholm is a big dessert place and there were a lot of cute little cafés serving coffee and cakes.
+My absolute favorite thing about Sweden is the concept of _fika_. _Fika_ roughly translates to 'A coffee & cake break' but it is so much more than that. It is supposed to be the time of the day when Swedes slow down, take a break, and notice the beauty of life. You can do it anywhere and with anyone or no one. The important thing is to take that time out and pause. This is unlike other places in the world, where coffee happens more and more 'to go' as a fuel for the rest of the day. Obviously our body works differently than a machine and for us a pause is more of a fuel than a caffeine shot. Naturally, Stockholm is a big dessert place and there were a lot of cute little cafés serving coffee and cakes.
 
 ![(Img 3) A cafe in Stockholm](../images/2018-09-04-visit-to-stockholm/stockholm_cafe.jpeg)
 
