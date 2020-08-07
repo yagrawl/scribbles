@@ -15,6 +15,7 @@
 @import 'components/newsletter';
 @import 'components/loader';
 @import 'components/footer';
+@import 'components/not-found';
 
 body {
   margin: 0;
@@ -51,10 +52,6 @@ img {
   width: $viewport-width;
   height: 380px;
   margin: auto;
-}
-
-.not-found-art {
-  max-width: 650px;
 }
 
 @media screen and (max-width: 720px) {

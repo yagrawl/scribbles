@@ -18,10 +18,10 @@ class NotFound extends Component {
       <div className="main">
         <SEO title={"404"}/>
         <Navbar title={title} cursor={cursor} subtitle={subtitle} author={author} location={location} root={true}/>
-        <div className="about-text">
+        <div className="not-found-text">
           <p>Oops, seems like you hit a route that does not exist.</p>
           <img src={NotFoundArt} className="not-found-art" alt="Not found art"/>
-          <p>Go back <Link to="/" className="anchor about-anchor">home</Link></p>
+          <p>Go back <Link to="/" className="anchor not-found-anchor">home</Link></p>
         </div>
         <Footer/>
       </div>
