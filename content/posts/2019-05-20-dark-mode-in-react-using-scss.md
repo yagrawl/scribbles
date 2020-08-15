@@ -12,10 +12,7 @@ means do I claim it to be the best possible way of adding dark-mode to your
 react app.
 
 The end goal is to add a dark mode button component which can be added anywhere
-in the project which on click switches to dark mode and back. It also keeps
-track of a users' preference using `localStorage` - so if a user returns to the
-website using the same browser, the previously selected mode will directly be
-applied.
+in the reach application which then on click switches it to dark mode and back. It also keeps track of a users' preference using `localStorage` - so if a user returns to the website using the same browser, the previously selected mode will directly be applied.
 
 Let's get started.
 

@@ -13,7 +13,7 @@ I'm very interested in User Interface Interaction. I've already taken CS 465 - U
 ## Day 1
 
 **Prompt** Design a sign up page, modal, form, app screen, etc.  
-**Design Approach** Inspired by the idea of space, I tried to incorporate light colors with some grpahics relating to the topic.
+**Design Approach** Inspired by the idea of space, I tried to incorporate light colors with some graphics relating to the topic.
 
 ![(Img 1). Day 1 - Sign Up Screen UI](../images/2016-12-22-10-day-ui-challenge/day1_signup.png)
 
@@ -27,14 +27,14 @@ I'm very interested in User Interface Interaction. I've already taken CS 465 - U
 ## Day 3
 
 **Prompt** Landing Page. Hint: What's the main focus? Is it for a book, an album, a mobile app, a product? Consider important landing page elements (call-to-actions, clarity, etc.)  
-**Design Approach** I was trying to learn meteorJS at the moment so I tried to basically replicate that on a similar idea.
+**Design Approach** I was trying to learn meteorJS at the time so I tried to basically replicate their landing page on a similar idea.
 
 ![(Img 3). Day 3 - MeteorJS landing page UI](../images/2016-12-22-10-day-ui-challenge/day3_launch_page.png)
 
 ## Day 4
 
 **Prompt** Design a calculator. Standard, scientific, or specialty calculator for something such as a mortgage? Is it for a phone, a tablet, a web app? (It's up to you!)  
-**Design Approach** I was taking PHYS 213 and we were just taught about heat transfer so that was the first thing that came to my mind. I tried to use heat specific colors to better enhance the experience.
+**Design Approach** I was taking PHYS 213 and we were being taught about heat transfer so that was the first thing that came to my mind. I tried to use heat specific colors to better enhance the experience.
 
 ![(Img 4). Day 4 - Heat calculator UI](../images/2016-12-22-10-day-ui-challenge/day4_calculator.png)
 
@@ -55,7 +55,7 @@ I'm very interested in User Interface Interaction. I've already taken CS 465 - U
 ## Day 7
 
 **Prompt** Design settings for something. Is it for security or privacy settings? Game settings? What is it and what's important? (It's up to you!)  
-**Design Approach** This is a weird settings app for a plane reservation app. It has a lot of uncommon features but the UI is kind of similar to the iPhone settings app.
+**Design Approach** This is a weird settings page for a flight booking app. It has a lot of uncommon features but the UI is kind of similar to the iPhone settings app.
 
 ![(Img 7). Day 7 - Plane tickets settings' UI](../images/2016-12-22-10-day-ui-challenge/day7_settings.png)
 
@@ -69,7 +69,7 @@ I'm very interested in User Interface Interaction. I've already taken CS 465 - U
 ## Day 9
 
 **Prompt** Design a music player. Consider the controls, placements, imagery such as the artist or album cover, etc.  
-**Design Approach** The design is pretty standard actually, just with a voice form according to the status of the song. The bright colors seem up with the dark background.
+**Design Approach** The design is pretty standard actually, just with a voice form according to the status of the song. The bright colors look better with the dark background.
 
 ![(Img 9). Day 9 - Music Player UI](../images/2016-12-22-10-day-ui-challenge/day9_music_player.png)
 
