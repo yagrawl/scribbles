@@ -18,17 +18,17 @@ I wanted this tracker to do the following:
 
 -   Track how many videos I have watched on YouTube -- both unique views and rewatched views.
 
--   A running list of my most rewatched videos.
+-   Keep a running list of my most rewatched videos (Top 10/Top 5).
 
--   Make it focused for the browser because that is my primary way of accessing YouTube.
+-   Be focused for the browser because that is my primary way of accessing YouTube.
 
--   Be able to see my personal view count next to YouTube's view count.
+-   Be able to display my personal view count next to YouTube's view count.
 
 -   Not be another application that sends data somewhere else (keep data on the client if possible, or end-to-end encryption).
 
--   Some control over pausing/unpausing the tracker.
+-   Provide some control over pausing/unpausing the tracker.
 
--   If possible, de-couple it from a YouTube/Google account.
+-   If possible, be de-coupled from a YouTube/Google account.
 
 ## Research
 
@@ -62,7 +62,7 @@ The `popup.html` serves as the UI for the extension and provides the user some c
 
 ## Insights
 
-This project was another experience in -- 'There is no perfect answers' and it is about trade-offs and choosing the best possible solution. There are issues with this approach -- these are tied to a browser because of the localStorage. There is an option that chrome provides where you can sync localStorage throughout all devices with Chrome logged in on the same id, but then that ties it to the account. I picked the one that would retain all data on-device. Similarly, one thing that proved complex was to figure out the replay that comes up after a YouTube video ends, because the controls to access/modify the DOM of the video player wasn't possible.
+This project was another experience in -- 'There is no perfect answer' and it is about trade-offs and choosing the best possible solution. There are issues with the approach I chose -- these are tied to a browser because of the localStorage. There is an option that chrome provides where you can sync localStorage throughout all devices with Chrome logged in on the same id, but then that ties it to the account. I picked the one that would retain all data on-device. Similarly, one thing that proved complex was to figure out the replay that comes up after a YouTube video ends, because the controls to access/modify the DOM of the video player wasn't possible.
 
 Nevertheless, I am happy with how it turned out and that it keeps on working in the background providing me with some interesting data about myself when I choose to see it.
 
