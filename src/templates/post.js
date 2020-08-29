@@ -12,7 +12,9 @@ import "../styles/main.scss"
 class PostTemplate extends Component {
   getTags(tags) {
     return tags.map((tag, i) => {
-      return <Link to={`/tag/${parseTag(tag)}`}><span>{tag}</span></Link>
+      return <Link to={`/tag/${parseTag(tag)}`} key={i}>
+        <span>{tag}</span>
+      </Link>
     });
   }
 

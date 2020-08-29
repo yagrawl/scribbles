@@ -6,13 +6,13 @@ tags: ["Projects", "Chrome Extension", "Tracking"]
 path: /a-chrome-extension-to-track-youtube-viewing-activity
 ---
 
-I am a firm believer in 'Quantified Self' but my motivation behind it isn't just improving myself. It could just be something interesting about myself that I can find out. I've written about some of the the things I use to track data about myself in this [post](/quantified-self).
+I am a firm believer in 'Quantified Self' but my motivation behind it isn't just improving myself. It could simply be something interesting about myself that I can find out. I've written about some of the the things I use to track data about myself in this [post](/quantified-self).
 
 I enjoy watching videos on YouTube (mostly music videos, movie trailers and video essays on various topics) and I realized that a lot of times, I keep rewatching the same videos. For other streaming platforms like Netflix, Hulu, HBO, etc. a service like [trakt](https://trakt.tv) does a good job but for YouTube, there is no way to keep track of your personal viewing activity.
 
 After researching for an existing solution for a while, I realized there was nothing available. YouTube does have a searchable playlist of your viewing 'History' but it seems unreliable. A lot of my viewing history doesn't seem to get added and I can't do much with that list. It is just there. Other solutions don't really exist so I decided to build something for myself.
 
-### Expectations
+## Expectations
 
 I wanted this tracker to do the following:
 
@@ -30,7 +30,7 @@ I wanted this tracker to do the following:
 
 -   If possible, de-couple it from a YouTube/Google account.
 
-### Research
+## Research
 
 There were a few different things I attempted to do which could cover most of my expectations. I quickly realized that there isn't a perfect solution available because no one really seems to care about this (which is fair), and YouTube's api on personal viewing history is non-existent.
 
@@ -38,7 +38,7 @@ I considered parsing the 'history' that YouTube provides but that didn't satisfy
 
 A chrome extension would be a lightweight addition which won't need to be tied down to a YouTube account to collect data and it could also modify the DOM of the page to add the view count. That seemed like the best solution in this particular case.
 
-### Implementation
+## Implementation
 
 To describe the architecture of how chrome extensions should be written is a whole other post. I'll keep this one focused to how my YouTube tracker was made.
 
@@ -60,11 +60,22 @@ The `popup.html` serves as the UI for the extension and provides the user some c
 
 ![(Img 3) YouTube views chrome extension popup UI)](../images/2020-08-28-a-chrome-extension-to-track-youtube-viewing-activity/youtubeviews_popup.png)
 
-### Insights
+## Insights
 
 This project was another experience in -- 'There is no perfect answers' and it is about trade-offs and choosing the best possible solution. There are issues with this approach -- these are tied to a browser because of the localStorage. There is an option that chrome provides where you can sync localStorage throughout all devices with Chrome logged in on the same id, but then that ties it to the account. I picked the one that would retain all data on-device. Similarly, one thing that proved complex was to figure out the replay that comes up after a YouTube video ends, because the controls to access/modify the DOM of the video player wasn't possible.
 
 Nevertheless, I am happy with how it turned out and that it keeps on working in the background providing me with some interesting data about myself when I choose to see it.
+
+## Recommendations
+
+Here are some YouTube channel recommendations for those who are interested in watching video essays.
+
+-   [CineFix](https://www.youtube.com/c/CineFix)
+-   [Kurzgesagt – In a Nutshell](https://www.youtube.com/user/Kurzgesagt)
+-   [Lessons from the Screenplay](https://www.youtube.com/c/LessonsfromtheScreenplay)
+-   [Nerdwriter1](https://www.youtube.com/user/Nerdwriter1)
+-   [Pursuit of Wonder](https://www.youtube.com/c/PursuitofWonder)
+-   [Screened](https://www.youtube.com/c/Screened)
 
 ## Try it out
 

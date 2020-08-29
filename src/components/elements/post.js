@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 class Post extends Component {
   getTags(tags) {
     return tags.map((tag, i) => {
-      return <Link to={`/tag/${parseTag(tag)}`}><span>{tag}</span></Link>
+      return <Link to={`/tag/${parseTag(tag)}`} key={i}><span>{tag}</span></Link>
     });
   }
 
@@ -27,10 +27,10 @@ class Post extends Component {
           <p className="post-snippet-excerpt">
             { this.getExcerpt(this.props.excerpt) }
           </p>
-          <div className="post-snippet-tags">
-            { this.getTags(this.props.tags) }
-          </div>
         </Link>
+        <div className="post-snippet-tags">
+          { this.getTags(this.props.tags) }
+        </div>
       </div>
     );
   }

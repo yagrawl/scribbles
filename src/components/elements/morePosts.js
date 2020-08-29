@@ -20,7 +20,7 @@ class MorePosts extends Component {
       let { words } = post.node.wordCount;
 
       return (
-        <div className="more-post-snippet-div">
+        <div key={i} className="more-post-snippet-div">
           <Link className="link" to={path}>
             <p className="post-snippet-title">{title}</p>
             <div className="post-snippet-details">
