@@ -36,3 +36,5 @@ From this exercise, I learnt a few things:
 -   (Psychological) Tunnel vision is very real. While most of the things I oversaw in the prior iterations stem from a lack of experience, tunnel vision also had a part to play. Once I thought I knew what the problem was, I kept focusing on it without ever stopping and considering if I had even understood the problem correctly. While it isn't always practical to keep stepping away from the problem at hand, it is definitely worth a shot whenever possible.
 
 I would highly recommend trying this with your own old projects. It is certainly a rewarding experience.
+
+**UPDATE** : As of 12/24/31, I've shutdown the messenger bot because it was hard to keep up with Facebook's ever-changing API and because I deactivated my Facebook Account.
