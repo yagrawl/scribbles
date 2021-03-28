@@ -37,4 +37,4 @@ From this exercise, I learnt a few things:
 
 I would highly recommend trying this with your own old projects. It is certainly a rewarding experience.
 
-**UPDATE** : As of 12/24/31, I've shutdown the messenger bot because it was hard to keep up with Facebook's ever-changing API and because I deactivated my Facebook Account.
+**UPDATE** : As of 12/24/20, I've shutdown the messenger bot because it was hard to keep up with Facebook's ever-changing API and because I deactivated my Facebook Account.
