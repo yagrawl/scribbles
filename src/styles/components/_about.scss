@@ -3,10 +3,6 @@
   font-size: 18px;
 }
 
-.about-anchor {
-  border-bottom: 1px solid $theme-primary-color;
-}
-
 .about-anchor:hover {
   animation: uline 0.10s linear 1 forwards;
   -webkit-animation: uline 0.10s linear 1 forwards;

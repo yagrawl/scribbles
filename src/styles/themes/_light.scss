@@ -9,6 +9,10 @@ body {
     color: $light-text-color;
   }
 
+  .about-anchor {
+    border-bottom: 0.2px solid $light-complimentary-color;
+  }
+
   .post-snippet-tags > a, .post-tags > a {
     color: $light-text-complimentary-color;
     background-color: $light-complimentary-color;

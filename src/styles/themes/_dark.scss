@@ -9,6 +9,10 @@ body.dark {
     color: $dark-text-color;
   }
 
+  .about-anchor {
+    border-bottom: 0.2px solid $dark-complimentary-color;
+  }
+
   .post-snippet-tags > a, .post-tags > a {
     color: $dark-text-complimentary-color;
     background-color: $dark-complimentary-color;
